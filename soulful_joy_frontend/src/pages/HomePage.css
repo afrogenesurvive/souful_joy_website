@@ -1,0 +1,14 @@
+.homePageRow {
+  margin-top: 10vh;
+}
+.homePage_container {
+  margin: 7vh auto;
+  border: 1px solid black;
+  height: 70vh;
+  text-align: center;
+}
+
+.homePage_container_footer {
+  margin: 2rem 0;
+  text-align: center;
+}

@@ -1,70 +1,82 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container'
+import Container from 'react-bootstrap/Container';
+import Carousel from 'react-bootstrap/Carousel';
+import MainNavigation from '../components/Navigation/MainNavigation';
+import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
+import bg1 from "../assets/images/bg1.jpg";
 
 const HomePage = () => {
 
 return (
+
   <div className="homePage_maindiv">
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_hero_col'>
-        <h1 className='test'> Hero </h1>
-      </Col>
-    </Row>
-  </Container>
+  <MainNavigation
+  />
+  <Row className="homePageCarouselRow">
 
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> General </h1>
-        <p>How do you feel when you hear soulful joy</p>
-      </Col>
-    </Row>
-  </Container>
+  <Carousel className="homePageCarousel" fade={true} controls={false}>
+    <Carousel.Item className="homePageCarouselItem">
+      <img
+        className="d-block w-100"
+        src={bg1}
+        alt="1st slide"
+      />
+      <Carousel.Caption>
+      <NavLink to="/company">
+        <h3>Soulful Joy</h3>
+      </NavLink>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={bg1}
+        alt="2nd slide"
+      />
 
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> Fetured Event </h1>
-      </Col>
-    </Row>
-  </Container>
+      <Carousel.Caption>
+      <NavLink to="/general">
+        <h3>General</h3>
+      </NavLink>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={bg1}
+        alt="3rd slide"
+      />
 
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> Facilitators </h1>
-      </Col>
-    </Row>
-  </Container>
+      <Carousel.Caption>
+        <NavLink to="/featuredEvent">
+          <h3>Featured Event</h3>
+        </NavLink>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={bg1}
+        alt="4th slide"
+      />
 
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> Summary Post </h1>
-      </Col>
-    </Row>
-  </Container>
+      <Carousel.Caption>
+        <NavLink to="/socialMedia">
+          <h3>Social Media</h3>
+        </NavLink>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  </Carousel>
 
-  <Container className="homePage_container">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> Social media</h1>
-      </Col>
-    </Row>
-  </Container>
-
-  <Container className="homePage_container_footer">
-    <Row className="homePageRow">
-      <Col className='homePage_col'>
-        <h1 className='test'> Footer</h1>
-      </Col>
-    </Row>
-  </Container>
+  </Row>
   </div>
 )
 

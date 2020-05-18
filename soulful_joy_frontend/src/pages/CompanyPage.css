@@ -1,0 +1,29 @@
+.companyPage_maindiv {
+  /* border: 1px solid black; */
+  height: 100vh;
+  width: 100vw;
+}
+
+.companyPageRow {
+  /* border: 1px solid yellow; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.companyPageCol {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 45vh 0;
+  text-align: center;
+}
+
+.companyPageRow_1 {
+  /* border: 1px solid green; */
+
+}
+
+.companyPageHeading {
+
+}

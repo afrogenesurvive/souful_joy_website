@@ -2,6 +2,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import WelcomePage from './pages/WelcomePage';
+import CompanyPage from './pages/CompanyPage';
+import GeneralPage from './pages/GeneralPage';
+import SocialMediaPage from './pages/SocialMediaPage';
+import FeaturedEventPage from './pages/FeaturedEventPage';
 
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
@@ -10,7 +15,7 @@ import './App.css';
 
 class App extends Component {
   state = {
-    test: 'test'
+    splashPage: true,
   };
 
   static contextType = AuthContext;
@@ -29,7 +34,9 @@ class App extends Component {
 
   }
 
-
+  closeSplash = () => {
+    this.setState({splashPage: false})
+  }
 
   render() {
     return (
@@ -39,13 +46,19 @@ class App extends Component {
             value={{
             }}
           >
-            <MainNavigation
-            />
 
             <main className="main-content">
               <Switch>
-              <Route path="/home" component={HomePage} />)
-              <Redirect from="/" to="/home" exact />)
+              <Route path="/welcome" render={(props) => <WelcomePage {...props}
+                closeSplash={this.closeSplash}
+              />}/>
+              <Route path="/home" component={HomePage} />
+              <Route path="/company" component={CompanyPage} />
+              <Route path="/general" component={GeneralPage} />
+              <Route path="/socialMedia" component={SocialMediaPage} />
+              <Route path="/featuredEvent" component={FeaturedEventPage} />
+              <Redirect from="/" to="/welcome" exact />
+              <Redirect from="*" to="/welcome" exact />
               </Switch>
             </main>
 

@@ -13,17 +13,43 @@
 
 .companyPageCol {
   /* border: 1px solid blue; */
-  margin: 0 auto;
-  max-width: 60%;
-  padding: 45vh 0;
+  /* margin: 0 auto; */
+  /* max-width: 60%; */
+  /* padding: 45vh 0; */
+  padding-top: 7rem;
   text-align: center;
 }
 
-.companyPageRow_1 {
-  /* border: 1px solid green; */
-
+.companyPageSubRow1 {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  /* border: 1px solid blue; */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.companyPageSubRow2 {
+  margin: 9rem auto;
+  width: 100%;
+  text-align: center;
+  height: 50vh;
+  /* border: 1px solid blue; */
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .companyPageHeading {
+  margin: 0 auto;
+  /* display: block; */
+}
 
+.companyPage_topRow_head {
+  height: 5rem;
+  width: 5rem;
+  /* border: 1px solid blue; */
+  /* display: inline-block; */
+}
+
+.footerRow {
+  border: 1px solid blue;
 }

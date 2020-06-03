@@ -4,8 +4,10 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 
+import SplashMainLogo from '../assets/imgs/logo_splash_pg.png'
 import "./WelcomePage.css"
 
 const WelcomePage = (props) => {
@@ -15,12 +17,18 @@ return (
     <Row className="welcomePageRow">
       <Col className='welcomePageCol'>
 
-        <Row className="welcomePageRow_1">
-          <h1 className='welcomePageHeading'> Welcome to soulful joy </h1>
+        <Row className="welcomePageSubRow Row1">
+          <Image src={SplashMainLogo} className="SplashMainLogo" fluid />
+          <h1 className='welcomePageHeading'> Soulful Joy </h1>
         </Row>
-        <NavLink to="/home">
-          <Button variant="outline-primary" className="welcomePageEnterBtn" onClick={props.closeSplash}>Enter</Button>
-        </NavLink>
+
+        <Row className="welcomePageSubRow Row2">
+          <h3 className='welcomePageSubHeading'> A Special Time and Place </h3>
+          <NavLink to="/home">
+            <Button variant="outline-light" className="welcomePageEnterBtn" onClick={props.closeSplash}>Enter</Button>
+          </NavLink>
+        </Row>
+
       </Col>
     </Row>
   </div>

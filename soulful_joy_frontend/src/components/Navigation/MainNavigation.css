@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sacramento&display=swap');
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Sacramento', cursive; */
+
 .main-navigation {
   position: fixed;
   left: 0;
@@ -5,7 +9,7 @@
   z-index: 9999;
   width: 100%;
   height: 3.5rem;
-  background: #06D6A0;
+  /* background: #06D6A0; */
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -16,7 +20,7 @@
 .main-navigation__logo h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .main-navigation__items {
@@ -56,4 +60,43 @@
   background: #ffffff;
   color: #5101d1;
   border-radius: 5px;
+}
+
+.navbarBrandLogo {
+  height: 1.5rem;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbarMaster {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.basic-navbar-nav {
+  /* margin-left: 40vw; */
+}
+.navbar_item {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 0 .5rem;
+
+}
+
+.navBar_link {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.navbar_brand_text {
+  font-family: 'Sacramento', cursive;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 420px) {
+
+  .basic-navbar-nav {
+    float: right;
+  }
+
 }

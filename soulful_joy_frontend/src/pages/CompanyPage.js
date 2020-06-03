@@ -18,8 +18,58 @@ return (
     <Row className="companyPageRow">
       <Col className='companyPageCol'>
 
-        <Row className="companyPageRow_1">
-          <h1 className='companyPageHeading'> CompanyPage </h1>
+        <Row className="companyPageSubRow1">
+
+          <Col md={7} className="companyPage_topRow">
+            x
+          </Col>
+          <Col md={3} className="companyPage_topRow">
+            x
+          </Col>
+
+        </Row>
+
+
+        <Row className="companyPageSubRow2">
+          <Col className="companyPage_topRow">
+            <Row className="companyPage_section_row_a">
+              1
+            </Row>
+            <Row className="companyPage_section_row_b">
+              2
+            </Row>
+            <Row className="companyPage_section_row_c">
+              3
+            </Row>
+          </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2">
+          <Col className="companyPage_topRow">
+            <Row className="companyPage_section_row_a">
+              1
+            </Row>
+            <Row className="companyPage_section_row_b">
+              2
+            </Row>
+            <Row className="companyPage_section_row_c">
+              3
+            </Row>
+          </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2">
+          <Col className="companyPage_topRow">
+            <Row className="companyPage_section_row_a">
+              1
+            </Row>
+            <Row className="companyPage_section_row_b">
+              2
+            </Row>
+            <Row className="companyPage_section_row_c">
+              3
+            </Row>
+          </Col>
         </Row>
       </Col>
     </Row>

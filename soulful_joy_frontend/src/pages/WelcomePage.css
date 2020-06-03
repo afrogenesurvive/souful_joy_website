@@ -1,33 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sacramento&display=swap');
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Sacramento', cursive; */
+
+.welcomePage_overlay {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .welcomePage_maindiv {
   /* border: 1px solid black; */
-  height: 100vh;
-  width: 100vw;
+  /* height: 100%; */
+  /* width: 100%; */
+  background-image: url('../assets/imgs/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: stretch;
 }
 
 .welcomePageRow {
   /* border: 1px solid yellow; */
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  display: block;
+  margin: 0rem;
+  /* padding: 1.5rem 0; */
+}
+
+.welcomePageSubRow {
+  display: block;
+  /* margin: 7rem auto 5rem; */
+  /* padding: 3 auto; */
+}
+.Row1 {
+  margin: 5rem;
+}
+.Row2 {
+  margin: 5rem;
 }
 
 .welcomePageCol {
   /* border: 1px solid blue; */
   margin: 0 auto;
   max-width: 60%;
-  padding: 45vh 0;
+  height: 100%;
+  padding: 15rem 0;
   text-align: center;
 }
 
-.welcomePageRow_1 {
-  /* border: 1px solid green; */
-
-}
 
 .welcomePageHeading {
-
+  color: #ffffff;
+}
+.welcomePageSubHeading {
+  color: #ffffff;
 }
 
 .welcomePageEnterBtn {
+  margin: 1.5rem auto;
+}
 
+.SplashMainLogo {
+  height: 9rem;
+  margin: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .welcomePageCol {
+    max-width: 85%;
+  }
+  .Row1 {
+    margin: 1.5rem auto;
+  }
+  .Row2 {
+    margin: 3rem auto;
+  }
+  .welcomePageHeading {
+    font-size: 1.5rem;
+  }
+  .welcomePageSubHeading {
+    font-size: 1.5rem;
+  }
 }

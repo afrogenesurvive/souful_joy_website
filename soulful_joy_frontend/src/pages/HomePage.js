@@ -7,7 +7,7 @@ import MainNavigation from '../components/Navigation/MainNavigation';
 import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
-import bg1 from "../assets/images/bg1.jpg";
+import bg1 from "../assets/imgs/bg1.jpg";
 
 const HomePage = () => {
 
@@ -21,57 +21,119 @@ return (
   <Carousel className="homePageCarousel" fade={true} controls={false}>
     <Carousel.Item className="homePageCarouselItem">
       <img
-        className="d-block w-100"
+        className="mainPage_carousel_img d-block w-100"
         src={bg1}
         alt="1st slide"
       />
+
       <Carousel.Caption>
-      <NavLink to="/company">
-        <h3>Soulful Joy</h3>
-      </NavLink>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <Row className="carousel_caption_row">
+        <Col>
+          <NavLink to="/company">
+            <h1 className="carousel_caption_heading">Soulful Joy</h1>
+          </NavLink>
+          <ul className="carousel_caption_list">
+            <li  className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+          </ul>
+        </Col>
+      </Row>
       </Carousel.Caption>
+
     </Carousel.Item>
+
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="mainPage_carousel_img d-block w-100"
         src={bg1}
         alt="2nd slide"
       />
 
       <Carousel.Caption>
-      <NavLink to="/general">
-        <h3>General</h3>
-      </NavLink>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <Row className="carousel_caption_row">
+        <Col>
+          <NavLink to="/general">
+            <h1 className="carousel_caption_heading">General</h1>
+          </NavLink>
+          <ul className="carousel_caption_list">
+            <li  className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+          </ul>
+        </Col>
+      </Row>
       </Carousel.Caption>
+
     </Carousel.Item>
+
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="mainPage_carousel_img d-block w-100"
         src={bg1}
         alt="3rd slide"
       />
-
       <Carousel.Caption>
-        <NavLink to="/featuredEvent">
-          <h3>Featured Event</h3>
-        </NavLink>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <Row className="carousel_caption_row">
+        <Col>
+          <NavLink to="/socialMedia">
+            <h1 className="carousel_caption_heading">Social Media</h1>
+          </NavLink>
+          <ul className="carousel_caption_list">
+            <li  className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+          </ul>
+        </Col>
+      </Row>
       </Carousel.Caption>
+
     </Carousel.Item>
+
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="mainPage_carousel_img d-block w-100"
         src={bg1}
         alt="4th slide"
       />
 
       <Carousel.Caption>
-        <NavLink to="/socialMedia">
-          <h3>Social Media</h3>
-        </NavLink>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <Row className="carousel_caption_row">
+        <Col>
+          <NavLink to="/featuredEvent">
+            <h1 className="carousel_caption_heading">Events</h1>
+          </NavLink>
+          <ul className="carousel_caption_list">
+            <li  className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+            <li className="carousel_caption_listItem">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </li>
+          </ul>
+        </Col>
+      </Row>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>

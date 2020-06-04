@@ -23,7 +23,7 @@ return (
         </Row>
 
         <Row className="welcomePageSubRow Row2">
-          <h3 className='welcomePageSubHeading'> A Special Time and Place </h3>
+          <h5 className='welcomePageSubHeading'> The Mango Is now ripe !</h5>
           <NavLink to="/home">
             <Button variant="outline-light" className="welcomePageEnterBtn" onClick={props.closeSplash}>Enter</Button>
           </NavLink>

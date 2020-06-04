@@ -69,7 +69,9 @@ font-family: 'Sacramento', cursive; */
 }
 
 .navbarMaster {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0,0,0, 0.85);
+  /* background-color: rgba(58, 183, 149, 0.3); */
+  padding: .5rem 3rem;
 }
 
 .basic-navbar-nav {
@@ -82,6 +84,10 @@ font-family: 'Sacramento', cursive; */
 
 }
 
+.navbar_item_social {
+
+}
+
 .navBar_link {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
@@ -91,6 +97,24 @@ font-family: 'Sacramento', cursive; */
 .navbar_brand_text {
   font-family: 'Sacramento', cursive;
   display: inline-block;
+}
+
+.navbar_divider {
+  border: 1px solid #ffffff;
+  padding: 0 !important;
+  margin: .5rem;
+}
+
+.dropdown-menu {
+  background-color: rgba(0,0,0, 0.7);
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #ffffff;
+  background-color: rgba(243, 227, 124, 0.3);
+}
+
+.navbar_socialIcon {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 420px) {

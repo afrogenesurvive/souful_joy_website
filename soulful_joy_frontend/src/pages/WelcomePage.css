@@ -10,11 +10,12 @@ font-family: 'Sacramento', cursive; */
 }
 .welcomePage_maindiv {
   /* border: 1px solid black; */
-  /* height: 100%; */
+  height: 100vh;
   /* width: 100%; */
   background-image: url('../assets/imgs/bg1.jpg');
   background-repeat: no-repeat;
   background-size: stretch;
+  padding-top: 11rem;
 }
 
 .welcomePageRow {
@@ -32,10 +33,10 @@ font-family: 'Sacramento', cursive; */
   /* padding: 3 auto; */
 }
 .Row1 {
-  margin: 5rem;
+  /* margin: 5rem; */
 }
 .Row2 {
-  margin: 5rem;
+  margin-top: 3rem;
 }
 
 .welcomePageCol {
@@ -43,16 +44,19 @@ font-family: 'Sacramento', cursive; */
   margin: 0 auto;
   max-width: 60%;
   height: 100%;
-  padding: 15rem 0;
+  /* padding: 15rem 0; */
   text-align: center;
 }
 
 
 .welcomePageHeading {
   color: #ffffff;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
 }
 .welcomePageSubHeading {
   color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .welcomePageEnterBtn {
@@ -61,7 +65,7 @@ font-family: 'Sacramento', cursive; */
 
 .SplashMainLogo {
   height: 9rem;
-  margin: 1.5rem;
+  margin: 3rem auto;
 }
 
 

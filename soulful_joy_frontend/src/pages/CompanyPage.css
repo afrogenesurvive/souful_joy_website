@@ -10,6 +10,22 @@ font-family: 'Sacramento', cursive; */
   background-image: url("../assets/imgs/fullPage_bg_1.jpg");
   background-size: contain;
 }
+.mainDiv_general {
+  background-image: url("../assets/imgs/fullPage_bg_1.jpg");
+  background-size: contain;
+}
+.mainDiv_events {
+  background-image: url("../assets/imgs/fullPage_bg_1.jpg");
+  background-size: contain;
+}
+.mainDiv_socialMedia {
+  background-image: url("../assets/imgs/fullPage_bg_1.jpg");
+  background-size: contain;
+}
+.mainDiv_contact {
+  background-image: url("../assets/imgs/fullPage_bg_1.jpg");
+  background-size: contain;
+}
 .companyPage_maindiv {
   /* border: 1px solid black; */
   /* height: 100vh; */
@@ -91,12 +107,14 @@ font-family: 'Sacramento', cursive; */
 }
 
 .content_section_grid_cell {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 1.5rem;
+  overflow: scroll;
+  height: 100%;
 }
 .content_section_grid_text {
   color: #ffffff;
-  max-height: 80%;
+  max-height: 10%;
 }
 .main_content_section_background {
   /* border: 1px solid blue; */
@@ -126,37 +144,37 @@ font-family: 'Sacramento', cursive; */
 }
 
 .footer_topRow {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .footer_topRow_text {
   margin: 1rem auto 1rem 1rem;
   color: #ffffff;
 }
 .footer_midRow {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .footer_midCol {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .footer_navList {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   list-style-type: none;
   padding: 0;
 }
 .footer_navListItem {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .footer_socialList {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   list-style-type: none;
   padding: 0;
 }
 .footer_socialListItem {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: right;
 }
 .footer_copyrightRow {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
 }
 .footer_copyrightRow_text {
@@ -193,22 +211,46 @@ font-family: 'Sacramento', cursive; */
     padding: 1rem;;
   }
   .companyPageSubRow2  {
-    margin: 3rem auto;
+    margin: 1.9rem auto;
+    height: fit-content;
+    /* height: 40vh; */
   }
   .companyPage_section_row {
-    height: 5rem;
+    height: 15vh;
+    /* height: 5rem; */
   }
   .content_section_grid_cell {
-    padding: 0rem;
+    /* border: 1px solid blue; */
+    padding: 0 1.5rem;
     display: inline-block;
     width: 50%;
+    overflow: scroll;
   }
   .splinterCell {
     width: 90%;
     margin: 0 auto;
+    padding: 2rem;
   }
   .footerRow {
     margin-top: 3rem;
+  }
+
+  .footer_navList {
+    /* border: 1px solid blue; */
+  }
+  .footer_navListItem {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: 0 .5rem;
+    /* float: right; */
+  }
+  .footer_socialList {
+    /* border: 1px solid blue; */
+  }
+  .footer_socialListItem {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: 0 1.5rem;
   }
 
 }

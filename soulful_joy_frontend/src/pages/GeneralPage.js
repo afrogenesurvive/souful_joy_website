@@ -75,7 +75,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.a:
+                  1.a: Lorem Ipsum - это текст-"
                 </p>
 
               </Col>
@@ -86,7 +86,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.c:
+                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 </p>
               </Col>
             </Row>
@@ -98,24 +98,24 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.b:
+                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.c:
+                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.a:
+                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.b:
+                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
@@ -132,13 +132,14 @@ return (
               </Row>
             </Col>
         </Row>
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
                 <p className="content_section_grid_text">
-                  1.a:
+                  1.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 </p>
 
               </Col>
@@ -146,13 +147,13 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  2.a:
+                  2.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                 </p>
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.b:
+                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
             </Row>
@@ -160,12 +161,12 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.a:
+                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.b:
+                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
               </p>
               </Col>
             </Row>

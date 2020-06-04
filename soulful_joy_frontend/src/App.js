@@ -17,6 +17,8 @@ import './App.css';
 class App extends Component {
   state = {
     splashPage: true,
+    detailViewerOpen: false,
+    detailViewerData: null,
   };
 
   static contextType = AuthContext;
@@ -35,9 +37,24 @@ class App extends Component {
 
   }
 
+
   closeSplash = () => {
     this.setState({splashPage: false})
   }
+
+  openDetailViwer = (args) => {
+    this.setState({
+      detailViewerOpen: true,
+      detailViewerData: args
+    })
+  }
+  closeDetailViewer = () => {
+    this.setState({
+      detailViewerOpen: false,
+      detailViewerData: null
+    })
+  }
+
 
   render() {
     return (
@@ -54,7 +71,12 @@ class App extends Component {
                 closeSplash={this.closeSplash}
               />}/>
               <Route path="/home" component={HomePage} />
-              <Route path="/company" component={CompanyPage} />
+              <Route path="/company" render={(props) => <CompanyPage {...props}
+                openDetailViwer={this.openDetailViwer}
+                closeDetailViewer={this.closeDetailViewer}
+                detailViewerOpen={this.state.detailViewerOpen}
+                detailViewerData={this.state.detailViewerData}
+              />}/>
               <Route path="/general" component={GeneralPage} />
               <Route path="/socialMedia" component={SocialMediaPage} />
               <Route path="/featuredEvent" component={FeaturedEventPage} />

@@ -3,6 +3,9 @@
 font-family: 'Sacramento', cursive; */
 
 
+.mobile {
+  display: none;
+}
 .mainDiv_company {
   background-image: url("../assets/imgs/fullPage_bg_1.jpg");
   background-size: contain;
@@ -88,7 +91,7 @@ font-family: 'Sacramento', cursive; */
 }
 
 .content_section_grid_cell {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   padding: 1.5rem;
 }
 .content_section_grid_text {
@@ -117,48 +120,49 @@ font-family: 'Sacramento', cursive; */
   /* border: 1px solid blue; */
   bottom: .5rem;
   left: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 0 1rem;
   /* background-color: #FC7A57; */
 }
 
 .footer_topRow {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 .footer_topRow_text {
   margin: 1rem auto 1rem 1rem;
   color: #ffffff;
 }
 .footer_midRow {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 .footer_midCol {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 .footer_navList {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   list-style-type: none;
   padding: 0;
 }
 .footer_navListItem {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
 }
 .footer_socialList {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   list-style-type: none;
   padding: 0;
 }
 .footer_socialListItem {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   text-align: right;
 }
 .footer_copyrightRow {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   text-align: center;
 }
 .footer_copyrightRow_text {
   font-size: x-small;
   margin: 0 auto .3rem;
+  color: #ffffff;
 }
 .footerIcon {
   color: #ffffff;
@@ -167,7 +171,44 @@ font-family: 'Sacramento', cursive; */
 @media only screen and (max-width: 420px) {
 
   .companyPage_top_heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 0 auto;
+  }
+  .companyPage_top_subtitle {
+    margin: 1rem auto;
+  }
+  .CompanyPage_HeadLogo {
+    height: 5rem;
+    margin: 0 auto;;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .companyPageSubRow1  {
+    padding: 1rem;;
+  }
+  .companyPageSubRow2  {
+    margin: 3rem auto;
+  }
+  .companyPage_section_row {
+    height: 5rem;
+  }
+  .content_section_grid_cell {
+    padding: 0rem;
+    display: inline-block;
+    width: 50%;
+  }
+  .splinterCell {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footerRow {
+    margin-top: 3rem;
   }
 
 }

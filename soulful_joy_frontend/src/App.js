@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import WelcomePage from './pages/WelcomePage';
 import CompanyPage from './pages/CompanyPage';
 import GeneralPage from './pages/GeneralPage';
+import ContactPage from './pages/ContactPage';
 import SocialMediaPage from './pages/SocialMediaPage';
 import FeaturedEventPage from './pages/FeaturedEventPage';
 
@@ -57,6 +58,7 @@ class App extends Component {
               <Route path="/general" component={GeneralPage} />
               <Route path="/socialMedia" component={SocialMediaPage} />
               <Route path="/featuredEvent" component={FeaturedEventPage} />
+              <Route path="/contact" component={ContactPage} />
               <Redirect from="/" to="/welcome" exact />
               <Redirect from="*" to="/welcome" exact />
               </Switch>

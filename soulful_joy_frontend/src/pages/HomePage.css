@@ -103,7 +103,7 @@ font-family: 'Sacramento', cursive; */
 
   .homePageCarouselRow {
     /* border: 1px solid brown; */
-    height: 98%;
+    height: 101%;
   }
 
   .carousel-caption {
@@ -111,6 +111,13 @@ font-family: 'Sacramento', cursive; */
   }
   .carousel-indicators {
     bottom: 3rem
+  }
+  .carousel_caption_row {
+    padding: 0;
+    width: 100%;
+  }
+  .carousel_caption_heading {
+    /* font-size: 1.7rem; */
   }
 
 }

@@ -57,7 +57,14 @@ const mainNavigation = props => (
                     <NavLink to="/featuredEvent" className="navBar_link">Events</NavLink>
                   </Nav.Link>
                 </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">
+                <Nav.Link className="navbar_item">
+                  <NavLink to="/contact" className="navBar_link">Contact</NavLink>
+                </Nav.Link>
+                </NavDropdown.Item>
               </NavDropdown>
+
+
 
               <Nav.Link className="navbar_divider">
               </Nav.Link>

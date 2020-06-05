@@ -7,7 +7,11 @@ import MainNavigation from '../components/Navigation/MainNavigation';
 import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
-import bg1 from "../assets/imgs/bg1.jpg";
+import bg1 from "../assets/imgs/fullPage_bg_1.jpg";
+import bg2 from "../assets/imgs/fullPage_bg_2.jpg";
+import bg3 from "../assets/imgs/fullPage_bg_3.jpg";
+import bg4 from "../assets/imgs/fullPage_bg_4.jpg";
+import bg5 from "../assets/imgs/fullPage_bg_5.jpg";
 
 const HomePage = () => {
 
@@ -52,7 +56,7 @@ return (
     <Carousel.Item>
       <img
         className="mainPage_carousel_img d-block w-100"
-        src={bg1}
+        src={bg2}
         alt="2nd slide"
       />
 
@@ -82,7 +86,7 @@ return (
     <Carousel.Item>
       <img
         className="mainPage_carousel_img d-block w-100"
-        src={bg1}
+        src={bg3}
         alt="3rd slide"
       />
       <Carousel.Caption>
@@ -111,7 +115,7 @@ return (
     <Carousel.Item>
       <img
         className="mainPage_carousel_img d-block w-100"
-        src={bg1}
+        src={bg4}
         alt="4th slide"
       />
 

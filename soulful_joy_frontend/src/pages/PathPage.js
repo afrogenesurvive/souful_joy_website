@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
+import DetailViewer from '../components/DetailViewer/DetailViewer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,15 +21,26 @@ import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
 import Blk_ico from '../assets/imgs/blk_ico.png';
 
-
 import "./CompanyPage.css"
 
-const ContactPage = (props) => {
+const PathPage = (props) => {
+
+  let detailViewerOpen = props.detailViewerOpen;
+  let detailViewerData = props.detailViewerData;
 
 return (
-  <div className="companyPage_maindiv mainDiv_contact">
+  <div className="companyPage_maindiv mainDiv_general">
   <MainNavigation
   />
+
+  {detailViewerOpen === true &&
+    detailViewerData.page === 'path' && (
+    <DetailViewer
+      data={detailViewerData}
+      closeDetailViewer={props.closeDetailViewer}
+    />
+  )}
+
     <Row className="companyPageRow">
       <Col className='companyPageCol'>
 
@@ -37,7 +49,7 @@ return (
           <Col md={9} className="companyPage_topCol">
             <Row>
               <h1 className="companyPage_top_heading">
-                Contact
+                The Path
               </h1>
             </Row>
             <Row>
@@ -51,18 +63,17 @@ return (
           </Col>
 
         </Row>
-
         <Row className="companyPageSubRow1 mobile">
 
           <Col sm={5} className="companyPage_topCol">
             <Row>
               <h1 className="companyPage_top_heading">
-                Social Contact
+                The Path
               </h1>
             </Row>
             <Row>
               <p className="companyPage_top_subtitle">
-                Drop us a limb...
+                ...
               </p>
             </Row>
           </Col>
@@ -77,61 +88,109 @@ return (
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст- Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст- Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                </p>
+              <h1 className="companyPage_top_heading">
+                Our Path
+              </h1>
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"inspire"})}>
+                <p className="content_section_grid_text is">
+                  Inspire
                 </p>
+              </Button>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"invigorate"})}>
+              <p className="content_section_grid_text is">
+                Invigorate
               </p>
+              </Button>
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"immerse"})}>
+              <p className="content_section_grid_text is">
+                Immersed
               </p>
+              </Button>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"improve"})}>
+              <p className="content_section_grid_text is">
+                Improved
               </p>
+              </Button>
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"incorporate"})}>
+              <p className="content_section_grid_text is">
+                Incorporate
               </p>
+              </Button>
               </Col>
             </Row>
 
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+        <Row className="companyPageSubRow2 desktop">
+          <Col className="companyPage_sectionCol">
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -141,35 +200,18 @@ return (
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
-                <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
 
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  2.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
+              <h1 className="companyPage_top_heading">
+                The Path
+              </h1>
 
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
               </Col>
             </Row>
 
             <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
               <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Some info about the path...
               </p>
               </Col>
             </Row>
@@ -177,52 +219,63 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
-                <p className="content_section_grid_text">
-                  1.a:
-                </p>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"inspire"})}>
+              <p className="content_section_grid_text is">
+                Inspire
+              </p>
+              </Button>
 
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  2.a:
-                </p>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"invigorate"})}>
+              <p className="content_section_grid_text is">
+                Invigorate
+              </p>
+              </Button>
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b:
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"immerse"})}>
+              <p className="content_section_grid_text is">
+                Immersed
               </p>
+              </Button>
               </Col>
             </Row>
 
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a:
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"imporve"})}>
+              <p className="content_section_grid_text is">
+                Improved
               </p>
+              </Button>
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b:
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"incorporate"})}>
+              <p className="content_section_grid_text is">
+                Incorporate
               </p>
+              </Button>
               </Col>
             </Row>
 
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -290,4 +343,4 @@ return (
 }
 
 
-export default ContactPage;
+export default PathPage;

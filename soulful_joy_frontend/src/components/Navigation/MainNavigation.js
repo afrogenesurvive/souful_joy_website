@@ -16,7 +16,8 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { faAdobe } from '@fortawesome/free-solid-svg-icons';
 
 import './MainNavigation.css';
-import SplashMainLogo from '../../assets/imgs/logo_splash_pg.png';
+import Wht_ico from '../../assets/imgs/wht_ico.png';
+import Blk_ico from '../../assets/imgs/blk_ico.png';
 
 
 const mainNavigation = props => (
@@ -25,46 +26,34 @@ const mainNavigation = props => (
       return (
         <Navbar className="navbarMaster" variant="dark" expand="lg" fixed="top">
           <Navbar.Brand>
-          <Image src={SplashMainLogo} className="navbarBrandLogo" fluid />
-          <p className="navbar_brand_text">
-            Soulful Joy
-          </p>
+          <Image src={Wht_ico} className="navbarBrandLogo" fluid />
+
+            <NavLink to="/home" className="navBar_link">
+              <p className="navbar_brand_text">
+              Soulful Joy
+              </p>
+            </NavLink>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
+
               <Nav.Link className="navbar_item">
-                <NavLink to="/home" className="navBar_link">Home</NavLink>
+                <NavLink to="/team" className="navBar_link">Team</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
-                <NavLink to="/company" className="navBar_link">Company</NavLink>
+                <NavLink to="/path" className="navBar_link">The Path</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
-                <NavLink to="/general" className="navBar_link">General</NavLink>
+                <NavLink to="/socialMedia" className="navBar_link">Join the Joy</NavLink>
               </Nav.Link>
-
-              <NavDropdown title="..." id="basic-nav-dropdown">
-
-                <NavDropdown.Item href="#action/3.1">
-                  <Nav.Link className="navbar_item">
-                    <NavLink to="/socialMedia" className="navBar_link">Social</NavLink>
-                  </Nav.Link>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  <Nav.Link className="navbar_item">
-                    <NavLink to="/featuredEvent" className="navBar_link">Events</NavLink>
-                  </Nav.Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                <Nav.Link className="navbar_item">
-                  <NavLink to="/contact" className="navBar_link">Contact</NavLink>
-                </Nav.Link>
-                </NavDropdown.Item>
-              </NavDropdown>
-
-
+              <Nav.Link className="navbar_item">
+                <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
+              </Nav.Link>
+              <Nav.Link className="navbar_item">
+                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
+              </Nav.Link>
 
               <Nav.Link className="navbar_divider">
               </Nav.Link>

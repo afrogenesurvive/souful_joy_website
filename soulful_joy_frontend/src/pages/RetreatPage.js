@@ -17,13 +17,15 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
 import ContentBgLogo from '../assets/imgs/content_bg.png';
+import Wht_ico from '../assets/imgs/wht_ico.png';
+import Blk_ico from '../assets/imgs/blk_ico.png';
 
 import "./CompanyPage.css"
 
-const GeneralPage = (props) => {
+const RetreatPage = (props) => {
 
 return (
-  <div className="companyPage_maindiv mainDiv_general">
+  <div className="companyPage_maindiv mainDiv_events">
   <MainNavigation
   />
     <Row className="companyPageRow">
@@ -34,17 +36,17 @@ return (
           <Col md={9} className="companyPage_topCol">
             <Row>
               <h1 className="companyPage_top_heading">
-                General
+                Retreat
               </h1>
             </Row>
             <Row>
               <p className="companyPage_top_subtitle">
-                Major Mango 1st Class!
+                ...
               </p>
             </Row>
           </Col>
           <Col md={3} className="companyPage_topCol topCol2">
-            <Image src={SplashMainLogo} className="CompanyPage_HeadLogo" fluid />
+            <Image src={Wht_ico} className="CompanyPage_HeadLogo" fluid />
           </Col>
 
         </Row>
@@ -54,17 +56,17 @@ return (
           <Col sm={5} className="companyPage_topCol">
             <Row>
               <h1 className="companyPage_top_heading">
-                General Mobile
+                Retreat
               </h1>
             </Row>
             <Row>
               <p className="companyPage_top_subtitle">
-                Major Mango 1st Class!
+                ...
               </p>
             </Row>
           </Col>
           <Col sm={5} className="companyPage_topCol topCol2">
-            <Image src={SplashMainLogo} className="CompanyPage_HeadLogo" fluid />
+            <Image src={Wht_ico} className="CompanyPage_HeadLogo" fluid />
           </Col>
 
         </Row>
@@ -400,9 +402,9 @@ return (
 
     <Row className="footerRow">
       <Col className="footerMainCol">
-        <Row className="footer_topRow">
-          <p className="footer_topRow_text">Kiss mi foot(er)-back</p>
-        </Row>
+      <Row className="footer_topRow">
+        <p className="footer_topRow_text">Stay in Touch</p>
+      </Row>
         <Row className="footer_midRow">
           <Col md={3} className="footer_midCol">
             <ul className="footer_navList">
@@ -410,16 +412,19 @@ return (
                 <NavLink to="/home" className="navBar_link">Home</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/company" className="navBar_link">Company</NavLink>
+                <NavLink to="/team" className="navBar_link">Team</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/general" className="navBar_link">General</NavLink>
+                <NavLink to="/path" className="navBar_link">The Path</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/socialMedia" className="navBar_link">Social</NavLink>
+                <NavLink to="/socialMedia" className="navBar_link">Join the Joy</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/featuredEvent" className="navBar_link">Events</NavLink>
+                <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
+              </li>
+              <li className="footer_navListItem">
+                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
               </li>
             </ul>
           </Col>
@@ -455,4 +460,4 @@ return (
 }
 
 
-export default GeneralPage;
+export default RetreatPage;

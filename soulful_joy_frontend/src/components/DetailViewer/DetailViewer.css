@@ -6,9 +6,9 @@ font-family: 'Sacramento', cursive; */
 .detailViewContainer {
   border: 1.5px solid #3AB795;
   position: fixed;
-  top: 5rem;
+  top: 7rem;
   left: 3.5rem;
-  height: 85vh;
+  height: 80vh;
   width: 90vw;
   /* height: 100vh;
   width: 100vw; */
@@ -20,30 +20,40 @@ font-family: 'Sacramento', cursive; */
 }
 
 .detailViewer_topRow {
-
+  margin: 3rem auto 3rem;
 }
 .detailViewer_topCol {
 
 }
 .detailViewer_subRow {
+  height: 20vh;
+  /* border: 1px solid #ffffff; */
+}
+.detailViewer_buttomRow {
 
 }
 
 .detailViewer_text {
  color: #ffffff;
  font-family: 'Quicksand', sans-serif;
+ margin: 0 auto;
 }
 .detailViewer_topHeading {
  color: #ffffff;
  font-family: 'Sacramento', cursive;
+ margin: 0 auto;
+}
+
+.detailViewer_closeBtn {
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 420px) {
 
   .detailViewContainer {
     left: 1rem;
-    height: 90vh;
-    width: 95vw;
+    height: 85vh;
+    width: 93vw;
   }
 
 }

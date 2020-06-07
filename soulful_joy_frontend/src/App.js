@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import WelcomePage from './pages/WelcomePage';
-import CompanyPage from './pages/CompanyPage';
-import GeneralPage from './pages/GeneralPage';
+import TeamPage from './pages/TeamPage';
+import PathPage from './pages/PathPage';
 import ContactPage from './pages/ContactPage';
 import SocialMediaPage from './pages/SocialMediaPage';
-import FeaturedEventPage from './pages/FeaturedEventPage';
+import RetreatPage from './pages/RetreatPage';
 
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
@@ -71,15 +71,20 @@ class App extends Component {
                 closeSplash={this.closeSplash}
               />}/>
               <Route path="/home" component={HomePage} />
-              <Route path="/company" render={(props) => <CompanyPage {...props}
+              <Route path="/team" render={(props) => <TeamPage {...props}
                 openDetailViwer={this.openDetailViwer}
                 closeDetailViewer={this.closeDetailViewer}
                 detailViewerOpen={this.state.detailViewerOpen}
                 detailViewerData={this.state.detailViewerData}
               />}/>
-              <Route path="/general" component={GeneralPage} />
+              <Route path="/path" render={(props) => <PathPage {...props}
+                openDetailViwer={this.openDetailViwer}
+                closeDetailViewer={this.closeDetailViewer}
+                detailViewerOpen={this.state.detailViewerOpen}
+                detailViewerData={this.state.detailViewerData}
+              />}/>
               <Route path="/socialMedia" component={SocialMediaPage} />
-              <Route path="/featuredEvent" component={FeaturedEventPage} />
+              <Route path="/retreat" component={RetreatPage} />
               <Route path="/contact" component={ContactPage} />
               <Redirect from="/" to="/welcome" exact />
               <Redirect from="*" to="/welcome" exact />

@@ -63,7 +63,8 @@ font-family: 'Sacramento', cursive; */
 }
 
 .navbarBrandLogo {
-  height: 1.5rem;
+  height: 4rem;
+  /* height: 1.5rem; */
   display: inline-block;
   margin: 0 1rem;
 }
@@ -104,6 +105,9 @@ font-family: 'Sacramento', cursive; */
   padding: 0 !important;
   margin: .5rem;
 }
+.navbar_item {
+  border: none;
+}
 
 .dropdown-menu {
   background-color: rgba(0,0,0, 0.7);
@@ -121,6 +125,13 @@ font-family: 'Sacramento', cursive; */
 
   .basic-navbar-nav {
     float: right;
+  }
+  .navbarMaster {
+    padding: .5rem 1.5rem;
+  }
+  .navbarBrandLogo {
+    /* height: 1.5rem; */
+    margin: 0;
   }
 
 }

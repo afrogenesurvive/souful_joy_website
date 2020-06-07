@@ -93,7 +93,7 @@ font-family: 'Sacramento', cursive; */
   font-family: 'Quicksand', sans-serif;
 }
 .CompanyPage_HeadLogo {
-  height: 9rem;
+  height: 11rem;
 }
 
 .topCol2 {
@@ -101,20 +101,48 @@ font-family: 'Sacramento', cursive; */
 }
 
 .companyPage_section_row {
-  height: 25vh;
+  height: fit-content;
+  /* height: 30vh; */
   /* border: 1px solid blue; */
   /* position: relative; */
 }
 
 .content_section_grid_cell {
   /* border: 1px solid blue; */
-  padding: 1.5rem;
+  /* padding: .5rem; */
+  padding: 3.5rem;
   overflow: scroll;
   height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.95); */
+}
+
+.content_section_grid_cell_img {
+  height: 100%;
+  /* width: 9rem; */
+  border-radius: 15%;
+}
+.cell_image_caption {
+  margin: .5rem auto;
+  color: #ffffff;
+}
+.cell_team_btn {
+  border: none;
+}
+.specialHead {
+  margin: 5rem;
+  color: #ffffff;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+}
+.is {
+  font-size: 3rem !important;
 }
 .content_section_grid_text {
   color: #ffffff;
-  max-height: 10%;
+  /* max-height: 60%; */
+  font-size:  1.4rem;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  border-radius: 15px;
 }
 .main_content_section_background {
   /* border: 1px solid blue; */
@@ -125,14 +153,16 @@ font-family: 'Sacramento', cursive; */
   height: 100%;
   width: 100%;
   padding: 1rem;
+  /* background-color: rgba(0, 0, 0, 0.85); */
 }
 .content_section_bg_row {
   /* text-align: center; */
   height: 100%;
 }
 .content_bg_img {
-  margin: auto auto;
-  height: 80%;
+  margin: 9rem auto;
+  /* margin: auto auto; */
+  height: 75%;
 }
 .footerRow {
   /* border: 1px solid blue; */
@@ -216,20 +246,40 @@ font-family: 'Sacramento', cursive; */
     /* height: 40vh; */
   }
   .companyPage_section_row {
-    height: 15vh;
+    height: fit-content;
+    /* height: 15vh; */
     /* height: 5rem; */
   }
   .content_section_grid_cell {
     /* border: 1px solid blue; */
-    padding: 0 1.5rem;
+    padding: 3rem 1.5rem;
     display: inline-block;
     width: 50%;
     overflow: scroll;
+  }
+  .content_section_grid_cell_img {
+    height: 7rem;
+  }
+  .cell_team_btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .content_section_grid_text {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
   }
   .splinterCell {
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
+  }
+  .is {
+    font-size: 1.5rem !important;
+  }
+  .content_bg_img {
+    margin: 5rem auto;
+    /* margin: auto auto; */
+    height: 75%;
   }
   .footerRow {
     margin-top: 3rem;

@@ -12,7 +12,7 @@ font-family: 'Sacramento', cursive; */
   /* border: 1px solid black; */
   height: 100vh;
   /* width: 100%; */
-  background-image: url('../assets/imgs/bg1.jpg');
+  background-image: url('../assets/imgs/Splash1.jpg');
   background-repeat: no-repeat;
   background-size: stretch;
   padding-top: 11rem;
@@ -64,7 +64,7 @@ font-family: 'Sacramento', cursive; */
 }
 
 .SplashMainLogo {
-  height: 9rem;
+  height: 13rem;
   margin: 3rem auto;
 }
 

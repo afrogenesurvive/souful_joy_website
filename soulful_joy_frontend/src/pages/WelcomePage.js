@@ -7,7 +7,9 @@ import { NavLink } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 
-import SplashMainLogo from '../assets/imgs/logo_splash_pg.png'
+import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
+import Wht_ico from '../assets/imgs/wht_ico.png';
+import Blk_ico from '../assets/imgs/blk_ico.png';
 import "./WelcomePage.css"
 
 const WelcomePage = (props) => {
@@ -18,7 +20,7 @@ return (
       <Col className='welcomePageCol'>
 
         <Row className="welcomePageSubRow Row1">
-          <Image src={SplashMainLogo} className="SplashMainLogo" fluid />
+          <Image src={Wht_ico} className="SplashMainLogo" fluid />
           <h1 className='welcomePageHeading'> Soulful Joy </h1>
         </Row>
 

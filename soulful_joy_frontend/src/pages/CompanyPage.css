@@ -6,24 +6,32 @@ font-family: 'Sacramento', cursive; */
 .mobile {
   display: none;
 }
-.mainDiv_company {
-  background-image: url("../assets/imgs/fullPage_bg_1.jpg");
-  background-size: contain;
+.mainDiv_team {
+  background-image: url("../assets/imgs/Team_Portrait2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
 }
-.mainDiv_general {
-  background-image: url("../assets/imgs/fullPage_bg_2.jpg");
-  background-size: contain;
+.mainDiv_path {
+  /* background-image: url("../assets/imgs/Process_1.jpg"); */
+  background-image: url("../assets/imgs/Process_Portrait2.jpg");
+  /* background-size: contain; */
+  /* background-color: center center; */
+  /* background-size: stretch; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding-bottom: 1rem; */
 }
-.mainDiv_events {
-  background-image: url("../assets/imgs/fullPage_bg_3.jpg");
+.mainDiv_retreat {
+  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
   background-size: contain;
 }
 .mainDiv_socialMedia {
-  background-image: url("../assets/imgs/fullPage_bg_4.jpg");
+  background-image: url("../assets/imgs/Splash_Portrait.jpg");
   background-size: contain;
 }
 .mainDiv_contact {
-  background-image: url("../assets/imgs/fullPage_bg_5.jpg");
+  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
   background-size: contain;
 }
 .companyPage_maindiv {
@@ -111,7 +119,7 @@ font-family: 'Sacramento', cursive; */
   /* border: 1px solid blue; */
   /* padding: .5rem; */
   padding: 3.5rem;
-  overflow: scroll;
+  /* overflow: scroll; */
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.95); */
 }
@@ -120,6 +128,7 @@ font-family: 'Sacramento', cursive; */
   height: 100%;
   /* width: 9rem; */
   border-radius: 15%;
+  margin: 0 1.5rem;
 }
 .cell_image_caption {
   margin: .5rem auto;
@@ -259,6 +268,7 @@ font-family: 'Sacramento', cursive; */
   }
   .content_section_grid_cell_img {
     height: 7rem;
+    margin: 0;
   }
   .cell_team_btn {
     display: block;

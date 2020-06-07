@@ -29,7 +29,7 @@ const PathPage = (props) => {
   let detailViewerData = props.detailViewerData;
 
 return (
-  <div className="companyPage_maindiv mainDiv_general">
+  <div className="companyPage_maindiv mainDiv_path">
   <MainNavigation
   />
 

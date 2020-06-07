@@ -32,7 +32,7 @@ const TeamPage = (props) => {
   let detailViewerData = props.detailViewerData;
 
 return (
-  <div className="companyPage_maindiv mainDiv_company">
+  <div className="companyPage_maindiv mainDiv_team">
   <MainNavigation
   />
   {detailViewerOpen === true &&

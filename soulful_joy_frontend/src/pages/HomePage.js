@@ -7,10 +7,10 @@ import MainNavigation from '../components/Navigation/MainNavigation';
 import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
-import bg1 from "../assets/imgs/fullPage_bg_1.jpg";
-import bg2 from "../assets/imgs/fullPage_bg_2.jpg";
-import bg3 from "../assets/imgs/fullPage_bg_3.jpg";
-import bg4 from "../assets/imgs/fullPage_bg_4.jpg";
+import bg1 from "../assets/imgs/Team_1.jpg";
+import bg2 from "../assets/imgs/Process_1.jpg";
+import bg3 from "../assets/imgs/Retreat_1.jpg";
+import bg4 from "../assets/imgs/Splash1.jpg";
 import bg5 from "../assets/imgs/fullPage_bg_5.jpg";
 
 const HomePage = () => {
@@ -34,7 +34,7 @@ return (
       <Row className="carousel_caption_row">
         <Col>
           <NavLink to="/company">
-            <h1 className="carousel_caption_heading">Soulful Joy</h1>
+            <h1 className="carousel_caption_heading">Team</h1>
           </NavLink>
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
@@ -64,7 +64,7 @@ return (
       <Row className="carousel_caption_row">
         <Col>
           <NavLink to="/general">
-            <h1 className="carousel_caption_heading">General</h1>
+            <h1 className="carousel_caption_heading">Path</h1>
           </NavLink>
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
@@ -92,9 +92,10 @@ return (
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
-          <NavLink to="/socialMedia">
-            <h1 className="carousel_caption_heading">Social Media</h1>
-          </NavLink>
+        <NavLink to="/featuredEvent">
+          <h1 className="carousel_caption_heading">Retreat</h1>
+        </NavLink>
+
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -122,9 +123,9 @@ return (
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
-          <NavLink to="/featuredEvent">
-            <h1 className="carousel_caption_heading">Events</h1>
-          </NavLink>
+        <NavLink to="/socialMedia">
+          <h1 className="carousel_caption_heading">Join the Joy</h1>
+        </NavLink>
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

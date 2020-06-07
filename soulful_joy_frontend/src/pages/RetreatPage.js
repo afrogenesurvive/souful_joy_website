@@ -25,7 +25,7 @@ import "./CompanyPage.css"
 const RetreatPage = (props) => {
 
 return (
-  <div className="companyPage_maindiv mainDiv_events">
+  <div className="companyPage_maindiv mainDiv_retreat">
   <MainNavigation
   />
     <Row className="companyPageRow">

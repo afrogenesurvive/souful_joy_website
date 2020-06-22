@@ -13,7 +13,7 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import { faAdobe } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import './MainNavigation.css';
 import Wht_ico from '../../assets/imgs/wht_ico.png';
@@ -68,6 +68,9 @@ const mainNavigation = props => (
               </Nav.Link>
               <Nav.Link className="navbar_item_social" href="">
                 <FontAwesomeIcon icon={faLinkedin} className="navbar_socialIcon"/>
+              </Nav.Link>
+              <Nav.Link className="navbar_item_social" href="">
+                <FontAwesomeIcon icon={faEnvelope} className="navbar_socialIcon"/>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

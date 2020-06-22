@@ -27,6 +27,7 @@ font-family: 'Sacramento', cursive; */
 
 .homePageCarousel {
   height: 100%;
+  width: 100%;
 }
 .homePageCarouselRow {
   /* border: 1px solid brown; */

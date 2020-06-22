@@ -25,7 +25,7 @@ return (
         </Row>
 
         <Row className="welcomePageSubRow Row2">
-          <h5 className='welcomePageSubHeading'> The Mango Is now ripe !</h5>
+          <h5 className='welcomePageSubHeading'> ...a special time and place...</h5>
           <NavLink to="/home">
             <Button variant="outline-light" className="welcomePageEnterBtn" onClick={props.closeSplash}>Enter</Button>
           </NavLink>

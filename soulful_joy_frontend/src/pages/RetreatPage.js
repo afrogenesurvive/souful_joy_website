@@ -14,6 +14,7 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
 import ContentBgLogo from '../assets/imgs/content_bg.png';
@@ -35,7 +36,7 @@ return (
 
           <Col md={9} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading retreat_text">
                 Retreat
               </h1>
             </Row>
@@ -55,7 +56,7 @@ return (
 
           <Col sm={5} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading retreat_text">
                 Retreat
               </h1>
             </Row>
@@ -130,7 +131,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -176,7 +177,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -221,7 +222,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -267,7 +268,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -330,7 +331,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -393,7 +394,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -444,6 +445,9 @@ return (
               </li>
               <li className="footer_socialListItem">
                 <FontAwesomeIcon icon={faLinkedin} className="footerIcon"/>
+              </li>
+              <li className="footer_socialListItem">
+                <FontAwesomeIcon icon={faEnvelope} className="footerIcon"/>
               </li>
             </ul>
           </Col>

@@ -14,11 +14,15 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { ReactSVG } from 'react-svg';
 
 import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
 import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
 import Blk_ico from '../assets/imgs/blk_ico.png';
+import Wht_ico2 from '../assets/imgs/wht_ico2.svg';
+import Blk_ico2 from '../assets/imgs/blk_ico2.svg';
 
 
 import "./CompanyPage.css"
@@ -36,7 +40,7 @@ return (
 
           <Col md={9} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading contact_text">
                 Contact
               </h1>
             </Row>
@@ -48,6 +52,16 @@ return (
           </Col>
           <Col md={3} className="companyPage_topCol topCol2">
             <Image src={Wht_ico} className="CompanyPage_HeadLogo" fluid />
+
+            {
+              // <ReactSVG
+              // src={Wht_ico2}
+              // beforeInjection={svg => {
+              //   svg.classList.add('testvg')
+              //   svg.setAttribute('style', 'width: 100px')
+              //   svg.setAttribute('style', 'color: #D88300')
+              // }}/>
+            }
           </Col>
 
         </Row>
@@ -56,7 +70,7 @@ return (
 
           <Col sm={5} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading contact_text">
                 Social Contact
               </h1>
             </Row>
@@ -131,56 +145,11 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
 
-        <Row className="companyPageSubRow2 mobile">
-          <Col className="companyPage_sectionCol">
-
-            <Row className="companyPage_section_row">
-              <Col sm={12} className="content_section_grid_cell splinterCell">
-                <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
-
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  2.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
-
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-            </Row>
-
-            <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-            </Row>
-
-          </Col>
-            <Col className="main_content_section_background">
-              <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
-              </Row>
-            </Col>
-        </Row>
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
@@ -222,7 +191,7 @@ return (
           </Col>
             <Col className="main_content_section_background">
               <Row className="content_section_bg_row">
-                <Image src={ContentBgLogo} className="content_bg_img" fluid />
+                <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
         </Row>
@@ -274,6 +243,9 @@ return (
               </li>
               <li className="footer_socialListItem">
                 <FontAwesomeIcon icon={faLinkedin} className="footerIcon"/>
+              </li>
+              <li className="footer_socialListItem">
+                <FontAwesomeIcon icon={faEnvelope} className="footerIcon"/>
               </li>
             </ul>
           </Col>

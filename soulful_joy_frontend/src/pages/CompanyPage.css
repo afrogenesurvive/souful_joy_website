@@ -7,7 +7,7 @@ font-family: 'Sacramento', cursive; */
   display: none;
 }
 .mainDiv_team {
-  background-image: url("../assets/imgs/Team_Portrait2.jpg");
+  background-image: url("../assets/imgs/Team_Portrait.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-size: contain; */
@@ -16,23 +16,27 @@ font-family: 'Sacramento', cursive; */
   /* background-image: url("../assets/imgs/Process_1.jpg"); */
   background-image: url("../assets/imgs/Process_Portrait2.jpg");
   /* background-size: contain; */
-  /* background-color: center center; */
+  background-position: center;
   /* background-size: stretch; */
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* padding-bottom: 1rem; */
 }
 .mainDiv_retreat {
   background-image: url("../assets/imgs/Retreat_Portrait.jpg");
-  background-size: contain;
+  /* background-size: contain; */
+  background-position: center;
+  background-size: cover
 }
 .mainDiv_socialMedia {
   background-image: url("../assets/imgs/Splash_Portrait.jpg");
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: cover
 }
 .mainDiv_contact {
-  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
-  background-size: contain;
+  background-image: url("../assets/imgs/Retreat_1.jpg");
+  background-size: cover;
+  /* background-size: contain; */
 }
 .companyPage_maindiv {
   /* border: 1px solid black; */
@@ -81,6 +85,21 @@ font-family: 'Sacramento', cursive; */
 .companyPageHeading {
   margin: 0 auto;
   /* display: block; */
+}
+.team_text {
+  color: #F3E37C !important;
+}
+.path_text {
+  color: #3AB795 !important;
+}
+.retreat_text {
+  color: #FC7A57 !important;
+}
+.socialMedia_text {
+  color: #78A35F !important;
+}
+.contact_text {
+  color: #D88300 !important;
 }
 
 .companyPage_topRow_head {
@@ -152,6 +171,7 @@ font-family: 'Sacramento', cursive; */
   font-size:  1.4rem;
   /* background-color: rgba(0, 0, 0, 0.8); */
   border-radius: 15px;
+  font-family: 'Quicksand', sans-serif;
 }
 .main_content_section_background {
   /* border: 1px solid blue; */
@@ -177,7 +197,11 @@ font-family: 'Sacramento', cursive; */
   /* border: 1px solid blue; */
   bottom: .5rem;
   left: 1rem;
-  background-color: rgba(0, 0, 0, 0.85);
+  /* background-color: rgba(0, 0, 0, 0.85); */
+  background-color: rgba(255, 205, 178, 0.85);
+  /* background-color: rgba(241, 91, 181, 0.85); */
+  /* background-color: rgba(198, 184, 169, 0.85); */
+  /* background-color: rgba(5, 138, 102, 0.85); */
   padding: 0 1rem;
   /* background-color: #FC7A57; */
 }
@@ -244,6 +268,33 @@ font-family: 'Sacramento', cursive; */
   }
   .desktop {
     display: none;
+  }
+
+  .mainDiv_team {
+    background-image: url("../assets/imgs/Team_Portrait3.jpg");
+    /* background-size: contain; */
+    background-position: center;
+    /* background-size: cover; */
+  }
+  .mainDiv_path {
+    /* background-image: url("../assets/imgs/Process_1.jpg"); */
+    background-image: url("../assets/imgs/Process_Portrait3.jpg");
+    background-position: center;
+  }
+  .mainDiv_retreat {
+    background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+  }
+  .mainDiv_socialMedia {
+    background-image: url("../assets/imgs/Splash_Portrait.jpg");
+  }
+  .mainDiv_contact {
+    background-image: url("../assets/imgs/Retreat_1.jpg");
+  }
+  .companyPage_maindiv {
+  }
+
+  .companyPage_maindiv {
+    width: 107vw;
   }
 
   .companyPageSubRow1  {

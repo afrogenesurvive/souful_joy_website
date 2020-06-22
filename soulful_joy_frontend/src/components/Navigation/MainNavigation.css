@@ -70,7 +70,11 @@ font-family: 'Sacramento', cursive; */
 }
 
 .navbarMaster {
-  background-color: rgba(0,0,0, 0.85);
+  /* background-color: rgba(5, 138, 102, 0.85); */
+  /* background-color: rgba(198, 184, 169, 0.85); */
+  /* background-color: rgba(241, 91, 181, 0.85); */
+  background-color: rgba(255, 205, 178, 0.85);
+  /* background-color: rgba(0,0,0, 0.85); */
   /* background-color: rgba(58, 183, 149, 0.3); */
   padding: .5rem 3rem;
 }

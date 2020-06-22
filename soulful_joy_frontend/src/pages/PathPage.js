@@ -15,6 +15,7 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
 import ContentBgLogo from '../assets/imgs/content_bg.png';
@@ -48,7 +49,7 @@ return (
 
           <Col md={9} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading path_text">
                 The Path
               </h1>
             </Row>
@@ -67,7 +68,7 @@ return (
 
           <Col sm={5} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading">
+              <h1 className="companyPage_top_heading path_text">
                 The Path
               </h1>
             </Row>
@@ -89,7 +90,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
               <h1 className="companyPage_top_heading">
-                Our Path
+                Our Vision
               </h1>
 
               </Col>
@@ -327,6 +328,9 @@ return (
               </li>
               <li className="footer_socialListItem">
                 <FontAwesomeIcon icon={faLinkedin} className="footerIcon"/>
+              </li>
+              <li className="footer_socialListItem">
+                <FontAwesomeIcon icon={faEnvelope} className="footerIcon"/>
               </li>
             </ul>
           </Col>

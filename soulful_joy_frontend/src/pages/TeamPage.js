@@ -94,16 +94,23 @@ return (
         }
 
         <Row className="companyPageSubRow2 desktop">
+          <Row className="grid_topRow">
+          <h1 className="companyPage_top_heading">
+            Our Vision
+          </h1>
+          <p className="content_section_grid_text">
+            Is to create a special time and place...
+          </p>
+          </Row>
+
+          <Row className="grid_mainRow">
+
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <h1 className="companyPage_top_heading">
-                Our Vision
-              </h1>
 
-              <p className="content_section_grid_text">
-                Is to create a special time and place...
-              </p>
+
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <NavLink to="/path" className="navBar_link">
@@ -162,16 +169,21 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
+            </Row>
         </Row>
 
         <Row className="companyPageSubRow2 desktop">
+        <Row className="grid_topRow">
+          <h1 className="companyPage_top_heading">
+            Our Mission
+          </h1>
+        </Row>
+
+        <Row className="grid_mainRow">
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
 
-              <h1 className="companyPage_top_heading">
-                Our Mission
-              </h1>
               </Col>
               <Col md={4} className="content_section_grid_cell">
 
@@ -211,9 +223,17 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
+            </Row>
         </Row>
 
         <Row className="companyPageSubRow2 desktop">
+        <Row className="grid_topRow">
+          <h1 className="companyPage_top_heading">
+            Team
+          </h1>
+        </Row>
+
+        <Row className="grid_mainRow">
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
@@ -281,7 +301,10 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
+            </Row>
         </Row>
+
+
 
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
@@ -290,7 +313,7 @@ return (
               <Col sm={12} className="content_section_grid_cell splinterCell">
 
               <h1 className="companyPage_top_heading">
-                Our Mission
+                Our Vision
               </h1>
 
               </Col>
@@ -311,6 +334,7 @@ return (
               </Row>
             </Col>
         </Row>
+
 
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
@@ -368,6 +392,7 @@ return (
             </Col>
         </Row>
 
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
@@ -375,7 +400,7 @@ return (
               <Col sm={12} className="content_section_grid_cell splinterCell">
 
               <h1 className="companyPage_top_heading">
-                Our Vision
+                Our Mission
               </h1>
 
               </Col>
@@ -397,8 +422,17 @@ return (
             </Col>
         </Row>
 
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
+
+          <Row className="companyPage_section_row">
+            <Col sm={12} className="content_section_grid_cell splinterCell">
+              <p className="cell_image_caption">
+                Team
+              </p>
+            </Col>
+          </Row>
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">

@@ -133,7 +133,19 @@ font-family: 'Sacramento', cursive; */
   /* border: 1px solid blue; */
   /* position: relative; */
 }
-
+.grid_topRow {
+  /* border: 1px solid blue; */
+  height: fit-content;
+  width: 100vw;
+  margin: .5rem auto;
+  display: inline-block;
+}
+.grid_mainRow {
+  display: inline-block;
+  width: 100vw;
+  text-align: center;
+  margin: 0 !important;
+}
 .content_section_grid_cell {
   /* border: 1px solid blue; */
   /* padding: .5rem; */
@@ -198,9 +210,12 @@ font-family: 'Sacramento', cursive; */
   bottom: .5rem;
   left: 1rem;
   /* background-color: rgba(0, 0, 0, 0.85); */
-  background-color: rgba(255, 205, 178, 0.85);
+  /* background-color: rgba(255, 205, 178, 0.85); */
   /* background-color: rgba(241, 91, 181, 0.85); */
   /* background-color: rgba(198, 184, 169, 0.85); */
+  background-color: rgba(245, 121, 131, 0.85);
+  /* background-color: rgba(13, 136, 111, 0.85); */
+
   /* background-color: rgba(5, 138, 102, 0.85); */
   padding: 0 1rem;
   /* background-color: #FC7A57; */

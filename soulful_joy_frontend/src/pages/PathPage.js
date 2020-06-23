@@ -85,13 +85,18 @@ return (
         </Row>
 
 
+
         <Row className="companyPageSubRow2 desktop">
+        <Row className="grid_topRow">
+        <h1 className="companyPage_top_heading">
+          Our Vision
+        </h1>
+        </Row>
+
+        <Row className="grid_mainRow">
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <h1 className="companyPage_top_heading">
-                Our Vision
-              </h1>
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
@@ -150,7 +155,10 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
+            </Row>
         </Row>
+
+
         <Row className="companyPageSubRow2 desktop">
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">

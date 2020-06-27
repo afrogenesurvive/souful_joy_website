@@ -14,6 +14,7 @@ import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube } from '@fortawesome/free-solid-svg-icons';
 
 import './MainNavigation.css';
 import Wht_ico from '../../assets/imgs/wht_ico.png';
@@ -40,20 +41,27 @@ const mainNavigation = props => (
             <Nav className="ml-auto">
 
               <Nav.Link className="navbar_item">
-                <NavLink to="/team" className="navBar_link">Team</NavLink>
+                <NavLink to="/welcome" className="navBar_link">WELCOME</NavLink>
+              </Nav.Link>
+              <Nav.Link className="navbar_item">
+                <NavLink to="/home" className="navBar_link">Soulful Joy/HOME</NavLink>
+              </Nav.Link>
+              <Nav.Link className="navbar_item">
+                <NavLink to="/team" className="navBar_link">The Team</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
                 <NavLink to="/path" className="navBar_link">The Path</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
-                <NavLink to="/socialMedia" className="navBar_link">Join the Joy</NavLink>
+                <NavLink to="/socialMedia" className="navBar_link">The Joy</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
-                <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
+                <NavLink to="/retreat" className="navBar_link">The Experience</NavLink>
               </Nav.Link>
               <Nav.Link className="navbar_item">
-                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
+                <NavLink to="/shop" className="navBar_link">Shop</NavLink>
               </Nav.Link>
+
 
               <Nav.Link className="navbar_divider">
               </Nav.Link>
@@ -72,6 +80,12 @@ const mainNavigation = props => (
               <Nav.Link className="navbar_item_social" href="">
                 <FontAwesomeIcon icon={faEnvelope} className="navbar_socialIcon"/>
               </Nav.Link>
+              <Nav.Link className="navbar_divider">
+              </Nav.Link>
+              <Nav.Link className="navbar_item">
+                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
+              </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>

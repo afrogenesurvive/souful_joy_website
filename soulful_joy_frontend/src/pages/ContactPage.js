@@ -202,7 +202,9 @@ return (
     <Row className="footerRow">
       <Col className="footerMainCol">
       <Row className="footer_topRow">
-        <p className="footer_topRow_text">Stay in Touch</p>
+        <NavLink to="/content" className="navBar_link">
+          <p className="footer_topRow_text">Stay in touch</p>
+        </NavLink>
       </Row>
         <Row className="footer_midRow">
           <Col md={3} className="footer_midCol">
@@ -221,9 +223,6 @@ return (
               </li>
               <li className="footer_navListItem">
                 <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
-              </li>
-              <li className="footer_navListItem">
-                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
               </li>
             </ul>
           </Col>

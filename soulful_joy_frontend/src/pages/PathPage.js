@@ -55,7 +55,7 @@ return (
             </Row>
             <Row>
               <p className="companyPage_top_subtitle">
-                ...
+                We developed a 5 point system focused on
               </p>
             </Row>
           </Col>
@@ -74,7 +74,7 @@ return (
             </Row>
             <Row>
               <p className="companyPage_top_subtitle">
-                ...
+                We developed a 5 point system focused on
               </p>
             </Row>
           </Col>
@@ -88,9 +88,12 @@ return (
 
         <Row className="companyPageSubRow2 desktop">
         <Row className="grid_topRow">
-        <h1 className="companyPage_top_heading">
-          Our Vision
-        </h1>
+        <p className="content_section_grid_text marginText">
+          Our Research has shown that people don’t want to experience a detox or cleanse alone, nor do
+          they want to be in an uninspiring environment.
+          As a result, we came together and created a high-quality experience, reasonably priced,
+          promising an unforgettable experience within an awe-inspiring Environment.
+        </p>
         </Row>
 
         <Row className="grid_mainRow">
@@ -158,52 +161,6 @@ return (
             </Row>
         </Row>
 
-
-        <Row className="companyPageSubRow2 desktop">
-          <Col className="companyPage_sectionCol">
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-            </Row>
-
-          </Col>
-            <Col className="main_content_section_background">
-              <Row className="content_section_bg_row">
-                <Image src={Wht_ico} className="content_bg_img" fluid />
-              </Row>
-            </Col>
-        </Row>
-
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
@@ -220,7 +177,10 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
               <p className="content_section_grid_text">
-                Some info about the path...
+              Our Research has shown that people don’t want to experience a detox or cleanse alone, nor do
+              they want to be in an uninspiring environment.
+              As a result, we came together and created a high-quality experience, reasonably priced,
+              promising an unforgettable experience within an awe-inspiring Environment.
               </p>
               </Col>
             </Row>
@@ -295,7 +255,9 @@ return (
     <Row className="footerRow">
       <Col className="footerMainCol">
       <Row className="footer_topRow">
-        <p className="footer_topRow_text">Stay in Touch</p>
+        <NavLink to="/content" className="navBar_link">
+          <p className="footer_topRow_text">Stay in touch</p>
+        </NavLink>
       </Row>
         <Row className="footer_midRow">
           <Col md={3} className="footer_midCol">
@@ -314,9 +276,6 @@ return (
               </li>
               <li className="footer_navListItem">
                 <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
-              </li>
-              <li className="footer_navListItem">
-                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
               </li>
             </ul>
           </Col>

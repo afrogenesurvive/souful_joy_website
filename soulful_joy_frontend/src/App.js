@@ -8,6 +8,7 @@ import PathPage from './pages/PathPage';
 import ContactPage from './pages/ContactPage';
 import SocialMediaPage from './pages/SocialMediaPage';
 import RetreatPage from './pages/RetreatPage';
+import ShopPage from './pages/ShopPage';
 
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
@@ -25,12 +26,14 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+    this.firebaseConfig = {
+
+    }
   }
 
 
 
   componentDidMount() {
-
   }
 
   componentWillUnmount() {
@@ -54,7 +57,6 @@ class App extends Component {
       detailViewerData: null
     })
   }
-
 
   render() {
     return (
@@ -85,6 +87,7 @@ class App extends Component {
               />}/>
               <Route path="/socialMedia" component={SocialMediaPage} />
               <Route path="/retreat" component={RetreatPage} />
+              <Route path="/shop" component={ShopPage} />
               <Route path="/contact" component={ContactPage} />
               <Redirect from="/" to="/welcome" exact />
               <Redirect from="*" to="/welcome" exact />

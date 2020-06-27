@@ -31,8 +31,13 @@ font-family: 'Sacramento', cursive; */
 
 }
 .detailViewer_subRow {
-  height: 20vh;
+  /* height: 30vh; */
   /* border: 1px solid #ffffff; */
+  overflow: scroll;
+}
+.xRow {
+  height: 35vh;
+  margin: 1rem 0;
 }
 .detailViewer_buttomRow {
 
@@ -41,7 +46,7 @@ font-family: 'Sacramento', cursive; */
 .detailViewer_text {
  color: #ffffff;
  font-family: 'Quicksand', sans-serif;
- margin: 0 auto;
+ margin: .7rem auto;
 }
 .detailViewer_topHeading {
  color: #ffffff;
@@ -53,12 +58,32 @@ font-family: 'Sacramento', cursive; */
   margin: 0 auto;
 }
 
+.team_links {
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+.detailViewer_linkList {
+  padding: 0;
+  margin: 0 auto;
+}
+.detailViewer_linkListItem {
+  list-style-type: none;
+}
+.bio_row {
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 420px) {
 
   .detailViewContainer {
     left: 1rem;
     height: 85vh;
     width: 93vw;
+  }
+  .xRow {
+    height: 45vh;
+    margin: 1rem 0;
   }
 
 }

@@ -95,89 +95,10 @@ return (
 
         <Row className="companyPageSubRow2 desktop">
           <Row className="grid_topRow">
-          <h1 className="companyPage_top_heading">
-            Our Vision
-          </h1>
-          <p className="content_section_grid_text">
-            Is to create a special time and place...
-          </p>
+            <h1 className="companyPage_top_heading">
+              Our Mission
+            </h1>
           </Row>
-
-          <Row className="grid_mainRow">
-
-          <Col className="companyPage_sectionCol">
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-
-
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-                <NavLink to="/path" className="navBar_link">
-                <p className="content_section_grid_text is">
-                  Inspire
-                </p>
-                </NavLink>
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <NavLink to="/path" className="navBar_link">
-              <p className="content_section_grid_text is">
-                Invigorate
-              </p>
-              </NavLink>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <NavLink to="/path" className="navBar_link">
-              <p className="content_section_grid_text is">
-                Immersed
-              </p>
-              </NavLink>
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <NavLink to="/path" className="navBar_link">
-              <p className="content_section_grid_text is">
-                Improved
-              </p>
-              </NavLink>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <NavLink to="/path" className="navBar_link">
-              <p className="content_section_grid_text is">
-                Incorporate
-              </p>
-              </NavLink>
-              </Col>
-            </Row>
-
-          </Col>
-            <Col className="main_content_section_background">
-              <Row className="content_section_bg_row">
-                <Image src={Wht_ico} className="content_bg_img" fluid />
-              </Row>
-            </Col>
-            </Row>
-        </Row>
-
-        <Row className="companyPageSubRow2 desktop">
-        <Row className="grid_topRow">
-          <h1 className="companyPage_top_heading">
-            Our Mission
-          </h1>
-        </Row>
 
         <Row className="grid_mainRow">
           <Col className="companyPage_sectionCol">
@@ -223,7 +144,7 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
-            </Row>
+          </Row>
         </Row>
 
         <Row className="companyPageSubRow2 desktop">
@@ -304,78 +225,68 @@ return (
             </Row>
         </Row>
 
+        <Row className="companyPageSubRow2 desktop">
+          <Row className="grid_topRow">
+          <h1 className="companyPage_top_heading">
+            Our Vision
+          </h1>
+          <p className="content_section_grid_text">
+            is to create a special time and place where you will follow the Path to an amazing Experience
+          </p>
+          </Row>
 
+          <Row className="grid_mainRow">
 
-        <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
-
             <Row className="companyPage_section_row">
-              <Col sm={12} className="content_section_grid_cell splinterCell">
+              <Col md={4} className="content_section_grid_cell">
 
-              <h1 className="companyPage_top_heading">
-                Our Vision
-              </h1>
+
 
               </Col>
-            </Row>
+              <Col md={4} className="content_section_grid_cell">
+                <NavLink to="/path" className="navBar_link">
+                <p className="content_section_grid_text is">
+                  Inspire
+                </p>
+                </NavLink>
 
-            <Row className="companyPage_section_row">
-              <Col sm={12} className="content_section_grid_cell splinterCell">
-              <p className="content_section_grid_text">
-                Soulful Joy exists to provide a unique residential experience where people who give of themselves a lot & often can rejuvenate & relax; while detoxing during a 4-day long retreat in lush tropical locations.
-              </p>
               </Col>
-            </Row>
-
-          </Col>
-            <Col className="main_content_section_background">
-              <Row className="content_section_bg_row">
-                <Image src={Wht_ico} className="content_bg_img" fluid />
-              </Row>
-            </Col>
-        </Row>
-
-
-        <Row className="companyPageSubRow2 mobile">
-          <Col className="companyPage_sectionCol">
-
-            <Row className="companyPage_section_row">
-              <Col sm={12} className="content_section_grid_cell splinterCell">
-              <NavLink to="/path" className="navBar_link">
-              <p className="content_section_grid_text is">
-                Inspire
-              </p>
-              </NavLink>
+              <Col md={4} className="content_section_grid_cell">
 
               </Col>
             </Row>
             <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
+              <Col md={4} className="content_section_grid_cell">
               <NavLink to="/path" className="navBar_link">
               <p className="content_section_grid_text is">
                 Invigorate
               </p>
               </NavLink>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
 
               </Col>
-              <Col sm={6} className="content_section_grid_cell">
+              <Col md={4} className="content_section_grid_cell">
               <NavLink to="/path" className="navBar_link">
               <p className="content_section_grid_text is">
-                Immersed
+                Immerse
               </p>
               </NavLink>
               </Col>
             </Row>
-
             <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
+              <Col md={4} className="content_section_grid_cell">
               <NavLink to="/path" className="navBar_link">
               <p className="content_section_grid_text is">
-                Improved
+                Improve
               </p>
               </NavLink>
               </Col>
-              <Col sm={6} className="content_section_grid_cell">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
               <NavLink to="/path" className="navBar_link">
               <p className="content_section_grid_text is">
                 Incorporate
@@ -390,6 +301,7 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
+            </Row>
         </Row>
 
 
@@ -421,7 +333,6 @@ return (
               </Row>
             </Col>
         </Row>
-
 
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
@@ -490,13 +401,100 @@ return (
             </Col>
         </Row>
 
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              <h1 className="companyPage_top_heading">
+                Our Vision
+              </h1>
+
+              </Col>
+            </Row>
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+              <p className="content_section_grid_text">
+                is to create a special time and place where you will follow the Path to an amazing Experience
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+              <NavLink to="/path" className="navBar_link">
+              <p className="content_section_grid_text is">
+                Inspire
+              </p>
+              </NavLink>
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+              <NavLink to="/path" className="navBar_link">
+              <p className="content_section_grid_text is">
+                Invigorate
+              </p>
+              </NavLink>
+
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+              <NavLink to="/path" className="navBar_link">
+              <p className="content_section_grid_text is">
+                Immersed
+              </p>
+              </NavLink>
+              </Col>
+            </Row>
+
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+              <NavLink to="/path" className="navBar_link">
+              <p className="content_section_grid_text is">
+                Improved
+              </p>
+              </NavLink>
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+              <NavLink to="/path" className="navBar_link">
+              <p className="content_section_grid_text is">
+                Incorporate
+              </p>
+              </NavLink>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
       </Col>
     </Row>
 
     <Row className="footerRow">
       <Col className="footerMainCol">
         <Row className="footer_topRow">
-          <p className="footer_topRow_text">Stay in Touch</p>
+          <NavLink to="/content" className="navBar_link">
+            <p className="footer_topRow_text">Stay in touch</p>
+          </NavLink>
         </Row>
         <Row className="footer_midRow">
           <Col md={3} className="footer_midCol">
@@ -515,9 +513,6 @@ return (
               </li>
               <li className="footer_navListItem">
                 <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
-              </li>
-              <li className="footer_navListItem">
-                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
               </li>
             </ul>
           </Col>

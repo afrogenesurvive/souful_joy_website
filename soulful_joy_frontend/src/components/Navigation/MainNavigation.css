@@ -127,6 +127,7 @@ font-family: 'Sacramento', cursive; */
   color: #ffffff;
 }
 
+
 @media only screen and (max-width: 420px) {
 
   .basic-navbar-nav {
@@ -139,5 +140,6 @@ font-family: 'Sacramento', cursive; */
     /* height: 1.5rem; */
     margin: 0;
   }
+
 
 }

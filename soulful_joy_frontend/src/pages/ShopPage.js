@@ -23,10 +23,10 @@ import Blk_ico from '../assets/imgs/blk_ico.png';
 
 import "./CompanyPage.css"
 
-const RetreatPage = (props) => {
+const ShopPage = (props) => {
 
 return (
-  <div className="companyPage_maindiv mainDiv_retreat">
+  <div className="companyPage_maindiv mainDiv_shop">
   <MainNavigation
   />
     <Row className="companyPageRow">
@@ -36,8 +36,8 @@ return (
 
           <Col md={9} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading retreat_text">
-                The Experience
+              <h1 className="companyPage_top_heading shop_text">
+                Shop
               </h1>
             </Row>
             <Row>
@@ -56,8 +56,8 @@ return (
 
           <Col sm={5} className="companyPage_topCol">
             <Row>
-              <h1 className="companyPage_top_heading retreat_text">
-                The Experience
+              <h1 className="companyPage_top_heading shop_text">
+                Shop
               </h1>
             </Row>
             <Row>
@@ -74,13 +74,6 @@ return (
 
 
         <Row className="companyPageSubRow2 desktop">
-          <Row className="grid_topRow">
-            <h1 className="companyPage_top_heading">
-              Our Mission
-            </h1>
-          </Row>
-
-        <Row className="grid_mainRow">
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
@@ -141,77 +134,6 @@ return (
                 <Image src={Wht_ico} className="content_bg_img" fluid />
               </Row>
             </Col>
-          </Row>
-        </Row>
-        <Row className="companyPageSubRow2 desktop">
-          <Row className="grid_topRow">
-            <h1 className="companyPage_top_heading">
-              Our Mission
-            </h1>
-          </Row>
-
-        <Row className="grid_mainRow">
-          <Col className="companyPage_sectionCol">
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"
-                </p>
-
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
-              </Col>
-            </Row>
-
-          </Col>
-            <Col className="main_content_section_background">
-              <Row className="content_section_bg_row">
-                <Image src={Wht_ico} className="content_bg_img" fluid />
-              </Row>
-            </Col>
-          </Row>
         </Row>
 
         <Row className="companyPageSubRow2 mobile">
@@ -304,6 +226,7 @@ return (
               </Row>
             </Col>
         </Row>
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
@@ -350,6 +273,131 @@ return (
             </Col>
         </Row>
 
+        <Row className="companyPageSubRow2 desktop">
+          <Col className="companyPage_sectionCol">
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                  1.a:
+                </p>
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                  1.c:
+                </p>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.b:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.c:
+              </p>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.a:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.b:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 desktop">
+          <Col className="companyPage_sectionCol">
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                  1.a:
+                </p>
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                  1.c:
+                </p>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.b:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                2.c:
+              </p>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.a:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.b:
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
       </Col>
     </Row>
 
@@ -376,7 +424,7 @@ return (
                 <NavLink to="/socialMedia" className="navBar_link">Join the Joy</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
+                <NavLink to="/shop" className="navBar_link">Shop</NavLink>
               </li>
             </ul>
           </Col>
@@ -415,4 +463,4 @@ return (
 }
 
 
-export default RetreatPage;
+export default ShopPage;

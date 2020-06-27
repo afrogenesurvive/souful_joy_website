@@ -21,11 +21,11 @@ return (
 
         <Row className="welcomePageSubRow Row1">
           <Image src={Wht_ico} className="SplashMainLogo" fluid />
-          <h1 className='welcomePageHeading'> Soulful Joy </h1>
+
         </Row>
 
         <Row className="welcomePageSubRow Row2">
-          <h5 className='welcomePageSubHeading'> ...a special time and place...</h5>
+          <h5 className='welcomePageSubHeading'> SOULFUL...a special Time and Place...</h5>
           <NavLink to="/home">
             <Button variant="outline-light" className="welcomePageEnterBtn" onClick={props.closeSplash}>Enter</Button>
           </NavLink>
@@ -37,6 +37,6 @@ return (
 )
 
 }
-
+// <h1 className='welcomePageHeading'> Soulful Joy </h1>
 
 export default WelcomePage;

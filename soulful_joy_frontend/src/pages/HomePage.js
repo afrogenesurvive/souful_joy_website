@@ -33,7 +33,7 @@ return (
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
-          <NavLink to="/company">
+          <NavLink to="/team">
             <h1 className="carousel_caption_heading">Team</h1>
           </NavLink>
           <ul className="carousel_caption_list">
@@ -63,7 +63,7 @@ return (
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
-          <NavLink to="/general">
+          <NavLink to="/path">
             <h1 className="carousel_caption_heading">Path</h1>
           </NavLink>
           <ul className="carousel_caption_list">
@@ -92,7 +92,7 @@ return (
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
-        <NavLink to="/featuredEvent">
+        <NavLink to="/retreat">
           <h1 className="carousel_caption_heading">Retreat</h1>
         </NavLink>
 
@@ -136,7 +136,7 @@ return (
             <li className="carousel_caption_listItem">
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </li>
-          
+
           </ul>
         </Col>
       </Row>

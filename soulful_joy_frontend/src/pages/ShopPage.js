@@ -452,7 +452,7 @@ return (
           </Col>
         </Row>
         <Row className="footer_copyrightRow">
-          <p className="footer_copyrightRow_text"> copyright original people 10000 bc</p>
+          <p className="footer_copyrightRow_text"> family@SoulfulJoy.com | Planet Earth | </p>
         </Row>
       </Col>
     </Row>

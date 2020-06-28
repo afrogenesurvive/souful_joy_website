@@ -73,7 +73,8 @@ font-family: 'Sacramento', cursive; */
   text-align: center;
   /* border: 1px solid blue; */
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: rgba(198, 184, 169, 0.95);
   padding: 1.5rem 1.5rem;
 }
 .companyPageSubRow2 {
@@ -93,22 +94,22 @@ font-family: 'Sacramento', cursive; */
   /* display: block; */
 }
 .team_text {
-  color: #F3E37C !important;
+  /* color: #F3E37C !important; */
 }
 .path_text {
-  color: #3AB795 !important;
+  /* color: #3AB795 !important; */
 }
 .retreat_text {
-  color: #FC7A57 !important;
+  /* color: #FC7A57 !important; */
 }
 .shop_text {
-  color: #FC7A57 !important;
+  /* color: #FC7A57 !important; */
 }
 .socialMedia_text {
-  color: #78A35F !important;
+  /* color: #78A35F !important; */
 }
 .contact_text {
-  color: #D88300 !important;
+  /* color: #D88300 !important; */
 }
 
 .companyPage_topRow_head {
@@ -166,12 +167,18 @@ font-family: 'Sacramento', cursive; */
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.95); */
 }
+.desktop_splinterCell {
+  margin: 0 auto;
+}
 
 .content_section_grid_cell_img {
   height: 100%;
   /* width: 9rem; */
   border-radius: 15%;
   margin: 0 1.5rem;
+}
+.facilitator_img {
+  height: 9rem;
 }
 .cell_image_caption {
   margin: .5rem auto;
@@ -224,8 +231,8 @@ font-family: 'Sacramento', cursive; */
   /* background-color: rgba(0, 0, 0, 0.85); */
   /* background-color: rgba(255, 205, 178, 0.85); */
   /* background-color: rgba(241, 91, 181, 0.85); */
-  /* background-color: rgba(198, 184, 169, 0.85); */
-  background-color: rgba(245, 121, 131, 0.85);
+  background-color: rgba(198, 184, 169, 0.95);
+  /* background-color: rgba(245, 121, 131, 0.85); */
   /* background-color: rgba(13, 136, 111, 0.85); */
 
   /* background-color: rgba(5, 138, 102, 0.85); */
@@ -239,6 +246,7 @@ font-family: 'Sacramento', cursive; */
 .footer_topRow_text {
   margin: 1rem auto 1rem 1rem;
   color: #ffffff;
+  font-weight: bold;
 }
 .footer_midRow {
   /* border: 1px solid blue; */
@@ -276,11 +284,19 @@ font-family: 'Sacramento', cursive; */
   color: #ffffff;
 }
 
+.formLabel {
+  color: #ffffff;
+}
+.sub_btn {
+  margin: 1rem auto;
+}
+
 @media only screen and (max-width: 420px) {
 
   .companyPage_top_heading {
     font-size: 2.5rem;
     margin: 0 auto;
+    color: #ffffff;
   }
   .companyPage_top_subtitle {
     margin: 1rem auto;
@@ -359,6 +375,7 @@ font-family: 'Sacramento', cursive; */
   .content_section_grid_text {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 5px;
+    font-size: 1.1rem;
   }
   .splinterCell {
     width: 90%;
@@ -393,6 +410,9 @@ font-family: 'Sacramento', cursive; */
     /* border: 1px solid blue; */
     display: inline-block;
     margin: 0 1.5rem;
+  }
+  .footer_copyrightRow {
+    height: 5rem;
   }
 
 }

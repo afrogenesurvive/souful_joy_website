@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
+import Form from 'react-bootstrap/Form';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -92,52 +93,106 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст- Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст- Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                  x
                 </p>
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                x
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                  x
                 </p>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+              <Col md={10} className="content_section_grid_cell desktop_splinterCell">
+              <Button variant="outline-light"  className="sub_btn" onClick={props.openContactForm}>
+                Subscribe to Newsletter
+              </Button>
+              {props.contactForm === true && (
+                <Form onSubmit={props.submitContactForm}>
+                  <Form.Row>
+
+                  <Form.Group as={Col} controlId="formGridAddressType">
+                    <Form.Label className="formLabel">Type</Form.Label>
+                    <Form.Control as="select">
+                    <option>Billing</option>
+                    <option>Shipping</option>
+
+                    </Form.Control>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressNumber">
+                    <Form.Label className="formLabel">Street No.</Form.Label>
+                    <Form.Control type="number" placeholder="addressNumber"/>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressStreet">
+                    <Form.Label className="formLabel">Street Name</Form.Label>
+                    <Form.Control type="text" placeholder="addressStreet"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressTown">
+                    <Form.Label className="formLabel">Town</Form.Label>
+                    <Form.Control type="text" placeholder="addressTown"/>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressCity">
+                    <Form.Label className="formLabel">City</Form.Label>
+                    <Form.Control type="text" placeholder="addressCity"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressCountry">
+                    <Form.Label className="formLabel">Country</Form.Label>
+                    <Form.Control type="text" placeholder="addressCountry"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressPostalCode">
+                    <Form.Label className="formLabel">postalCode</Form.Label>
+                    <Form.Control type="text" placeholder="addresspostalCode"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+
+                    <Button variant="outline-success" className="formButton" onClick={props.cancelContactForm}>
+                    Cancel
+                    </Button>
+
+                    <Button variant="outline-danger" className="formButton" type="submit">
+                    Submit
+                    </Button>
+
+                  </Form.Row>
+
+                  </Form>
+              )}
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                .
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                .
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                .
               </p>
               </Col>
             </Row>
@@ -156,7 +211,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
                 <p className="content_section_grid_text">
-                  1.a:
+                  x
                 </p>
 
               </Col>
@@ -164,13 +219,13 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  2.a:
+                  x
                 </p>
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.b:
+                x
               </p>
               </Col>
             </Row>
@@ -178,12 +233,104 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.a:
+                x
               </p>
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.b:
+                x
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              <Button variant="outline-light" onClick={props.openContactForm}>
+                Subscribe to Newsletter
+              </Button>
+              {props.contactForm === true && (
+                <Form onSubmit={props.submitContactForm}>
+                  <Form.Row>
+
+                  <Form.Group as={Col} controlId="formGridAddressType">
+                    <Form.Label className="formLabel">Type</Form.Label>
+                    <Form.Control as="select">
+                    <option>Billing</option>
+                    <option>Shipping</option>
+
+                    </Form.Control>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressNumber">
+                    <Form.Label className="formLabel">Street No.</Form.Label>
+                    <Form.Control type="number" placeholder="addressNumber"/>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressStreet">
+                    <Form.Label className="formLabel">Street Name</Form.Label>
+                    <Form.Control type="text" placeholder="addressStreet"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressTown">
+                    <Form.Label className="formLabel">Town</Form.Label>
+                    <Form.Control type="text" placeholder="addressTown"/>
+                  </Form.Group>
+
+                  <Form.Group as={Col} controlId="formGridAddressCity">
+                    <Form.Label className="formLabel">City</Form.Label>
+                    <Form.Control type="text" placeholder="addressCity"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressCountry">
+                    <Form.Label className="formLabel">Country</Form.Label>
+                    <Form.Control type="text" placeholder="addressCountry"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+                  <Form.Group as={Col} controlId="formGridAddressPostalCode">
+                    <Form.Label className="formLabel">postalCode</Form.Label>
+                    <Form.Control type="text" placeholder="addresspostalCode"/>
+                  </Form.Group>
+                  </Form.Row>
+
+                  <Form.Row>
+
+                    <Button variant="outline-success" className="formButton" onClick={props.cancelContactForm}>
+                    Cancel
+                    </Button>
+
+                    <Button variant="outline-danger" className="formButton" type="submit">
+                    Submit
+                    </Button>
+
+                  </Form.Row>
+
+                  </Form>
+              )}
+              </Col>
+            </Row>
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+              <p className="content_section_grid_text">
+                x
               </p>
               </Col>
             </Row>
@@ -250,7 +397,7 @@ return (
           </Col>
         </Row>
         <Row className="footer_copyrightRow">
-          <p className="footer_copyrightRow_text"> copyright original people 10000 bc</p>
+          <p className="footer_copyrightRow_text"> family@SoulfulJoy.com | Planet Earth | </p>
         </Row>
       </Col>
     </Row>

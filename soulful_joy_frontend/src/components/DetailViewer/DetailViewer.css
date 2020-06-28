@@ -4,7 +4,7 @@ font-family: 'Sacramento', cursive; */
 
 
 .detailViewContainer {
-  border: 1.5px solid #3AB795;
+  border: 1.5px solid rgba(198, 184, 169, 0.85);
   position: fixed;
   top: 7rem;
   left: 3.5rem;
@@ -14,11 +14,11 @@ font-family: 'Sacramento', cursive; */
   width: 100vw; */
   z-index: 10;
   /* background-color: rgba(0, 0, 0, 0.9); */
-  /* background-color: rgba(5, 138, 102, 0.85); */
+  background-color: rgba(5, 138, 102, 0.85);
   /* background-color: rgba(198, 184, 169, 0.85); */
   /* background-color: rgba(241, 91, 181, 0.85); */
   /* background-color: rgba(255, 205, 178, 0.85); */
-  background-color: rgba(13, 136, 111, 0.85);
+  /* background-color: rgba(13, 136, 111, 0.85); */
   padding: 1rem;
   /* margin: 4.5rem auto; */
   border-radius: 5px;

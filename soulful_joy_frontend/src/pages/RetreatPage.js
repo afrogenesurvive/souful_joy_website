@@ -21,14 +21,30 @@ import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
 import Blk_ico from '../assets/imgs/blk_ico.png';
 
+import StyleLogo from '../assets/imgs/stylelogo.png'
+
+import DetailViewer from '../components/DetailViewer/DetailViewer';
+
+
 import "./CompanyPage.css"
 
 const RetreatPage = (props) => {
+
+  let detailViewerOpen = props.detailViewerOpen;
+  let detailViewerData = props.detailViewerData;
 
 return (
   <div className="companyPage_maindiv mainDiv_retreat">
   <MainNavigation
   />
+  {detailViewerOpen === true &&
+     detailViewerData.page === 'retreat' && (
+    <DetailViewer
+      data={detailViewerData}
+      closeDetailViewer={props.closeDetailViewer}
+    />
+  )}
+
     <Row className="companyPageRow">
       <Col className='companyPageCol'>
 
@@ -51,7 +67,6 @@ return (
           </Col>
 
         </Row>
-
         <Row className="companyPageSubRow1 mobile">
 
           <Col sm={5} className="companyPage_topCol">
@@ -76,7 +91,70 @@ return (
         <Row className="companyPageSubRow2 desktop">
           <Row className="grid_topRow">
             <h1 className="companyPage_top_heading">
-              Our Mission
+              Introduction
+            </h1>
+            <p className="content_section_grid_text">
+              Our Purpose
+            </p>
+          </Row>
+
+        <Row className="grid_mainRow">
+          <Col className="companyPage_sectionCol">
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                  The Path to this amazing Experience is based on Di I Dem
+                </p>
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                Inspire – Immerse – Invigorate – Improve - Incorporate
+              </p>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                .
+              </p>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                Join us this October 8-11, 2020 in Negril Jamaica where we will take you on the Path to this amazing Experience.
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={StyleLogo} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+          </Row>
+        </Row>
+        <Row className="companyPageSubRow2 desktop">
+          <Row className="grid_topRow">
+            <h1 className="companyPage_top_heading">
+              Itinerary
             </h1>
           </Row>
 
@@ -85,53 +163,48 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"
+                -Travel to Jamaica guide
+                -4 day retreat outline
+                -What to bring
+                -Rules for the detox
+                -Other activities
                 </p>
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
+
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              -Packages -- you will not be hungry!
+                --Beginner- Vegan food
+                --Intermediate- Live food
+                --Advanced- Juice cleanse( Liquids only)
               </p>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+              <Button variant="outline-light" size="lg" className="">
+                Book Now
+              </Button>
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
+
               </Col>
             </Row>
 
@@ -146,7 +219,7 @@ return (
         <Row className="companyPageSubRow2 desktop">
           <Row className="grid_topRow">
             <h1 className="companyPage_top_heading">
-              Our Mission
+              Location
             </h1>
           </Row>
 
@@ -155,53 +228,48 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"
+                  Negril TreeHouse, Negril Jamaica
                 </p>
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                1.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  1.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                  Pictures and information about the space
                 </p>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.a:Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+              -Booking options
+                  --Single/ Double Occupancy
               </p>
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Video Link from Gail the owner
               </p>
               </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+              <Button variant="outline-light" size="lg" className="">
+                Location Website
+              </Button>
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-              </p>
+              <Button variant="outline-light" size="lg" className="">
+                Book Now
+              </Button>
               </Col>
             </Row>
 
@@ -213,41 +281,106 @@ return (
             </Col>
           </Row>
         </Row>
+        <Row className="companyPageSubRow2 desktop">
+        <Row className="grid_topRow">
+          <h1 className="companyPage_top_heading">
+            Facilitators
+          </h1>
+        </Row>
+
+        <Row className="grid_mainRow">
+          <Col className="companyPage_sectionCol">
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+                  <p className="cell_image_caption">
+                    Kwayera
+                  </p>
+                </Button>
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"khadijah"})}>
+                  <p className="cell_image_caption">
+                    Khadijah
+                  </p>
+                </Button>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"ade"})}>
+                  <p className="cell_image_caption">
+                    Ade
+                  </p>
+                </Button>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwasa"})}>
+                  <p className="cell_image_caption">
+                    Kwasa
+                  </p>
+                </Button>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"perdella"})}>
+                  <p className="cell_image_caption">
+                    Perdella
+                  </p>
+                </Button>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+            </Row>
+        </Row>
+
 
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
-                <p className="content_section_grid_text">
-                  1.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
 
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
-                <p className="content_section_grid_text">
-                  2.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                </p>
-
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
+              <h1 className="companyPage_top_heading">
+                Introduction
+              </h1>
               <p className="content_section_grid_text">
-                2.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                Our Purpose
               </p>
               </Col>
             </Row>
 
             <Row className="companyPage_section_row">
-              <Col sm={6} className="content_section_grid_cell">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
               <p className="content_section_grid_text">
-                3.a: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-              </p>
-              </Col>
-              <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+              Soulful Joy began as a solution in response to the ever-increasing levels
+              of stress that adults are experiencing every day.
+              Several of our friends who have been in the alternative wellness field for over 40 years each in various ways came together and decided to offer a “relax and rejuvenate” while you detox retreat.
               </p>
               </Col>
             </Row>
@@ -259,13 +392,14 @@ return (
               </Row>
             </Col>
         </Row>
+
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
                 <p className="content_section_grid_text">
-                  1.a:
+                  The Path to this amazing Experience is based on Di I Dem
                 </p>
 
               </Col>
@@ -273,26 +407,22 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  2.a:
+                  Inspire – Immerse – Invigorate – Improve - Incorporate
                 </p>
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                2.b:
-              </p>
+
               </Col>
             </Row>
 
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a:
-              </p>
+
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                3.b:
+                Join us this October 8-11, 2020 in Negril Jamaica where we will take you on the Path to this amazing Experience
               </p>
               </Col>
             </Row>
@@ -304,13 +434,97 @@ return (
               </Row>
             </Col>
         </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              <h1 className="companyPage_top_heading">
+                Itinerary
+              </h1>
+              </Col>
+            </Row>
+
+          </Col>
+
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+                <p className="content_section_grid_text">
+                -Travel to Jamaica guide
+                -4 day retreat outline
+                -What to bring
+                -Rules for the detox
+                -Other activities
+                </p>
+
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+              -Packages -- you will not be hungry!
+              --Beginner- Vegan food
+              --Intermediate- Live food
+              --Advanced- Juice cleanse( Liquids only)
+              </p>
+              </Col>
+            </Row>
+
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+              <Button variant="outline-light" size="lg" className="">
+                Book Now
+              </Button>
+
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+              <p className="content_section_grid_text">
+                x
+              </p>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              <h1 className="companyPage_top_heading">
+                Location
+              </h1>
+              <p className="content_section_grid_text">
+                Negril TreeHouse, Negril Jamaica
+              </p>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
         <Row className="companyPageSubRow2 mobile">
           <Col className="companyPage_sectionCol">
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
                 <p className="content_section_grid_text">
-                  1.a:
+                  -Pictures and information about the space
                 </p>
 
               </Col>
@@ -318,27 +532,101 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <p className="content_section_grid_text">
-                  2.a:
+                  -Booking options
+	                 --Single/ Double Occupancy
                 </p>
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <p className="content_section_grid_text">
-                2.b:
+                - Video Link from Gail the owner
               </p>
               </Col>
             </Row>
 
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.a:
-              </p>
+              <Button variant="outline-light" size="lg" className="">
+                Website
+              </Button>
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                3.b:
-              </p>
+              <Button variant="outline-light" size="lg" className="">
+                Book Now
+              </Button>
+              </Col>
+            </Row>
+
+          </Col>
+            <Col className="main_content_section_background">
+              <Row className="content_section_bg_row">
+                <Image src={Wht_ico} className="content_bg_img" fluid />
+              </Row>
+            </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+
+              <h1 className="companyPage_top_heading">
+                Facilitators
+              </h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+
+        <Row className="companyPageSubRow2 mobile">
+          <Col className="companyPage_sectionCol">
+
+            <Row className="companyPage_section_row">
+              <Col sm={12} className="content_section_grid_cell splinterCell">
+              <Image src={Wht_ico} className="facilitator_img" fluid />
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_a"})}>
+                <p className="cell_image_caption">
+                  facilitator_a
+                </p>
+              </Button>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_b"})}>
+                  <p className="cell_image_caption">
+                    facilitator_b
+                  </p>
+                </Button>
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+                <Image src={Wht_ico} className="facilitator_img" fluid />
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_c"})}>
+                  <p className="cell_image_caption">
+                    facilitator_c
+                  </p>
+                </Button>
+              </Col>
+            </Row>
+
+            <Row className="companyPage_section_row">
+              <Col sm={6} className="content_section_grid_cell">
+              <Image src={Wht_ico} className="facilitator_img" fluid />
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_d"})}>
+                <p className="cell_image_caption">
+                  facilitator_d
+                </p>
+              </Button>
+              </Col>
+              <Col sm={6} className="content_section_grid_cell">
+              <Image src={Wht_ico} className="facilitator_img" fluid />
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_e"})}>
+                <p className="cell_image_caption">
+                  facilitator_e
+                </p>
+              </Button>
               </Col>
             </Row>
 
@@ -404,7 +692,7 @@ return (
           </Col>
         </Row>
         <Row className="footer_copyrightRow">
-          <p className="footer_copyrightRow_text"> copyright original people 10000 bc</p>
+          <p className="footer_copyrightRow_text"> family@SoulfulJoy.com | Planet Earth | </p>
         </Row>
       </Col>
     </Row>

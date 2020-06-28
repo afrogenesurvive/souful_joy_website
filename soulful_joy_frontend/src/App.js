@@ -20,24 +20,20 @@ class App extends Component {
     splashPage: true,
     detailViewerOpen: false,
     detailViewerData: null,
+    contactForm: false,
   };
 
   static contextType = AuthContext;
 
   constructor(props) {
     super(props);
-    this.firebaseConfig = {
-
-    }
   }
-
 
 
   componentDidMount() {
   }
 
   componentWillUnmount() {
-
   }
 
 
@@ -56,6 +52,17 @@ class App extends Component {
       detailViewerOpen: false,
       detailViewerData: null
     })
+  }
+  openContactForm = () => {
+
+    this.setState({contactForm: true})
+  }
+  submitContactForm = () => {
+
+    this.setState({contactForm: false})
+  }
+  cancelContactForm = () => {
+    this.setState({contactForm: false})
   }
 
   render() {
@@ -86,9 +93,19 @@ class App extends Component {
                 detailViewerData={this.state.detailViewerData}
               />}/>
               <Route path="/socialMedia" component={SocialMediaPage} />
-              <Route path="/retreat" component={RetreatPage} />
+              <Route path="/retreat" render={(props) => <RetreatPage {...props}
+                openDetailViwer={this.openDetailViwer}
+                closeDetailViewer={this.closeDetailViewer}
+                detailViewerOpen={this.state.detailViewerOpen}
+                detailViewerData={this.state.detailViewerData}
+              />}/>
               <Route path="/shop" component={ShopPage} />
-              <Route path="/contact" component={ContactPage} />
+              <Route path="/contact" render={(props) => <ContactPage {...props}
+                contactForm={this.state.contactForm}
+                openContactForm={this.openContactForm}
+                cancelContactForm={this.cancelContactForm}
+                submitContactForm={this.submitContactForm}
+              />}/>
               <Redirect from="/" to="/welcome" exact />
               <Redirect from="*" to="/welcome" exact />
               </Switch>

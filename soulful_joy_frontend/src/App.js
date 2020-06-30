@@ -12,7 +12,7 @@ import ShopPage from './pages/ShopPage';
 
 import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -25,11 +25,13 @@ class App extends Component {
 
   static contextType = AuthContext;
 
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
+  // }
+
+  componentDidUpdate() {
+    console.log('y');
   }
-
-
   componentDidMount() {
   }
 
@@ -64,7 +66,7 @@ class App extends Component {
   cancelContactForm = () => {
     this.setState({contactForm: false})
   }
-
+// <Route path="/home" component={MainNavigation} />
   render() {
     return (
       <BrowserRouter>
@@ -73,7 +75,7 @@ class App extends Component {
             value={{
             }}
           >
-
+          <MainNavigation />
             <main className="main-content">
               <Switch>
               <Route path="/welcome" render={(props) => <WelcomePage {...props}

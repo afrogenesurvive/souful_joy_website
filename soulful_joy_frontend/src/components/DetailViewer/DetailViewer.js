@@ -1,21 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import AuthContext from '../../context/auth-context';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+// import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+// import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+// import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { faAdobe } from '@fortawesome/free-solid-svg-icons';
 
 import './DetailViewer.css';
-import SplashMainLogo from '../../assets/imgs/logo_splash_pg.png';
+// import SplashMainLogo from '../../assets/imgs/logo_splash_pg.png';
 
 
 const detailViewer = props => (

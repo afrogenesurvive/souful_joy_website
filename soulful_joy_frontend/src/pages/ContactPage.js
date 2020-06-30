@@ -1,29 +1,30 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
-import MainNavigation from '../components/Navigation/MainNavigation';
-import Carousel from 'react-bootstrap/Carousel';
+// import MainNavigation from '../components/Navigation/MainNavigation';
+// import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
+// import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { ReactSVG } from 'react-svg';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { ReactSVG } from 'react-svg';
 
-import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
-import ContentBgLogo from '../assets/imgs/content_bg.png';
+// import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
+// import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
-import Blk_ico from '../assets/imgs/blk_ico.png';
-import Wht_ico2 from '../assets/imgs/wht_ico2.svg';
-import Blk_ico2 from '../assets/imgs/blk_ico2.svg';
+// import Blk_ico from '../assets/imgs/blk_ico.png';
+// import Wht_ico2 from '../assets/imgs/wht_ico2.svg';
+// import Blk_ico2 from '../assets/imgs/blk_ico2.svg';
 
 
 import "./CompanyPage.css"
@@ -32,8 +33,7 @@ const ContactPage = (props) => {
 
 return (
   <div className="companyPage_maindiv mainDiv_contact">
-  <MainNavigation
-  />
+
     <Row className="companyPageRow">
       <Col className='companyPageCol'>
 
@@ -349,7 +349,7 @@ return (
     <Row className="footerRow">
       <Col className="footerMainCol">
       <Row className="footer_topRow">
-        <NavLink to="/content" className="navBar_link">
+        <NavLink to="/content" className="footer_navBar_link">
           <p className="footer_topRow_text">Stay in touch</p>
         </NavLink>
       </Row>
@@ -357,19 +357,19 @@ return (
           <Col md={3} className="footer_midCol">
             <ul className="footer_navList">
               <li className="footer_navListItem">
-                <NavLink to="/home" className="navBar_link">Home</NavLink>
+                <NavLink to="/home" className="footer_navBar_link">Home</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/team" className="navBar_link">Team</NavLink>
+                <NavLink to="/team" className="footer_navBar_link">Team</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/path" className="navBar_link">The Path</NavLink>
+                <NavLink to="/path" className="footer_navBar_link">The Path</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/socialMedia" className="navBar_link">Join the Joy</NavLink>
+                <NavLink to="/socialMedia" className="footer_navBar_link">Join the Joy</NavLink>
               </li>
               <li className="footer_navListItem">
-                <NavLink to="/retreat" className="navBar_link">Retreat</NavLink>
+                <NavLink to="/retreat" className="footer_navBar_link">Retreat</NavLink>
               </li>
             </ul>
           </Col>
@@ -391,7 +391,7 @@ return (
                 <FontAwesomeIcon icon={faLinkedin} className="footerIcon"/>
               </li>
               <li className="footer_socialListItem">
-                <FontAwesomeIcon icon={faEnvelope} className="footerIcon"/>
+                <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
               </li>
             </ul>
           </Col>

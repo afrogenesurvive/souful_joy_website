@@ -86,7 +86,7 @@ font-family: 'Sacramento', cursive; */
 }
 .navbar_item {
   border: 1px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 15%;
   margin: 0 .5rem;
 
 }
@@ -98,14 +98,35 @@ font-family: 'Sacramento', cursive; */
 .navBar_link {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
+  font-size: .9rem;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: .5rem;
+  font-weight: bolder;
+  margin: 0 .5rem;
+}
 
+.thisPage {
+  color: yellow;
+}
+.navBar_link:hover {
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
 }
 
 .navbar_brand_text {
   font-family: 'Sacramento', cursive;
   display: inline-block;
+  font-size: 1.9rem;
 }
 
+.xlink > p {
+  border: none;
+  font-size: 1.9rem;
+  color: #ffffff;
+  /* margin-top: .5rem; */
+}
 .navbar_divider {
   border: 1px solid #ffffff;
   padding: 0 !important;
@@ -127,6 +148,22 @@ font-family: 'Sacramento', cursive; */
   color: #ffffff;
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1150px) {
+  .navbarMaster {
+    padding: .5rem 1rem;
+  }
+  .navBar_link {
+    font-size: .7rem;
+  }
+  .navBar_link:hover {
+    font-size: .9rem;
+  }
+  .navbar_item {
+    padding: 0rem;
+    margin: 0;
+  }
+}
+
 
 @media only screen and (max-width: 420px) {
 
@@ -140,6 +177,8 @@ font-family: 'Sacramento', cursive; */
     /* height: 1.5rem; */
     margin: 0;
   }
-
+  .navBar_link {
+    border: none;
+  }
 
 }

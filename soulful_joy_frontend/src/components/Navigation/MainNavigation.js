@@ -10,11 +10,11 @@ import AuthContext from '../../context/auth-context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+// import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { faYoutube } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 import './MainNavigation.css';
 import Wht_ico from '../../assets/imgs/wht_ico.png';
@@ -26,8 +26,6 @@ const mainNavigation = (props) => (
   <AuthContext.Consumer>
     {context => {
 
-      let locationx = props.location.pathname;
-      console.log(locationx);
       return (
         <Navbar className="navbarMaster" variant="dark" expand="lg" fixed="top">
           <Navbar.Brand>
@@ -66,20 +64,17 @@ const mainNavigation = (props) => (
 
               <Nav.Link className="navbar_divider">
               </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="">
+              <Nav.Link className="navbar_item_social" href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebookSquare} className="navbar_socialIcon"/>
               </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="">
-                <FontAwesomeIcon icon={faTwitterSquare} className="navbar_socialIcon"/>
-              </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="">
+              <Nav.Link className="navbar_item_social" href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="navbar_socialIcon"/>
               </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="">
+              <Nav.Link className="navbar_item_social" href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} className="navbar_socialIcon"/>
               </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="">
-                <FontAwesomeIcon icon={faEnvelope} className="navbar_socialIcon"/>
+              <Nav.Link className="navbar_item_social" href="" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} className="navbar_socialIcon"/>
               </Nav.Link>
               <Nav.Link className="navbar_divider">
               </Nav.Link>

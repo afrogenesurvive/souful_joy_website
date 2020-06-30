@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Container from 'react-bootstrap/Container';
 import Carousel from 'react-bootstrap/Carousel';
-// import MainNavigation from '../components/Navigation/MainNavigation';
+import MainNavigation from '../components/Navigation/MainNavigation';
 import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
@@ -18,6 +18,7 @@ const HomePage = () => {
 return (
 
   <div className="homePage_maindiv">
+  <MainNavigation />
 
   <Row className="homePageCarouselRow">
 

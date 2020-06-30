@@ -10,7 +10,7 @@ import SocialMediaPage from './pages/SocialMediaPage';
 import RetreatPage from './pages/RetreatPage';
 import ShopPage from './pages/ShopPage';
 
-import MainNavigation from './components/Navigation/MainNavigation';
+// import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
 // import logo from './logo.svg';
 import './App.css';
@@ -30,7 +30,6 @@ class App extends Component {
   // }
 
   componentDidUpdate() {
-    console.log('y');
   }
   componentDidMount() {
   }
@@ -75,7 +74,9 @@ class App extends Component {
             value={{
             }}
           >
-          <MainNavigation />
+          {
+            // <MainNavigation />
+          }
             <main className="main-content">
               <Switch>
               <Route path="/welcome" render={(props) => <WelcomePage {...props}

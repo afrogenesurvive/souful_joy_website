@@ -222,7 +222,7 @@ font-family: 'Sacramento', cursive; */
 .content_section_bg_row {
   /* text-align: center; */
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8)
+  /* background-color: rgba(0, 0, 0, 0.8) */
 }
 .content_bg_img {
   /* margin: 9rem auto; */

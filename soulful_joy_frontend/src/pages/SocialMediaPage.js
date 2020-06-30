@@ -4,17 +4,17 @@ import Col from 'react-bootstrap/Col';
 // import Container from 'react-bootstrap/Container';
 // import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
-// import MainNavigation from '../components/Navigation/MainNavigation';
+import MainNavigation from '../components/Navigation/MainNavigation';
 // import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+// import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 // import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
@@ -26,9 +26,12 @@ import Wht_ico from '../assets/imgs/wht_ico.png';
 import "./CompanyPage.css"
 
 const SocialMediaPage = (props) => {
+  // let locationx = props.location.pathname;
+  // console.log(locationx);
 
 return (
   <div className="companyPage_maindiv mainDiv_socialMedia">
+  <MainNavigation />
 
     <Row className="companyPageRow">
       <Col className='companyPageCol'>
@@ -84,41 +87,45 @@ return (
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
+              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
                 <p className="content_section_grid_text">
                   facebook
                 </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                twitter
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                tiktok
-              </p>
-              </Col>
-            </Row>
-            <Row className="companyPage_section_row">
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                youtube
-              </p>
-              </Col>
-              <Col md={4} className="content_section_grid_cell">
-              <p className="content_section_grid_text">
-                linkedin
-              </p>
+                </a>
               </Col>
               <Col md={4} className="content_section_grid_cell">
 
               </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <p className="content_section_grid_text">
+                youtube
+              </p>
+              </a>
+              </Col>
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
+              <a href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
+              <p className="content_section_grid_text">
+                linkedin
+              </p>
+              </a>
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+
+              </Col>
+              <Col md={4} className="content_section_grid_cell">
+              <a href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
               <p className="content_section_grid_text">
                 Instagram
               </p>
+              </a>
+              </Col>
+            </Row>
+            <Row className="companyPage_section_row">
+              <Col md={4} className="content_section_grid_cell">
+
               </Col>
               <Col md={4} className="content_section_grid_cell">
 
@@ -460,25 +467,33 @@ return (
           <Col md={3} className="footer_midCol">
             <ul className="footer_socialList">
               <li className="footer_socialListItem">
+              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebookSquare} className="footerIcon"/>
+              </a>
               </li>
               <li className="footer_socialListItem">
-                <FontAwesomeIcon icon={faTwitterSquare} className="footerIcon"/>
-              </li>
-              <li className="footer_socialListItem">
+              <a href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="footerIcon"/>
+              </a>
               </li>
               <li className="footer_socialListItem">
+              <a href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} className="footerIcon"/>
+              </a>
               </li>
               <li className="footer_socialListItem">
+              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
+              </a>
               </li>
             </ul>
           </Col>
         </Row>
         <Row className="footer_copyrightRow">
-          <p className="footer_copyrightRow_text"> family@SoulfulJoy.com | Planet Earth | </p>
+        <a className="footer_copyrightRow_text" href="mailto:family@SoulfulJoy.com" target="_blank" rel="noopener noreferrer">
+          <p > family@SoulfulJoy.com | Planet Earth | </p>
+        </a>
+
         </Row>
       </Col>
     </Row>

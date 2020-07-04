@@ -29,12 +29,22 @@ const mainNavigation = (props) => (
       return (
         <Navbar className="navbarMaster" variant="dark" expand="lg" fixed="top">
           <Navbar.Brand>
-          <Image src={Wht_ico} className="navbarBrandLogo" fluid />
+
+          <NavLink to="/parallax">
+            <Image src={Wht_ico} className="navbarBrandLogo" fluid />
+          </NavLink>
 
             <NavLink to="/home" className="xlink">
               <p className="navbar_brand_text">
               Soulful Joy
               </p>
+              {
+              //   props.currentPage && (
+              //   <p className="currentPageTxt">
+              //   {props.currentPage}
+              //   </p>
+              // )
+            }
             </NavLink>
           </Navbar.Brand>
 
@@ -43,44 +53,71 @@ const mainNavigation = (props) => (
             <Nav className="ml-auto">
 
 
-                <NavLink to="/home" className="navBar_link">Home</NavLink>
+                {props.currentPage !== '/home' && (
+                  <NavLink to="/home" className="navBar_link">Home</NavLink>
+                )}
+                {props.currentPage === '/home' && (
+                  <NavLink to="/home" className="navBar_link_selected">Home</NavLink>
+                )}
 
+                {props.currentPage !== '/team' && (
+                  <NavLink to="/team" className="navBar_link">The Team</NavLink>
+                )}
+                {props.currentPage === '/team' && (
+                  <NavLink to="/team" className="navBar_link_selected">The Team</NavLink>
+                )}
 
-                <NavLink to="/team" className="navBar_link">The Team</NavLink>
+                {props.currentPage !== '/path' && (
+                  <NavLink to="/path" className="navBar_link">The Path</NavLink>
+                )}
+                {props.currentPage === '/path' && (
+                  <NavLink to="/path" className="navBar_link_selected">The Path</NavLink>
+                )}
 
+                {props.currentPage !== '/retreat' && (
+                  <NavLink to="/retreat" className="navBar_link">The Experience</NavLink>
+                )}
+                {props.currentPage === '/retreat' && (
+                  <NavLink to="/retreat" className="navBar_link_selected">The Experience</NavLink>
+                )}
 
-                <NavLink to="/path" className="navBar_link">The Path</NavLink>
+                {props.currentPage !== '/socialMedia' && (
+                  <NavLink to="/socialMedia" className="navBar_link">The Joy</NavLink>
+                )}
+                {props.currentPage === '/socialMedia' && (
+                  <NavLink to="/socialMedia" className="navBar_link_selected">The Joy</NavLink>
+                )}
 
+                {props.currentPage !== '/shop' && (
+                  <NavLink to="/shop" className="navBar_link">Shop</NavLink>
+                )}
+                {props.currentPage === '/shop' && (
+                  <NavLink to="/shop" className="navBar_link_selected">Shop</NavLink>
+                )}
 
-                <NavLink to="/retreat" className="navBar_link">The Experience</NavLink>
+                <Nav.Link className="navbar_divider">
+                </Nav.Link>
+                <Nav.Link className="navbar_item_social" href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faFacebookSquare} className="navbar_socialIcon"/>
+                </Nav.Link>
+                <Nav.Link className="navbar_item_social" href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faInstagram} className="navbar_socialIcon"/>
+                </Nav.Link>
+                <Nav.Link className="navbar_item_social" href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} className="navbar_socialIcon"/>
+                </Nav.Link>
+                <Nav.Link className="navbar_item_social" href="" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faYoutube} className="navbar_socialIcon"/>
+                </Nav.Link>
+                <Nav.Link className="navbar_divider">
+                </Nav.Link>
 
-
-                <NavLink to="/socialMedia" className="navBar_link">The Joy</NavLink>
-
-
-                <NavLink to="/shop" className="navBar_link">Shop</NavLink>
-
-
-
-              <Nav.Link className="navbar_divider">
-              </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faFacebookSquare} className="navbar_socialIcon"/>
-              </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} className="navbar_socialIcon"/>
-              </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} className="navbar_socialIcon"/>
-              </Nav.Link>
-              <Nav.Link className="navbar_item_social" href="" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faYoutube} className="navbar_socialIcon"/>
-              </Nav.Link>
-              <Nav.Link className="navbar_divider">
-              </Nav.Link>
-
-                <NavLink to="/contact" className="navBar_link">Contact</NavLink>
-
+                {props.currentPage !== '/contact' && (
+                  <NavLink to="/contact" className="navBar_link">Contact</NavLink>
+                )}
+                {props.currentPage === '/contact' && (
+                  <NavLink to="/contact" className="navBar_link_selected">Contact</NavLink>
+                )}
 
             </Nav>
           </Navbar.Collapse>

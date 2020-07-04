@@ -32,12 +32,15 @@ import "./CompanyPage.css"
 
 const RetreatPage = (props) => {
 
+  let location = props.location.pathname;
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
 
 return (
   <div className="companyPage_maindiv mainDiv_retreat">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
   {detailViewerOpen === true &&
      detailViewerData.page === 'retreat' && (

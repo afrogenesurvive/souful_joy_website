@@ -13,12 +13,14 @@ import bg3 from "../assets/imgs/Retreat_1.jpg";
 import bg4 from "../assets/imgs/Splash1.jpg";
 // import bg5 from "../assets/imgs/fullPage_bg_5.jpg";
 
-const HomePage = () => {
-
+const HomePage = (props) => {
+  let location = props.location.pathname;
 return (
 
   <div className="homePage_maindiv">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
   <Row className="homePageCarouselRow">
 

@@ -30,8 +30,8 @@ import "./CompanyPage.css"
 
 const TeamPage = (props) => {
 
-  let locationx = props.location.pathname;
-  console.log(locationx);
+  let location = props.location.pathname;
+  // console.log(location);
 
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
@@ -39,7 +39,9 @@ const TeamPage = (props) => {
 return (
 
   <div className="companyPage_maindiv mainDiv_team">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
   {detailViewerOpen === true &&
      detailViewerData.page === 'team' && (

@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import SocialMediaPage from './pages/SocialMediaPage';
 import RetreatPage from './pages/RetreatPage';
 import ShopPage from './pages/ShopPage';
+import ParallaxPage from './pages/ParallaxPage';
 
 // import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
@@ -21,6 +22,7 @@ class App extends Component {
     detailViewerOpen: false,
     detailViewerData: null,
     contactForm: false,
+    scrollPos: 0,
   };
 
   static contextType = AuthContext;
@@ -32,9 +34,12 @@ class App extends Component {
   componentDidUpdate() {
   }
   componentDidMount() {
+    // console.log('boop',window.scrollY);
+     window.addEventListener('scroll', this.listenToScroll);
   }
 
   componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenToScroll)
   }
 
 
@@ -65,6 +70,21 @@ class App extends Component {
   cancelContactForm = () => {
     this.setState({contactForm: false})
   }
+  listenToScroll = () => {
+
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = winScroll / height;
+    // console.log(`
+    //     window.scrollY: ${window.scrollY}
+    //     document.body.scrollTop: ${document.body.scrollTop},
+    //     document.documentElement.scrollTop: ${document.documentElement.scrollTop},
+    //     document.documentElement.scrollHeight: ${document.documentElement.scrollHeight},
+    //     document.documentElement.clientHeight: ${document.documentElement.clientHeight}
+    //     scrolled: ${scrolled}
+    //   `);
+    this.setState({scrollPos: window.scrollY})
+  }
 // <Route path="/home" component={MainNavigation} />
   render() {
     return (
@@ -77,7 +97,7 @@ class App extends Component {
           {
             // <MainNavigation />
           }
-            <main className="main-content">
+            <main className="main-content" onScroll={this.onScroll}>
               <Switch>
               <Route path="/welcome" render={(props) => <WelcomePage {...props}
                 closeSplash={this.closeSplash}
@@ -102,7 +122,13 @@ class App extends Component {
                 detailViewerOpen={this.state.detailViewerOpen}
                 detailViewerData={this.state.detailViewerData}
               />}/>
-              <Route path="/shop" component={ShopPage} />
+              <Route path="/shop" render={(props) => <ShopPage {...props}
+
+              />}/>
+              <Route path="/parallax" render={(props) => <ParallaxPage {...props}
+                scrollPos={this.state.scrollPos}
+
+              />}/>
               <Route path="/contact" render={(props) => <ContactPage {...props}
                 contactForm={this.state.contactForm}
                 openContactForm={this.openContactForm}

@@ -30,10 +30,13 @@ import Wht_ico from '../assets/imgs/wht_ico.png';
 import "./CompanyPage.css"
 
 const ContactPage = (props) => {
+  let location = props.location.pathname;
 
 return (
   <div className="companyPage_maindiv mainDiv_contact">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
     <Row className="companyPageRow">
       <Col className='companyPageCol'>

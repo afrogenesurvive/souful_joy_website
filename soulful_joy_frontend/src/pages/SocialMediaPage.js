@@ -26,12 +26,14 @@ import Wht_ico from '../assets/imgs/wht_ico.png';
 import "./CompanyPage.css"
 
 const SocialMediaPage = (props) => {
-  // let locationx = props.location.pathname;
-  // console.log(locationx);
+  let location = props.location.pathname;
+  // console.log(location);
 
 return (
   <div className="companyPage_maindiv mainDiv_socialMedia">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
     <Row className="companyPageRow">
       <Col className='companyPageCol'>

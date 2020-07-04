@@ -27,12 +27,15 @@ import "./CompanyPage.css"
 
 const PathPage = (props) => {
 
+  let location = props.location.pathname;
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
 
 return (
   <div className="companyPage_maindiv mainDiv_path">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
   {detailViewerOpen === true &&
     detailViewerData.page === 'path' && (

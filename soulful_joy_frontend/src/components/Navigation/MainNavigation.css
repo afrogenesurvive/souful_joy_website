@@ -105,6 +105,19 @@ font-family: 'Sacramento', cursive; */
   font-weight: bolder;
   margin: 0 .5rem;
 }
+.navBar_link_selected {
+  color: rgba(255, 205, 178, 0.85);
+  font-size: 1rem;
+  padding: .5rem;
+  font-weight: bolder;
+  margin: 0 .5rem;
+}
+.navBar_link_selected:hover {
+  color: #ffffff !important;
+}
+.currentPageTxt {
+  font-size: 3rem !important;
+}
 
 .thisPage {
   color: yellow;

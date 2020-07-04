@@ -47,6 +47,7 @@ font-family: 'Sacramento', cursive; */
 .companyPage_maindiv {
   /* border: 1px solid black; */
   /* height: 100vh; */
+
   width: 100vw;
   /* z-index: 3; */
 }
@@ -58,12 +59,14 @@ font-family: 'Sacramento', cursive; */
   margin: 0;
 }
 
+
 .companyPageCol {
   /* border: 1px solid blue; */
   /* margin: 0 auto; */
   /* max-width: 60%; */
   /* padding: 45vh 0; */
-  padding: 7rem 0 0 0;
+  /* padding: 7rem 0 0 0; */
+  /* padding: 20vh 0 0 0; */
   text-align: center;
 }
 
@@ -300,6 +303,8 @@ font-family: 'Sacramento', cursive; */
 .footer_navBar_link {
   color: rgba(5, 138, 102, 0.85);
 }
+
+
 
 @media only screen and (max-width: 420px) {
 

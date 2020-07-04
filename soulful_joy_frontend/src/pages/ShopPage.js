@@ -26,10 +26,12 @@ import "./CompanyPage.css"
 
 const ShopPage = (props) => {
 
-  // console.log('x',props.location);
+  let location = props.location.pathname;
 return (
   <div className="companyPage_maindiv mainDiv_shop">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
 
     <Row className="companyPageRow">
       <Col className='companyPageCol'>

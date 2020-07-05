@@ -37,6 +37,11 @@
   }
 }
 
+.main-content {
+  /* height: 100%; */
+  /* overflow: hidden; */
+}
+
 @media only screen and (max-width: 420px) {
   .main-content {
     width: 100vw;

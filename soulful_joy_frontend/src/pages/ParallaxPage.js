@@ -27,8 +27,36 @@ import "./ParallaxPage.css"
 const ParallaxPage = (props) => {
   // console.log('boop',window.scrollY);
   // console.log('x',props.location);
-  if (props.scrollPos > 175) {
-    console.log('Erika!!');
+  console.log(`
+      x: ${props.mouseWheelDeltaY},
+      y: ${props.overscrollTop},
+      z: ${props.overscrollDir},
+      mobile: ${props.mobile}
+    `);
+  let topMes = (props.overscrollTop/.7)+'em';
+
+  if (props.mobile === false) {
+    let maxTop = -230/.7+'rem';
+    if (props.overscrollTop <= -230) {
+      console.log('lower limit');
+      topMes = maxTop;
+    }
+  }
+  if (props.mobile === true) {
+    let maxTop = -200/.7+'rem';
+    if (props.overscrollTop <= -200) {
+      console.log('lower limit');
+      topMes = maxTop;
+    }
+  }
+
+
+  if (props.overscrollTop >= 0.5) {
+    console.log('upper limit');
+    topMes = .5+'rem';
+  }
+  const style = {
+    top: topMes,
   }
 return (
   <div className="mainDiv_parallax">
@@ -37,10 +65,9 @@ return (
     <Row className="parallaxRow1">
     </Row>
 
-    <Row className="parallaxFooterRow">
-    </Row>
 
-    <Row className="parallaxRow2">
+    <Row style={style} className="parallaxRow2">
+
     </Row>
 
   </div>

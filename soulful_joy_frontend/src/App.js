@@ -23,6 +23,10 @@ class App extends Component {
     detailViewerData: null,
     contactForm: false,
     scrollPos: 0,
+    mouseWheelDeltaY: 0,
+    overscrollTop: 0.5,
+    overscrollDir: null,
+    mobile: false,
   };
 
   static contextType = AuthContext;
@@ -34,8 +38,14 @@ class App extends Component {
   componentDidUpdate() {
   }
   componentDidMount() {
-    // console.log('boop',window.scrollY);
      window.addEventListener('scroll', this.listenToScroll);
+     // window.addEventListener('mousemove', this.mousemove);
+     // window.addEventListener('mouseup', this.mousemove);
+     // window.addEventListener('mousedown', this.mousemove);
+     window.addEventListener('wheel', this.mousemove);
+     if (window.innerWidth <= 420) {
+       this.setState({mobile: true})
+     }
   }
 
   componentWillUnmount() {
@@ -71,7 +81,6 @@ class App extends Component {
     this.setState({contactForm: false})
   }
   listenToScroll = () => {
-
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = winScroll / height;
@@ -84,7 +93,49 @@ class App extends Component {
     //     scrolled: ${scrolled}
     //   `);
     this.setState({scrollPos: window.scrollY})
+    // console.log('x',window.scrollY);
   }
+  mousemove = (e) => {
+    // console.log("deltaY",e.deltaY);
+    // console.log("clientY",e.clientY);
+    // console.log("offsetY",e.offsetY);
+    let overscrollTop = this.state.overscrollTop;
+    let overscrollDir = null;
+    if ( e.deltaY > 0 ) {
+      overscrollDir = 'down'
+    }
+    if ( e.deltaY < 0 ) {
+      overscrollDir = 'up'
+    }
+
+
+    if (overscrollDir === 'down' && overscrollTop >= -230 && this.state.mobile === false) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop-1,
+        overscrollDir: overscrollDir
+      })
+    }
+    if (overscrollDir === 'down' && overscrollTop >= -200 && this.state.mobile === true) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop-1,
+        overscrollDir: overscrollDir
+      })
+    }
+
+
+
+    if (overscrollDir === 'up' && overscrollTop <= 1.5) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop+1,
+        overscrollDir: overscrollDir
+      })
+    }
+
+  }
+
 // <Route path="/home" component={MainNavigation} />
   render() {
     return (
@@ -97,7 +148,7 @@ class App extends Component {
           {
             // <MainNavigation />
           }
-            <main className="main-content" onScroll={this.onScroll}>
+            <main className="main-content">
               <Switch>
               <Route path="/welcome" render={(props) => <WelcomePage {...props}
                 closeSplash={this.closeSplash}
@@ -127,7 +178,10 @@ class App extends Component {
               />}/>
               <Route path="/parallax" render={(props) => <ParallaxPage {...props}
                 scrollPos={this.state.scrollPos}
-
+                mouseWheelDeltaY={this.state.mouseWheelDeltaY}
+                overscrollTop={this.state.overscrollTop}
+                overscrollDir={this.state.overscrollDir}
+                mobile={this.state.mobile}
               />}/>
               <Route path="/contact" render={(props) => <ContactPage {...props}
                 contactForm={this.state.contactForm}

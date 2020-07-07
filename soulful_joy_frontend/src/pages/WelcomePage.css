@@ -15,7 +15,7 @@ font-family: 'Sacramento', cursive; */
   background-image: url('../assets/imgs/Splash1.jpg');
   /* background-repeat: no-repeat; */
   background-size: cover;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 
 .welcomePageRow {
@@ -52,20 +52,28 @@ font-family: 'Sacramento', cursive; */
 .welcomePageHeading {
   color: #ffffff;
   font-family: 'Sacramento', cursive;
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 .welcomePageSubHeading {
   color: #ffffff;
+  /* font-weight: bold; */
+  font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
 
 .welcomePageEnterBtn {
   margin: 1.5rem auto;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  border-radius: 25px;
+  border: 3px solid #ffffff;
+  padding: .1rem 3rem;
 }
 
 .SplashMainLogo {
-  height: 13rem;
-  margin: 3rem auto;
+  height: 35vh;
+  /* height: 13rem; */
+  /* margin: 3rem auto; */
 }
 
 

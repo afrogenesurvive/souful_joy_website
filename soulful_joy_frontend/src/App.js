@@ -24,9 +24,10 @@ class App extends Component {
     contactForm: false,
     scrollPos: 0,
     mouseWheelDeltaY: 0,
-    overscrollTop: 0.5,
+    overscrollTop: -90,
     overscrollDir: null,
     mobile: false,
+    height: "",
   };
 
   static contextType = AuthContext;
@@ -45,6 +46,19 @@ class App extends Component {
      window.addEventListener('wheel', this.mousemove);
      if (window.innerWidth <= 420) {
        this.setState({mobile: true})
+     }
+     this.setState({height: window.innerHeight})
+     if (window.innerHeight > 780 && window.innerHeight < 960) {
+       this.setState({
+         height: 'med',
+         overscrollTop: -75
+       })
+     }
+     if (window.innerHeight > 960) {
+       this.setState({
+         height: 'tall',
+         overscrollTop: -90
+       })
      }
   }
 
@@ -92,8 +106,7 @@ class App extends Component {
     //     document.documentElement.clientHeight: ${document.documentElement.clientHeight}
     //     scrolled: ${scrolled}
     //   `);
-    this.setState({scrollPos: window.scrollY})
-    // console.log('x',window.scrollY);
+    this.setState({scrollPos: window.scrollY});
   }
   mousemove = (e) => {
     // console.log("deltaY",e.deltaY);
@@ -109,14 +122,14 @@ class App extends Component {
     }
 
 
-    if (overscrollDir === 'down' && overscrollTop >= -230 && this.state.mobile === false) {
+    if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -370) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && overscrollTop >= -200 && this.state.mobile === true) {
+    if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -450) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
@@ -126,7 +139,14 @@ class App extends Component {
 
 
 
-    if (overscrollDir === 'up' && overscrollTop <= 1.5) {
+    if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -75) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop+1,
+        overscrollDir: overscrollDir
+      })
+    }
+    if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -90) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,
@@ -182,6 +202,7 @@ class App extends Component {
                 overscrollTop={this.state.overscrollTop}
                 overscrollDir={this.state.overscrollDir}
                 mobile={this.state.mobile}
+                viewHeight={this.state.height}
               />}/>
               <Route path="/contact" render={(props) => <ContactPage {...props}
                 contactForm={this.state.contactForm}

@@ -7,14 +7,16 @@ font-family: 'Sacramento', cursive; */
   display: none;
 }
 .mainDiv_team {
-  background-image: url("../assets/imgs/Team_Portrait.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../assets/imgs/palm_bg.png");
+  /* background-image: url("../assets/imgs/Team_Portrait.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   /* background-size: contain; */
 }
 .mainDiv_path {
   /* background-image: url("../assets/imgs/Process_1.jpg"); */
-  background-image: url("../assets/imgs/Process_Portrait2.jpg");
+  /* background-image: url("../assets/imgs/Process_Portrait2.jpg"); */
+  background-image: url("../assets/imgs/palm_bg.png");
   /* background-size: contain; */
   background-position: center;
   /* background-size: stretch; */
@@ -23,24 +25,28 @@ font-family: 'Sacramento', cursive; */
   /* padding-bottom: 1rem; */
 }
 .mainDiv_retreat {
-  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+  /* background-image: url("../assets/imgs/Retreat_Portrait.jpg"); */
+  background-image: url("../assets/imgs/palm_bg.png");
   /* background-size: contain; */
   background-position: center;
   background-size: cover
 }
 .mainDiv_shop {
-  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+  /* background-image: url("../assets/imgs/Retreat_Portrait.jpg"); */
+  background-image: url("../assets/imgs/palm_bg.png");
   /* background-size: contain; */
   background-position: center;
   background-size: cover
 }
 .mainDiv_socialMedia {
-  background-image: url("../assets/imgs/Splash_Portrait.jpg");
+  /* background-image: url("../assets/imgs/Splash_Portrait.jpg"); */
+  background-image: url("../assets/imgs/palm_bg.png");
   /* background-size: contain; */
   background-size: cover
 }
 .mainDiv_contact {
-  background-image: url("../assets/imgs/Retreat_1.jpg");
+  /* background-image: url("../assets/imgs/Retreat_1.jpg"); */
+  background-image: url("../assets/imgs/palm_bg.png");
   background-size: cover;
   /* background-size: contain; */
 }

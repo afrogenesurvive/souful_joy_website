@@ -46,28 +46,33 @@ const ParallaxPage = (props) => {
   // let topMes = props.overscrollTop/.5+'em';
   // let topMes = props.overscrollTop/.6+'em';
   // let topMes = props.overscrollTop/.65+'em';
-  let topMes = props.overscrollTop/.7+'em';
+  let topMes = 0;
+  if (props.mobile !== true) {
+    topMes = props.overscrollTop/.7+'em';
+  }
+  if (props.mobile === true) {
+    topMes = props.overscrollTop/1.7+'em';
+  }
   // let topMes = props.overscrollTop/.75+'em';
 
   if (props.mobile === false && props.viewHeight === 'med') {
-    if (props.overscrollTop <= -136) {
+    if (props.overscrollTop <= -133) {
       console.log('lower limit');
-      topMes = -136/.7+'em';
+      topMes = -133/.7+'em';
     }
   }
   if (props.mobile === false && props.viewHeight === 'tall') {
-    if (props.overscrollTop <= -165) {
+    if (props.overscrollTop <= -162) {
       console.log('lower limit');
-      topMes = -165/.7+'em';
+      topMes = -162/.7+'em';
     }
   }
-  // if (props.mobile === true) {
-  //   let maxTop = -200/.4+'rem';
-  //   if (props.overscrollTop <= -200) {z
-  //     console.log('lower limit');
-  //     topMes = maxTop;
-  //   }
-  // }
+  if (props.mobile === true) {
+    if (props.overscrollTop <= -340) {
+      console.log('lower limit mobile');
+      topMes = -340/1.7+'em';
+    }
+  }
 
   if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
     console.log('upper limit');
@@ -76,6 +81,12 @@ const ParallaxPage = (props) => {
   if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
     console.log('upper limit');
     topMes = -30/.7+'em';
+  }
+  if (props.mobile === true) {
+    if (props.overscrollTop >= -65) {
+      console.log('upper limit mobile');
+      topMes = -65/1.7+'em';
+    }
   }
 
 

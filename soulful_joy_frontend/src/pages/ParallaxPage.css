@@ -156,5 +156,12 @@ body {
   .parallaxSubRow2_headRow {
     margin-bottom: .5rem;
   }
+  .parallaxSubRow2_heading {
+    font-size: 3.5rem;
+  }
+  .parallax_gridCol {
+    width: 33%;
+    height: 17vh;
+  }
 
 }

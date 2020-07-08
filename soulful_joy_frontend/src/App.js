@@ -39,15 +39,14 @@ class App extends Component {
   componentDidUpdate() {
   }
   componentDidMount() {
+    console.log(window.innerHeight);
      window.addEventListener('scroll', this.listenToScroll);
      // window.addEventListener('mousemove', this.mousemove);
      // window.addEventListener('mouseup', this.mousemove);
      // window.addEventListener('mousedown', this.mousemove);
      window.addEventListener('wheel', this.mousemove);
-     if (window.innerWidth <= 420) {
-       this.setState({mobile: true})
-     }
-     this.setState({height: window.innerHeight})
+
+     this.setState({height: window.innerHeight});
      if (window.innerHeight > 780 && window.innerHeight < 960) {
        this.setState({
          height: 'med',
@@ -58,6 +57,13 @@ class App extends Component {
        this.setState({
          height: 'tall',
          overscrollTop: -30
+       })
+     }
+     if (window.innerWidth <= 420) {
+       this.setState({
+         mobile: true,
+         height: 'mobile',
+         overscrollTop: -65
        })
      }
   }
@@ -122,14 +128,21 @@ class App extends Component {
     }
 
 
-    if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -136) {
+    if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -133) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -165) {
+    if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -162) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop-1,
+        overscrollDir: overscrollDir
+      })
+    }
+    if (overscrollDir === 'down' && this.state.mobile === true && overscrollTop >= -340) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
@@ -146,6 +159,13 @@ class App extends Component {
       })
     }
     if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -30) {
+      this.setState({
+        mouseWheelDeltaY: e.deltaY,
+        overscrollTop: overscrollTop+1,
+        overscrollDir: overscrollDir
+      })
+    }
+    if (overscrollDir === 'up' && this.state.mobile === true && overscrollTop <= -65) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,

@@ -2,7 +2,9 @@ body {
   /* overflow: hidden; */
   /* height: 125vh !important; */
 }
-
+.mobile {
+  display: none;
+}
 .mainDiv_parallax {
   height: 100vh;
   background-image: url("../assets/imgs/Retreat_Portrait.jpg");
@@ -19,12 +21,26 @@ body {
 }
 
 .parallaxFooterRow {
-  border: 4px solid blue;
-  height: 13%;
+  /* border: 4px solid blue; */
+  /* background-color:  rgba(198, 184, 169, 0.95); */
+  /* background-color:  rgba(241, 91, 181, 0.95); */
+  background-color:  rgba(249, 176, 182, 0.95);
+  height: fit-content;
+  /* height: 13%; */
   width: 100%;
   margin: 0rem;
+  padding-top: 1rem;
   position: absolute;
   bottom: 25vh;
+}
+.footer_navBar_link {
+  color: #ffffff;
+}
+.footerIcon {
+  color: #ffffff;
+}
+.footer_copyrightRow_text {
+  color: #ffffff;
 }
 
 .parallaxRow2 {
@@ -33,6 +49,7 @@ body {
   border-bottom: 5px solid rgba(198, 184, 169, 0.95);
   position: relative;
   /* background-color: rgba(241, 91, 181, 0.85); */
+  /* background-color: rgba(5, 138, 102, 0.85); */
   background-image: url("../assets/imgs/Retreat_Portrait.jpg");
   background-size: cover;
   /* position: absolute; */
@@ -40,7 +57,7 @@ body {
   /* top: 0; */
   margin: 7vh 0 0 0;
   /* height: 175%; */
-  height: 250vh;
+  height: 300vh;
   width: 100vw;
 }
 
@@ -52,7 +69,7 @@ body {
   /* border: 1px solid pink; */
   padding: 1.5rem 1.5rem 1.5rem 5rem;
   border-radius: 25px;
-  background-color: rgba(198, 184, 169, 0.95);
+  background-color: rgba(198, 184, 169, 0.9);
   margin: 0 7rem;
 }
 .topCol {
@@ -69,4 +86,75 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.parallaxSubRow2 {
+ /* border: 1px solid yellow; */
+ background-color: rgba(198, 184, 169, 0.95);
+ width: 85vw;
+ height: fit-content;
+ margin:  5rem auto;
+ padding: 3rem;
+ border-radius: 20px;
+}
+.parallaxSubRow2_headRow {
+ /* border: 1px solid red; */
+ height: fit-content;
+ width: 100%;
+ margin: 0rem auto 3rem;
+ text-align: center;
+}
+.parallaxSubRow2_heading {
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+}
+.parallaxSubRow2_gridRow {
+ /* border: 1px solid yellow; */
+ width: 100%;
+ height: fit-content;
+ margin: 0 auto;
+}
+.parallax_gridCol {
+ /* border: 1px solid purple; */
+ height: 13vh;
+ /* height: fit-content; */
+ text-align: center;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+
+  .mobile {
+    display: inline-block;
+  }
+  .desktop {
+    display: none;
+  }
+  .parallaxSubRow1 {
+    margin: 0 7vw;
+    padding: 0 .5rem;
+  }
+  .topHeading {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: .3rem;
+  }
+  .topSubtitle {
+    font-size: .9rem;
+    text-align: center;
+  }
+  .ParallaxPage_HeadLogo {
+    height: 7.5rem;
+    margin: 0 5.5rem;
+  }
+  .parallaxSubRow2 {
+    padding: 1rem;
+  }
+  .parallaxSubRow2_headRow {
+    margin-bottom: .5rem;
+  }
+
 }

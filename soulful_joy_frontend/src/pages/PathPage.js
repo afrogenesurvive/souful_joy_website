@@ -106,7 +106,7 @@ return (
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"inspire"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"inspire"})}>
                 <p className="content_section_grid_text is">
                   Inspire
                 </p>
@@ -118,7 +118,7 @@ return (
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"invigorate"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"invigorate"})}>
               <p className="content_section_grid_text is">
                 Invigorate
               </p>
@@ -128,7 +128,7 @@ return (
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"immerse"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"immerse"})}>
               <p className="content_section_grid_text is">
                 Immersed
               </p>
@@ -137,7 +137,7 @@ return (
             </Row>
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"improve"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"improve"})}>
               <p className="content_section_grid_text is">
                 Improved
               </p>
@@ -147,7 +147,7 @@ return (
 
               </Col>
               <Col md={4} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"incorporate"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"incorporate"})}>
               <p className="content_section_grid_text is">
                 Incorporate
               </p>
@@ -201,7 +201,7 @@ return (
 
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"inspire"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"inspire"})}>
               <p className="content_section_grid_text is">
                 Inspire
               </p>
@@ -211,7 +211,7 @@ return (
             </Row>
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"invigorate"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"invigorate"})}>
               <p className="content_section_grid_text is">
                 Invigorate
               </p>
@@ -219,7 +219,7 @@ return (
 
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"immerse"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"immerse"})}>
               <p className="content_section_grid_text is">
                 Immersed
               </p>
@@ -229,14 +229,14 @@ return (
 
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"imporve"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"imporve"})}>
               <p className="content_section_grid_text is">
                 Improved
               </p>
               </Button>
               </Col>
               <Col sm={6} className="content_section_grid_cell">
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'path', data:"incorporate"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"incorporate"})}>
               <p className="content_section_grid_text is">
                 Incorporate
               </p>

@@ -2,17 +2,24 @@
 /* font-family: 'Quicksand', sans-serif;
 font-family: 'Sacramento', cursive; */
 
+.detailViewer_blackTop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0,0,0,.85);
+}
 
 .detailViewContainer {
-  border: 1.5px solid rgba(198, 184, 169, 0.85);
-  position: fixed;
-  top: 7rem;
-  left: 3.5rem;
-  height: 80vh;
-  width: 90vw;
+  /* border: 1.5px solid rgba(198, 184, 169, 0.85); */
+  /* position: fixed; */
+  /* top: 7rem; */
+  /* left: 3.5rem; */
+  height: 75vh;
+  width: 85vh;
   /* height: 100vh;
   width: 100vw; */
-  z-index: 10;
+  /* z-index: 10; */
   /* background-color: rgba(0, 0, 0, 0.9); */
   background-color: rgba(5, 138, 102, 0.85);
   /* background-color: rgba(198, 184, 169, 0.85); */
@@ -20,8 +27,8 @@ font-family: 'Sacramento', cursive; */
   /* background-color: rgba(255, 205, 178, 0.85); */
   /* background-color: rgba(13, 136, 111, 0.85); */
   padding: 1rem;
-  /* margin: 4.5rem auto; */
-  border-radius: 5px;
+  margin: 19vh auto;
+  border-radius: 25%;
 }
 
 .detailViewer_topRow {

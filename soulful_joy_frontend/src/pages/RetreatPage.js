@@ -348,7 +348,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwayera"})}>
                 <p className="cell_image_caption">
                   Kwayera
                 </p>
@@ -356,7 +356,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwayera"})}>
                   <p className="cell_image_caption">
                     Kwayera
                   </p>
@@ -365,7 +365,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwayera"})}>
                 <p className="cell_image_caption">
                   Kwayera
                 </p>
@@ -375,7 +375,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"khadijah"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"khadijah"})}>
                   <p className="cell_image_caption">
                     Khadijah
                   </p>
@@ -383,7 +383,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwayera"})}>
                 <p className="cell_image_caption">
                   Kwayera
                 </p>
@@ -391,7 +391,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"ade"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"ade"})}>
                   <p className="cell_image_caption">
                     Ade
                   </p>
@@ -401,7 +401,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwasa"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwasa"})}>
                   <p className="cell_image_caption">
                     Kwasa
                   </p>
@@ -409,7 +409,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"kwayera"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"kwayera"})}>
                 <p className="cell_image_caption">
                   Kwayera
                 </p>
@@ -417,7 +417,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"perdella"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"perdella"})}>
                   <p className="cell_image_caption">
                     Perdella
                   </p>
@@ -698,7 +698,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_a"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_a"})}>
                 <p className="cell_image_caption">
                   facilitator_a
                 </p>
@@ -708,7 +708,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_b"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_b"})}>
                   <p className="cell_image_caption">
                     facilitator_b
                   </p>
@@ -716,7 +716,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_c"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_c"})}>
                   <p className="cell_image_caption">
                     facilitator_c
                   </p>
@@ -727,7 +727,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_d"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_d"})}>
                 <p className="cell_image_caption">
                   facilitator_d
                 </p>
@@ -735,7 +735,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_e"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_e"})}>
                 <p className="cell_image_caption">
                   facilitator_e
                 </p>
@@ -756,7 +756,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_a"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_a"})}>
                 <p className="cell_image_caption">
                   facilitator_a
                 </p>
@@ -766,7 +766,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_b"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_b"})}>
                   <p className="cell_image_caption">
                     facilitator_b
                   </p>
@@ -774,7 +774,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={Wht_ico} className="facilitator_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_c"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_c"})}>
                   <p className="cell_image_caption">
                     facilitator_c
                   </p>
@@ -785,7 +785,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_d"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_d"})}>
                 <p className="cell_image_caption">
                   facilitator_d
                 </p>
@@ -793,7 +793,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <Image src={Wht_ico} className="facilitator_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'retreat', data:"facilitator_e"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"facilitator_e"})}>
                 <p className="cell_image_caption">
                   facilitator_e
                 </p>

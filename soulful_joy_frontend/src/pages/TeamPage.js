@@ -97,7 +97,7 @@ return (
         //   <p className="content_section_grid_text">
         //   3.c: Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
         // </p>
-        // <Button variant="outline-warning" onClick={props.openDetailViwer.bind(this, "...it's free real estate...")}>more</Button>{' '}
+        // <Button variant="outline-warning" onClick={props.openDetailViewer.bind(this, "...it's free real estate...")}>more</Button>{' '}
         }
 
         <Row className="companyPageSubRow2 desktop">
@@ -169,7 +169,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"kwayera"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"kwayera"})}>
                   <p className="cell_image_caption">
                     Kwayera
                   </p>
@@ -183,7 +183,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"khadijah"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"khadijah"})}>
                   <p className="cell_image_caption">
                     Khadijah
                   </p>
@@ -194,7 +194,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"ade"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"ade"})}>
                   <p className="cell_image_caption">
                     Ade
                   </p>
@@ -204,7 +204,7 @@ return (
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"kwasa"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"kwasa"})}>
                   <p className="cell_image_caption">
                     Kwasa
                   </p>
@@ -215,7 +215,7 @@ return (
               </Col>
               <Col md={4} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"perdella"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"perdella"})}>
                   <p className="cell_image_caption">
                     Perdella
                   </p>
@@ -355,7 +355,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={12} className="content_section_grid_cell splinterCell">
               <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"kwayera"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"kwayera"})}>
                 <p className="cell_image_caption">
                   Kwayera
                 </p>
@@ -365,7 +365,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"khadijah"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"khadijah"})}>
                   <p className="cell_image_caption">
                     Khadijah
                   </p>
@@ -373,7 +373,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
                 <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"ade"})}>
+                <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"ade"})}>
                   <p className="cell_image_caption">
                     Ade
                   </p>
@@ -384,7 +384,7 @@ return (
             <Row className="companyPage_section_row">
               <Col sm={6} className="content_section_grid_cell">
               <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"kwasa"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"kwasa"})}>
                 <p className="cell_image_caption">
                   Kwasa
                 </p>
@@ -392,7 +392,7 @@ return (
               </Col>
               <Col sm={6} className="content_section_grid_cell">
               <Image src={TeamImage1} className="content_section_grid_cell_img" fluid />
-              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViwer.bind(this, {page: 'team', data:"perdella"})}>
+              <Button variant="outline-light" className="cell_team_btn" onClick={props.openDetailViewer.bind(this, {page: 'team', data:"perdella"})}>
                 <p className="cell_image_caption">
                   Perdella
                 </p>

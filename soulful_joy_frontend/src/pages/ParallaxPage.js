@@ -2,11 +2,12 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Container from 'react-bootstrap/Container';
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
 // import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
+import DetailViewer from '../components/DetailViewer/DetailViewer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { library } from '@fortawesome/fontawesome-svg-core';
@@ -25,8 +26,11 @@ import Wht_ico from '../assets/imgs/wht_ico.png';
 import "./ParallaxPage.css"
 
 const ParallaxPage = (props) => {
-  // console.log('boop',window.scrollY);
-  // console.log('x',props.location);
+
+  let location = props.location.pathname;
+  let detailViewerOpen = props.detailViewerOpen;
+  let detailViewerData = props.detailViewerData;
+
   console.log(`
       x: ${props.mouseWheelDeltaY},
       y: ${props.overscrollTop},
@@ -34,18 +38,27 @@ const ParallaxPage = (props) => {
       mobile: ${props.mobile},
       height: ${props.viewHeight}
     `);
-  let topMes = props.overscrollTop*.45+'rem';
+  // let topMes = props.overscrollTop/.3+'em';
+  // let topMes = props.overscrollTop/.35+'em';
+  // let topMes = props.overscrollTop/.45+'em';
+  // let topMes = props.overscrollTop/.4+'em';
+  // let topMes = props.overscrollTop/.55+'em';
+  // let topMes = props.overscrollTop/.5+'em';
+  // let topMes = props.overscrollTop/.6+'em';
+  // let topMes = props.overscrollTop/.65+'em';
+  let topMes = props.overscrollTop/.7+'em';
+  // let topMes = props.overscrollTop/.75+'em';
 
   if (props.mobile === false && props.viewHeight === 'med') {
-    if (props.overscrollTop <= -370) {
+    if (props.overscrollTop <= -136) {
       console.log('lower limit');
-      topMes = -370*.45+'rem';
+      topMes = -136/.7+'em';
     }
   }
   if (props.mobile === false && props.viewHeight === 'tall') {
-    if (props.overscrollTop <= -450) {
+    if (props.overscrollTop <= -165) {
       console.log('lower limit');
-      topMes = -450*.45+'rem';
+      topMes = -165/.7+'em';
     }
   }
   // if (props.mobile === true) {
@@ -56,13 +69,13 @@ const ParallaxPage = (props) => {
   //   }
   // }
 
-  if (props.overscrollTop >= -75 && props.viewHeight === 'med') {
+  if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
     console.log('upper limit');
-    topMes = -75*.45+'rem';
+    topMes = -26/.7+'em';
   }
-  if (props.overscrollTop >= -90 && props.viewHeight === 'tall') {
+  if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
     console.log('upper limit');
-    topMes = -90*.45+'rem';
+    topMes = -30/.7+'em';
   }
 
 
@@ -71,13 +84,23 @@ const ParallaxPage = (props) => {
   }
 return (
   <div className="mainDiv_parallax">
-  <MainNavigation />
+  <MainNavigation
+    currentPage={location}
+  />
+
+  {detailViewerOpen === true &&
+     detailViewerData.page === 'parallax' && (
+    <DetailViewer
+      data={detailViewerData}
+      closeDetailViewer={props.closeDetailViewer}
+    />
+  )}
 
     <Row className="parallaxRow1">
       <Col className="parallaxCol1">
-        <Row className="parallaxSubRow1">
+        <Row className="parallaxSubRow1 desktop">
           <Col md={9} className="topCol">
-            <Row>
+            <Row className>
               <h1 className="topHeading">
                 The Path
               </h1>
@@ -89,17 +112,27 @@ return (
             </Row>
           </Col>
           <Col md={3} className="topCol2">
-            <Image src={Wht_ico} className="CompanyPage_HeadLogo" fluid />
+            <Image src={Wht_ico} className="ParallaxPage_HeadLogo" fluid />
+          </Col>
+        </Row>
+
+        <Row className="parallaxSubRow1 mobile">
+          <Col className="topCol">
+            <Image src={Wht_ico} className="ParallaxPage_HeadLogo" fluid />
+
+              <h1 className="topHeading">
+                The Path
+              </h1>
+
+              <p className="topSubtitle">
+                We developed a 5 point system focused on
+              </p>
+
           </Col>
         </Row>
 
         <Row className="parallaxFooterRow">
           <Col className="footerMainCol">
-          <Row className="footer_topRow">
-            <NavLink to="/content" className="footer_navBar_link">
-              <p className="footer_topRow_text">Stay in touch</p>
-            </NavLink>
-          </Row>
             <Row className="footer_midRow">
               <Col md={3} className="footer_midCol">
                 <ul className="footer_navList">
@@ -159,8 +192,195 @@ return (
       </Col>
     </Row>
 
-
     <Row style={style} className="parallaxRow2">
+
+      <Row className="parallaxSubRow2">
+
+        <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading" >
+              First
+            </h1>
+            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
+            </Button>
+        </Row>
+
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+
+      </Row>
+
+      <Row className="parallaxSubRow2">
+
+        <Row className="parallaxSubRow2_headRow">
+          <h1 className="parallaxSubRow2_heading">
+            Second
+          </h1>
+        </Row>
+
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+
+      </Row>
+
+      <Row className="parallaxSubRow2">
+
+        <Row className="parallaxSubRow2_headRow">
+          <h1 className="parallaxSubRow2_heading">
+            Third
+          </h1>
+        </Row>
+
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+
+      </Row>
 
     </Row>
 

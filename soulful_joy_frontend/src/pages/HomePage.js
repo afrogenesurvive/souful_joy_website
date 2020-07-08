@@ -7,10 +7,10 @@ import MainNavigation from '../components/Navigation/MainNavigation';
 import { NavLink } from 'react-router-dom';
 
 import "./HomePage.css"
-import bg1 from "../assets/imgs/Team_1.jpg";
-import bg2 from "../assets/imgs/Process_1.jpg";
-import bg3 from "../assets/imgs/Retreat_1.jpg";
-import bg4 from "../assets/imgs/Splash1.jpg";
+// import bg1 from "../assets/imgs/Team_1.jpg";
+// import bg2 from "../assets/imgs/Process_1.jpg";
+// import bg3 from "../assets/imgs/Retreat_1.jpg";
+// import bg4 from "../assets/imgs/Splash1.jpg";
 import carousel_1 from "../assets/imgs/carousel_1.png";
 import carousel_2 from "../assets/imgs/carousel_2.jpg";
 import carousel_3 from "../assets/imgs/carousel_3.jpg";

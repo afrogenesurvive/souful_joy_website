@@ -24,7 +24,7 @@ class App extends Component {
     contactForm: false,
     scrollPos: 0,
     mouseWheelDeltaY: 0,
-    overscrollTop: -90,
+    overscrollTop: .5,
     overscrollDir: null,
     mobile: false,
     height: "",
@@ -51,13 +51,13 @@ class App extends Component {
      if (window.innerHeight > 780 && window.innerHeight < 960) {
        this.setState({
          height: 'med',
-         overscrollTop: -75
+         overscrollTop: -26
        })
      }
      if (window.innerHeight > 960) {
        this.setState({
          height: 'tall',
-         overscrollTop: -90
+         overscrollTop: -30
        })
      }
   }
@@ -71,7 +71,7 @@ class App extends Component {
     this.setState({splashPage: false})
   }
 
-  openDetailViwer = (args) => {
+  openDetailViewer = (args) => {
     this.setState({
       detailViewerOpen: true,
       detailViewerData: args
@@ -95,9 +95,9 @@ class App extends Component {
     this.setState({contactForm: false})
   }
   listenToScroll = () => {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = winScroll / height;
+    // const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    // const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    // const scrolled = winScroll / height;
     // console.log(`
     //     window.scrollY: ${window.scrollY}
     //     document.body.scrollTop: ${document.body.scrollTop},
@@ -122,14 +122,14 @@ class App extends Component {
     }
 
 
-    if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -370) {
+    if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -136) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -450) {
+    if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -165) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
@@ -138,15 +138,14 @@ class App extends Component {
     }
 
 
-
-    if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -75) {
+    if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -26) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -90) {
+    if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -30) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,
@@ -175,20 +174,20 @@ class App extends Component {
               />}/>
               <Route path="/home" component={HomePage} />
               <Route path="/team" render={(props) => <TeamPage {...props}
-                openDetailViwer={this.openDetailViwer}
+                openDetailViewer={this.openDetailViewer}
                 closeDetailViewer={this.closeDetailViewer}
                 detailViewerOpen={this.state.detailViewerOpen}
                 detailViewerData={this.state.detailViewerData}
               />}/>
               <Route path="/path" render={(props) => <PathPage {...props}
-                openDetailViwer={this.openDetailViwer}
+                openDetailViewer={this.openDetailViewer}
                 closeDetailViewer={this.closeDetailViewer}
                 detailViewerOpen={this.state.detailViewerOpen}
                 detailViewerData={this.state.detailViewerData}
               />}/>
               <Route path="/socialMedia" component={SocialMediaPage} />
               <Route path="/retreat" render={(props) => <RetreatPage {...props}
-                openDetailViwer={this.openDetailViwer}
+                openDetailViewer={this.openDetailViewer}
                 closeDetailViewer={this.closeDetailViewer}
                 detailViewerOpen={this.state.detailViewerOpen}
                 detailViewerData={this.state.detailViewerData}
@@ -203,6 +202,11 @@ class App extends Component {
                 overscrollDir={this.state.overscrollDir}
                 mobile={this.state.mobile}
                 viewHeight={this.state.height}
+
+                openDetailViewer={this.openDetailViewer}
+                closeDetailViewer={this.closeDetailViewer}
+                detailViewerOpen={this.state.detailViewerOpen}
+                detailViewerData={this.state.detailViewerData}
               />}/>
               <Route path="/contact" render={(props) => <ContactPage {...props}
                 contactForm={this.state.contactForm}

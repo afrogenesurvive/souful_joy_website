@@ -21,6 +21,7 @@ import './DetailViewer.css';
 const detailViewer = props => (
   <AuthContext.Consumer>
     {context => {
+      console.log('detailViewer', props);
       return (
         <div className="detailViewer_blackTop">
           <div className="detailViewContainer">

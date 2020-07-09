@@ -7,7 +7,7 @@ body {
 }
 .mainDiv_parallax {
   height: 100vh;
-  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+  background-image: url("../assets/imgs/palm_bg.png");
   background-position: center;
   background-size: cover;
   position: sticky;
@@ -34,13 +34,13 @@ body {
   bottom: 25vh;
 }
 .footer_navBar_link {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .footerIcon {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .footer_copyrightRow_text {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .parallaxRow2 {
@@ -50,14 +50,15 @@ body {
   position: relative;
   /* background-color: rgba(241, 91, 181, 0.85); */
   /* background-color: rgba(5, 138, 102, 0.85); */
-  background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+  background-image: url("../assets/imgs/palm_bg.png");
   background-size: cover;
   /* position: absolute; */
   /* top: -5rem; */
   /* top: 0; */
   margin: 7vh 0 0 0;
   /* height: 175%; */
-  height: 300vh;
+  height: fit-content;
+  /* height: 300vh; */
   width: 100vw;
 }
 
@@ -110,6 +111,11 @@ body {
   font-family: 'Sacramento', cursive;
   font-size: 5rem;
 }
+.parallaxSubRow2_subheading {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
 .parallaxSubRow2_gridRow {
  /* border: 1px solid yellow; */
  width: 100%;
@@ -118,12 +124,23 @@ body {
 }
 .parallax_gridCol {
  /* border: 1px solid purple; */
- height: 13vh;
+ height: 19vh;
  /* height: fit-content; */
  text-align: center;
+ padding: .5rem;
 }
-
-
+.parallax_gridText {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.ParallaxPage_staffImg {
+  height: 100%;
+  border-radius: 25px;
+}
+.fiveIs {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 420px) {
 
@@ -132,6 +149,12 @@ body {
   }
   .desktop {
     display: none;
+  }
+  .mainDiv_parallax {
+    background-image: url("../assets/imgs/mobile_palm_bg.jpg");
+  }
+  .parallaxRow2 {
+    background-image: url("../assets/imgs/mobile_palm_bg.jpg");
   }
   .parallaxSubRow1 {
     margin: 0 7vw;
@@ -152,6 +175,7 @@ body {
   }
   .parallaxSubRow2 {
     padding: 1rem;
+    width: 90vw;
   }
   .parallaxSubRow2_headRow {
     margin-bottom: .5rem;
@@ -161,7 +185,12 @@ body {
   }
   .parallax_gridCol {
     width: 33%;
-    height: 17vh;
+    height: 21vh;
+  }
+  .ParallaxPage_staffImg {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 15px;
   }
 
 }

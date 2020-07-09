@@ -192,6 +192,19 @@ font-family: 'Sacramento', cursive; */
   }
   .navBar_link {
     border: none;
+    text-align: right;
+  }
+  .xlink {
+    text-align: right;
+  }
+  .navBar_link_selected {
+    text-align: right;
+    font-size: 1.5rem;
+  }
+  .navbar_item_social {
+    text-align: right;
+    margin-right: 2rem;
+    display: inline;
   }
 
 }

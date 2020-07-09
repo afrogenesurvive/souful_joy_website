@@ -15,9 +15,14 @@ import carousel_1 from "../assets/imgs/carousel_1.png";
 import carousel_2 from "../assets/imgs/carousel_2.jpg";
 import carousel_3 from "../assets/imgs/carousel_3.jpg";
 import carousel_4 from "../assets/imgs/carousel_4.jpg";
+import mobile_carousel_1 from "../assets/imgs/mobile_carousel_1.jpg";
+import mobile_carousel_2 from "../assets/imgs/mobile_carousel_2.jpg";
+import mobile_carousel_3 from "../assets/imgs/mobile_carousel_3.jpg";
+import mobile_carousel_4 from "../assets/imgs/mobile_carousel_4.jpg";
 // import bg5 from "../assets/imgs/fullPage_bg_5.jpg";
 
 const HomePage = (props) => {
+  // console.log("mobile",props.mobile);
   let location = props.location.pathname;
 return (
 
@@ -31,11 +36,22 @@ return (
   <Carousel className="homePageCarousel" fade={true} controls={false}>
 
     <Carousel.Item>
-      <img
-        className="mainPage_carousel_img d-block w-100"
-        src={carousel_1}
-        alt="3rd slide"
-      />
+
+      {props.mobile !== true && (
+        <img
+          className="mainPage_carousel_img d-block w-100"
+          src={carousel_1}
+          alt="3rd slide"
+        />
+      )}
+      {props.mobile === true && (
+        <img
+          className="mainPage_carousel_img d-block w-100"
+          src={mobile_carousel_1}
+          alt="3rd slide"
+        />
+      )}
+
       <Carousel.Caption>
       <Row className="carousel_caption_row">
         <Col>
@@ -55,11 +71,21 @@ return (
     </Carousel.Item>
 
     <Carousel.Item className="homePageCarouselItem">
-      <img
-        className="mainPage_carousel_img d-block w-100"
-        src={carousel_2}
-        alt="1st slide"
-      />
+
+      {props.mobile !== true && (
+        <img
+          className="mainPage_carousel_img d-block w-100"
+          src={carousel_2}
+          alt="1st slide"
+        />
+      )}
+      {props.mobile === true && (
+        <img
+          className="mainPage_carousel_img d-block w-100"
+          src={mobile_carousel_2}
+          alt="1st slide"
+        />
+      )}
 
       <Carousel.Caption>
       <Row className="carousel_caption_row">
@@ -79,11 +105,22 @@ return (
     </Carousel.Item>
 
     <Carousel.Item>
+
+    {props.mobile !== true && (
       <img
         className="mainPage_carousel_img d-block w-100"
         src={carousel_3}
         alt="2nd slide"
       />
+    )}
+    {props.mobile === true && (
+      <img
+        className="mainPage_carousel_img d-block w-100"
+        src={mobile_carousel_3}
+        alt="2nd slide"
+      />
+    )}
+
 
       <Carousel.Caption>
       <Row className="carousel_caption_row">
@@ -103,11 +140,21 @@ return (
     </Carousel.Item>
 
     <Carousel.Item>
+
+    {props.mobile !== true && (
       <img
         className="mainPage_carousel_img d-block w-100"
         src={carousel_4}
         alt="4th slide"
       />
+    )}
+    {props.mobile === true && (
+      <img
+        className="mainPage_carousel_img d-block w-100"
+        src={mobile_carousel_4}
+        alt="4th slide"
+      />
+    )}
 
       <Carousel.Caption>
       <Row className="carousel_caption_row">

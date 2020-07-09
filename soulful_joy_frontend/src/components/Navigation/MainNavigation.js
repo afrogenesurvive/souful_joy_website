@@ -88,12 +88,16 @@ const mainNavigation = (props) => (
                   <NavLink to="/socialMedia" className="navBar_link_selected">The Joy</NavLink>
                 )}
 
-                {props.currentPage !== '/shop' && (
-                  <NavLink to="/shop" className="navBar_link">Shop</NavLink>
-                )}
-                {props.currentPage === '/shop' && (
-                  <NavLink to="/shop" className="navBar_link_selected">Shop</NavLink>
-                )}
+                {
+                  // props.currentPage !== '/shop' && (
+                  // <NavLink to="/shop" className="navBar_link">Shop</NavLink>
+                  // )
+                }
+                {
+                  // props.currentPage === '/shop' && (
+                  // <NavLink to="/shop" className="navBar_link_selected">Shop</NavLink>
+                  // )
+                }
 
                 <Nav.Link className="navbar_divider">
                 </Nav.Link>

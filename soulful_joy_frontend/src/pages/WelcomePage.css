@@ -79,10 +79,13 @@ font-family: 'Sacramento', cursive; */
 
 
 @media only screen and (max-width: 420px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
 
+  .welcomePage_maindiv {
+    background-image: url('../assets/imgs/mobile_splash_bg.jpg');
+  }
   .welcomePageCol {
     max-width: 85%;
   }
@@ -93,9 +96,11 @@ font-family: 'Sacramento', cursive; */
     margin: 3rem auto;
   }
   .welcomePageHeading {
-    font-size: 1.5rem;
+    font-size: 5rem;
   }
   .welcomePageSubHeading {
     font-size: 1.5rem;
+    font-weight: bold;
   }
+  
 }

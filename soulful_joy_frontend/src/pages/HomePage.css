@@ -100,6 +100,7 @@ font-family: 'Sacramento', cursive; */
   width: fit-content;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(198, 184, 169, 0.9); */
   padding: .5rem 3rem;
 }
 
@@ -113,7 +114,10 @@ font-family: 'Sacramento', cursive; */
   }
 
   .carousel-caption {
-    bottom: 5rem
+    bottom: 10rem;
+    width: 90vw;
+    left: 2rem;
+
   }
   .carousel-indicators {
     bottom: 3rem
@@ -123,7 +127,10 @@ font-family: 'Sacramento', cursive; */
     width: 100%;
   }
   .carousel_caption_heading {
-    /* font-size: 1.7rem; */
+    font-size: 5rem;
+  }
+  .carousel_caption_listItem > p {
+    font-size: 1.5rem;
   }
 
 }

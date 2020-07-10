@@ -126,7 +126,7 @@ class App extends Component {
       overscrollDir = 'up'
     }
 
-    if (overscrollDir === 'down' && this.state.height === 'med') {
+    if (overscrollDir === 'down' && this.state.height === 'med' && this.state.detailViewerOpen === false) {
     // if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -133) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -134,7 +134,7 @@ class App extends Component {
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.height === 'tall') {
+    if (overscrollDir === 'down' && this.state.height === 'tall' && this.state.detailViewerOpen === false) {
     // if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -162) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -142,7 +142,7 @@ class App extends Component {
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.mobile === true) {
+    if (overscrollDir === 'down' && this.state.mobile === true && this.state.detailViewerOpen === false) {
     // if (overscrollDir === 'down' && this.state.mobile === true && overscrollTop >= -340) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -151,21 +151,21 @@ class App extends Component {
       })
     }
 
-    if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -26) {
+    if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -26 && this.state.detailViewerOpen === false) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -30) {
+    if (overscrollDir === 'up' && this.state.height === 'tall' && overscrollTop <= -30 && this.state.detailViewerOpen === false) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'up' && this.state.mobile === true && overscrollTop <= -65) {
+    if (overscrollDir === 'up' && this.state.mobile === true && overscrollTop <= -65 && this.state.detailViewerOpen === false) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop+1,

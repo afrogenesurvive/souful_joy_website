@@ -1,7 +1,7 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-// import Image from 'react-bootstrap/Image';
+import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -13,6 +13,18 @@ import AuthContext from '../../context/auth-context';
 // import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 // import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { faAdobe } from '@fortawesome/free-solid-svg-icons';
+import location_1 from '../../assets/imgs/location_1.jpg';
+import location_2 from '../../assets/imgs/location_2.jpg';
+import location_3 from '../../assets/imgs/location_3.jpg';
+import location_4 from '../../assets/imgs/location_4.jpg';
+import location_5 from '../../assets/imgs/location_5.jpg';
+import location_6 from '../../assets/imgs/location_6.jpg';
+
+import team_1 from '../../assets/imgs/team_1_kwayera.jpeg';
+import team_2 from '../../assets/imgs/team_2_ade.jpg';
+import team_3 from '../../assets/imgs/team_3_khadijah.jpg';
+import team_4 from '../../assets/imgs/team_4_kwasausya.jpg';
+import team_5 from '../../assets/imgs/team_5_perdella.jpg';
 
 import './DetailViewer.css';
 // import SplashMainLogo from '../../assets/imgs/logo_splash_pg.png';
@@ -21,20 +33,23 @@ import './DetailViewer.css';
 const detailViewer = props => (
   <AuthContext.Consumer>
     {context => {
-      console.log('detailViewer', props);
+      // console.log('detailViewer', props);
       return (
         <div className="detailViewer_blackTop">
           <div className="detailViewContainer">
             <Row className="detailViewer_topRow">
               <Col className="detailViewer_topCol">
                 <Row className="detailViewer_subRow">
-                  <h1 className="detailViewer_topHeading"> Detail Viewer </h1>
+                  <h1 className="detailViewer_topHeading">
+                    {props.data.page}
+                  </h1>
                 </Row>
                 <Row className="detailViewer_subRow xRow">
 
                   {props.data.page === 'team' &&
-                    props.data.data === 'kwayera' && (
-                      <Row className="bio_row">
+                    props.data.data === 'team_1_kwayera' && (
+                      <Row className="detail_content_row">
+                        <Image src={team_1} className="detailViewer_Img detailStaffImg" fluid/>
                         <p className="detailViewer_text">
                           Name: D. Kweyera Archer
                         </p>
@@ -56,8 +71,9 @@ const detailViewer = props => (
                       </Row>
                   )}
                   {props.data.page === 'team' &&
-                    props.data.data === 'khadijah' && (
-                      <Row className="bio_row">
+                    props.data.data === 'team_3_khadijah' && (
+                      <Row className="detail_content_row">
+                      <Image src={team_3} className="detailViewer_Img detailStaffImg" fluid/>
                       <p className="detailViewer_text">
                         Name: Khadija A. Tudor (LMT)
                       </p>
@@ -72,8 +88,9 @@ const detailViewer = props => (
                       </Row>
                   )}
                   {props.data.page === 'team' &&
-                    props.data.data === 'ade' && (
-                      <Row className="bio_row">
+                    props.data.data === 'team_2_ade' && (
+                      <Row className="detail_content_row">
+                      <Image src={team_2} className="detailViewer_Img detailStaffImg" fluid/>
                       <p className="detailViewer_text">
                         Name: Ade Collman (LAC. & LMT)
                       </p>
@@ -89,8 +106,9 @@ const detailViewer = props => (
                       </Row>
                   )}
                   {props.data.page === 'team' &&
-                    props.data.data === 'kwasa' && (
-                      <Row className="bio_row">
+                    props.data.data === 'team_4_kwasausya' && (
+                      <Row className="detail_content_row">
+                      <Image src={team_4} className="detailViewer_Img detailStaffImg" fluid/>
                       <p className="detailViewer_text">
                         Name: Kwasausya Khepera
                       </p>
@@ -104,8 +122,9 @@ const detailViewer = props => (
                       </Row>
                   )}
                   {props.data.page === 'team' &&
-                    props.data.data === 'perdella' && (
-                      <Row className="bio_row">
+                    props.data.data === 'team_5_perdella' && (
+                      <Row className="detail_content_row">
+                      <Image src={team_5} className="detailViewer_Img detailStaffImg" fluid/>
                       <p className="detailViewer_text">
                         Name: Perdella
                       </p>
@@ -120,50 +139,9 @@ const detailViewer = props => (
                       </Row>
                   )}
 
-                  {props.data.page === 'path' &&
-                    props.data.data === 'inspire' && (
-                      <Row className="path_row">
-                        <p className="detailViewer_text">
-                          Inspire info
-                        </p>
-                      </Row>
-                  )}
-                  {props.data.page === 'path' &&
-                    props.data.data === 'invigorate' && (
-                      <Row className="path_row">
-                        <p className="detailViewer_text">
-                          Invigorate info
-                        </p>
-                      </Row>
-                  )}
-                  {props.data.page === 'path' &&
-                    props.data.data === 'immerse' && (
-                      <Row className="path_row">
-                        <p className="detailViewer_text">
-                          Immerse info
-                        </p>
-                      </Row>
-                  )}
-                  {props.data.page === 'path' &&
-                    props.data.data === 'improve' && (
-                      <Row className="path_row">
-                        <p className="detailViewer_text">
-                          Imporve info
-                        </p>
-                      </Row>
-                  )}
-                  {props.data.page === 'path' &&
-                    props.data.data === 'incorporate' && (
-                      <Row className="path_row">
-                        <p className="detailViewer_text">
-                          Incorporate info
-                        </p>
-                      </Row>
-                  )}
-
 
                   {props.data.page === 'parallax' &&
-                    props.data.data === 'test' && (
+                    props.data.data === 'fiveIs_test' && (
                       <Row className="parallax_row">
                         <p className="detailViewer_text">
                           Test test toast!!!!
@@ -172,117 +150,130 @@ const detailViewer = props => (
                   )}
 
 
+                  {props.data.page === 'path' &&
+                    props.data.data === 'fiveIs_inspire' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                         Be inspired to detox during a 4-day long retreat in lush tropical locations while rejuvenating your soul.
+                         </p>
+                      </Row>
+                  )}
+                  {props.data.page === 'path' &&
+                    props.data.data === 'fiveIs_immerse' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                        Committ and immerse your entire body and being as you learn.
+                        </p>
+                      </Row>
+                  )}
+                  {props.data.page === 'path' &&
+                    props.data.data === 'fiveIs_invigorate' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                        Invigorate your life energy during our daily High Vitality activities.
+                        </p>
+                      </Row>
+                  )}
+                  {props.data.page === 'path' &&
+                    props.data.data === 'fiveIs_improve' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                        Gain perspective and tools that contribute to how you can Improve your life.
+                        </p>
+                      </Row>
+                  )}
+                  {props.data.page === 'path' &&
+                    props.data.data === 'fiveIs_incorporate' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                        You will find it easy to Incorporate these new tips and tools into your life when you leave us.
+                        </p>
+                      </Row>
+                  )}
+
+
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'four_day_outline' && (
+                      <Row className="detail_content_row">
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'packages' && (
+                      <Row className="detail_content_row">
+                        <p className="detailViewer_text">
+                      -You will not be hungry --
+                        --Beginner- Vegan food
+                        --Intermediate- Live food
+                        --Advanced- Juice cleanse( Liquids only)
+                        </p>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'what_to_bring' && (
+                      <Row className="detail_content_row">
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'logo' && (
+                      <Row className="detail_content_row">
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'detox_rules' && (
+                      <Row className="detail_content_row">
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'other_activities' && (
+                      <Row className="detail_content_row">
+                      </Row>
+                  )}
+
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_1' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_1} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_2' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_2} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_3' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_3} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_4' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_4} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_5' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_5} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
+                  {props.data.page === 'retreat' &&
+                    props.data.data === 'location_6' && (
+                      <Row className="detail_content_row">
+                        <Image src={location_6} className="detailViewer_Img" fluid/>
+                      </Row>
+                  )}
 
                 </Row>
 
                 <Row className="detailViewer_subRow team_links">
 
-
-                  {props.data.page === 'team' &&
-                    props.data.data === 'perdella' && (
-                    <ul className="detailViewer_linkList">
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          Perdella's linkedin
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          Perdella's ig
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          Perdella's fb
-                        </p>
-                      </li>
-                    </ul>
-                  )}
-                  {props.data.page === 'team' &&
-                    props.data.data === 'kwayera' && (
-                    <ul className="detailViewer_linkList">
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwayera's linkedin
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwayera's ig
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwayera's fb
-                        </p>
-                      </li>
-                    </ul>
-                  )}
-                  {props.data.page === 'team' &&
-                    props.data.data === 'khadijah' && (
-                    <ul className="detailViewer_linkList">
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          khadijah's linkedin
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          khadijah's ig
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          khadijah's fb
-                        </p>
-                      </li>
-                    </ul>
-                  )}
-                  {props.data.page === 'team' &&
-                    props.data.data === 'kwasa' && (
-                    <ul className="detailViewer_linkList">
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwasa's linkedin
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwasa's ig
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          kwasa's fb
-                        </p>
-                      </li>
-                    </ul>
-                  )}
-                  {props.data.page === 'team' &&
-                    props.data.data === 'ade' && (
-                    <ul className="detailViewer_linkList">
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          ade's linkedin
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          ade's ig
-                        </p>
-                      </li>
-                      <li className="detailViewer_linkListItem">
-                        <p className="detailViewer_text">
-                          ade's fb
-                        </p>
-                      </li>
-                    </ul>
-                  )}
-
-
                 </Row>
+
                 <Row className="detailViewer_bottomRow">
-                  <Button variant="outline-warning" className="detailViewer_closeBtn" onClick={props.closeDetailViewer}>
+                  <Button variant="outline-light" className="detailViewer_closeBtn" onClick={props.closeDetailViewer}>
                     Close
                   </Button>
                 </Row>

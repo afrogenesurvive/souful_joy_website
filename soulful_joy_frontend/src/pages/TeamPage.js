@@ -218,8 +218,6 @@ return (
             <h1 className="parallaxSubRow2_heading" >
               Our Mission
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
-            </Button>
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">
@@ -289,7 +287,7 @@ return (
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
-            <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1"})}/>
+            <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1_kwayera"})}/>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">

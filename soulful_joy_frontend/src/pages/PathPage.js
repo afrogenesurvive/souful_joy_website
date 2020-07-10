@@ -266,7 +266,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
 
-            <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_improve"})}>
+            <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_incorporate"})}>
               Incorporate
             </p>
 

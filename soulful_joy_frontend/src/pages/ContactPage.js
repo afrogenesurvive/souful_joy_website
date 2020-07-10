@@ -101,7 +101,7 @@ return (
   />
 
   {detailViewerOpen === true &&
-     detailViewerData.page === 'retreat' && (
+     detailViewerData.page === 'contact' && (
     <DetailViewer
       data={detailViewerData}
       closeDetailViewer={props.closeDetailViewer}
@@ -212,8 +212,6 @@ return (
             <h1 className="parallaxSubRow2_heading" >
               Contact
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'contact', data:"contact_detail"})}>
-            </Button>
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">

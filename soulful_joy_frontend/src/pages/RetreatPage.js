@@ -21,6 +21,12 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 // import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
 // import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
+import location_1 from '../assets/imgs/location_1.jpg';
+import location_2 from '../assets/imgs/location_2.jpg';
+import location_3 from '../assets/imgs/location_3.jpg';
+import location_4 from '../assets/imgs/location_4.jpg';
+import location_5 from '../assets/imgs/location_5.jpg';
+import location_6 from '../assets/imgs/location_6.jpg';
 // import Blk_ico from '../assets/imgs/blk_ico.png';
 
 import "./ParallaxPage.css"
@@ -212,8 +218,6 @@ return (
             <h1 className="parallaxSubRow2_heading" >
               Our Purpose
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
-            </Button>
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">
@@ -343,9 +347,7 @@ return (
 
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_1} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_1"})}/>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
@@ -353,16 +355,12 @@ return (
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_2} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_2"})}/>
           </Col>
         </Row>
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_3} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_3"})}/>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
@@ -370,16 +368,12 @@ return (
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_4} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_4"})}/>
           </Col>
         </Row>
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_5} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_5"})}/>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
@@ -387,9 +381,7 @@ return (
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
+            <Image src={location_6} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_6"})}/>
           </Col>
         </Row>
 

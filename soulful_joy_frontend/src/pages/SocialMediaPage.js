@@ -212,8 +212,7 @@ return (
             <h1 className="parallaxSubRow2_heading" >
               Affiliates
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'contact', data:"contact_detail"})}>
-            </Button>
+
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">
@@ -269,15 +268,13 @@ return (
         </Row>
 
       </Row>
-
       <Row className="parallaxSubRow2">
 
         <Row className="parallaxSubRow2_headRow">
             <h1 className="parallaxSubRow2_heading" >
               Social
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'contact', data:"contact_detail"})}>
-            </Button>
+
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">
@@ -339,8 +336,7 @@ return (
             <h1 className="parallaxSubRow2_heading" >
               Sponsors
             </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'contact', data:"contact_detail"})}>
-            </Button>
+
         </Row>
 
         <Row className="parallaxSubRow2_gridRow">

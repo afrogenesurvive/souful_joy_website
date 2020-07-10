@@ -99,7 +99,8 @@ font-family: 'Sacramento', cursive; */
   height: fit-content;
   width: fit-content;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(rgba(197, 31, 113, .7),	rgba(236, 161, 48, .7));
+  /* background: rgba(0, 0, 0, 0.8); */
   /* background-color: rgba(198, 184, 169, 0.9); */
   padding: .5rem 3rem;
 }

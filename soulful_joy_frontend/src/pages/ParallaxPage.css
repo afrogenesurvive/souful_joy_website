@@ -137,6 +137,10 @@ body {
   height: 100%;
   border-radius: 25px;
 }
+.ParallaxPage_locatiomImg {
+  height: 100%;
+  border-radius: 25px;
+}
 .fiveIs {
     font-weight: bolder;
     font-size: 1.5rem;

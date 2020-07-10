@@ -214,6 +214,9 @@ return (
             </h1>
 
         </Row>
+        <p className="parallaxSubRow2_subheading">
+          Follow our Ambassadors and Affiliates
+        </p>
 
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
@@ -268,76 +271,17 @@ return (
         </Row>
 
       </Row>
-      <Row className="parallaxSubRow2">
 
-        <Row className="parallaxSubRow2_headRow">
-            <h1 className="parallaxSubRow2_heading" >
-              Social
-            </h1>
-
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-            x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
       <Row className="parallaxSubRow2">
 
         <Row className="parallaxSubRow2_headRow">
             <h1 className="parallaxSubRow2_heading" >
               Sponsors
             </h1>
-
         </Row>
+        <p className="parallaxSubRow2_subheading">
+          A Special thanks to Our Investors and Sponsors.
+        </p>
 
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
@@ -393,6 +337,67 @@ return (
 
       </Row>
 
+      <Row className="parallaxSubRow2">
+
+        <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading" >
+              Social
+            </h1>
+        </Row>
+
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <a href="https://www.linkedin.com/company/soulfuljoy/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="socialPageGridIcon"/>
+            </a>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <a href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} className="socialPageGridIcon"/>
+            </a>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutube} className="socialPageGridIcon"/>
+            </a>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              x
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+          <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookSquare} className="socialPageGridIcon"/>
+          </a>
+          </Col>
+        </Row>
+
+      </Row>
 
     </Row>
 

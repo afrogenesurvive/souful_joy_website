@@ -131,4 +131,3 @@ const mainNavigation = (props) => (
   </AuthContext.Consumer>
 );
 export default withRouter(mainNavigation);
-// export default mainNavigation;

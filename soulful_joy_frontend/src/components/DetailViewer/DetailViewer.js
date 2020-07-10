@@ -40,9 +40,11 @@ const detailViewer = props => (
             <Row className="detailViewer_topRow">
               <Col className="detailViewer_topCol">
                 <Row className="detailViewer_subRow">
-                  <h1 className="detailViewer_topHeading">
-                    {props.data.page}
-                  </h1>
+                  {
+                    // <h1 className="detailViewer_topHeading">
+                    // {props  .data.page}
+                    // </h1>
+                }
                 </Row>
                 <Row className="detailViewer_subRow xRow">
 

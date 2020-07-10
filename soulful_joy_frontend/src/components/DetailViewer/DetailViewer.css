@@ -53,6 +53,7 @@ font-family: 'Sacramento', cursive; */
   /* height: 35vh; */
   margin: 1rem;
   /* border: 1px solid yellow; */
+  text-align: center;
 }
 .detailViewer_buttomRow {
 
@@ -62,6 +63,7 @@ font-family: 'Sacramento', cursive; */
  color: #ffffff;
  font-family: 'Quicksand', sans-serif;
  margin: .7rem auto;
+ font-size: 1.2rem;
 }
 .detailViewer_topHeading {
  color: #ffffff;

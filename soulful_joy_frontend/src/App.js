@@ -16,7 +16,7 @@ import RetreatPage2 from './pages/RetreatPage2';
 import ShopPage from './pages/ShopPage';
 import ParallaxPage from './pages/ParallaxPage';
 
-// import MainNavigation from './components/Navigation/MainNavigation';
+import MainNavigation from './components/Navigation/MainNavigation';
 import AuthContext from './context/auth-context';
 // import logo from './logo.svg';
 import './App.css';
@@ -33,6 +33,7 @@ class App extends Component {
     overscrollDir: null,
     mobile: false,
     height: "",
+    lowerLimit: false,
   };
 
   static contextType = AuthContext;
@@ -43,6 +44,15 @@ class App extends Component {
 
   componentDidUpdate() {
     // console.log('bam!! Kick it up a notch....component');
+    // let foo = MainNavigation.props;
+    // let bar = {...MainNavigation};
+    // console.log('1',foo);
+    // console.log('2',bar);
+    // console.log('3',bar.WrappedComponent);
+    // console.log('4',bar.WrappedComponent());
+    // console.log('5',bar.propTypes);
+    // console.log('a',{...Switch});
+    // console.log('b',{...BrowserRouter});
     // prevLocation
     // currentLocation
     // if not equal then reset overscrollTop
@@ -126,7 +136,12 @@ class App extends Component {
       overscrollDir = 'up'
     }
 
-    if (overscrollDir === 'down' && this.state.height === 'med' && this.state.detailViewerOpen === false) {
+    if (
+      overscrollDir === 'down' &&
+      this.state.height === 'med' &&
+      this.state.detailViewerOpen === false &&
+      this.state.lowerLimit === false
+    ) {
     // if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -133) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -134,7 +149,12 @@ class App extends Component {
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.height === 'tall' && this.state.detailViewerOpen === false) {
+    if (
+      overscrollDir === 'down' &&
+      this.state.height === 'tall' &&
+       this.state.detailViewerOpen === false &&
+       this.state.lowerLimit === false
+     ) {
     // if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -162) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -142,7 +162,12 @@ class App extends Component {
         overscrollDir: overscrollDir
       })
     }
-    if (overscrollDir === 'down' && this.state.mobile === true && this.state.detailViewerOpen === false) {
+    if (
+      overscrollDir === 'down' &&
+      this.state.mobile === true &&
+      this.state.detailViewerOpen === false &&
+      this.state.lowerLimit === false
+    ) {
     // if (overscrollDir === 'down' && this.state.mobile === true && overscrollTop >= -340) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
@@ -150,6 +175,7 @@ class App extends Component {
         overscrollDir: overscrollDir
       })
     }
+
 
     if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -26 && this.state.detailViewerOpen === false) {
       this.setState({
@@ -173,6 +199,14 @@ class App extends Component {
       })
     }
 
+  }
+
+  setOverscrollTop = (args) => {
+    console.log('set overscrollTop');
+    this.setState({
+      overscrollTop: args,
+      lowerLimitState: true
+    })
   }
 
 // <Route path="/home" component={MainNavigation} />
@@ -205,6 +239,7 @@ class App extends Component {
                 scrollPos={this.state.scrollPos}
                 mouseWheelDeltaY={this.state.mouseWheelDeltaY}
                 overscrollTop={this.state.overscrollTop}
+                setOverscrollTop={this.setOverscrollTop}
                 overscrollDir={this.state.overscrollDir}
                 mobile={this.state.mobile}
                 viewHeight={this.state.height}

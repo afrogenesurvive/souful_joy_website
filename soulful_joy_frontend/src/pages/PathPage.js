@@ -214,10 +214,10 @@ return (
           <h1 className="parallaxSubRow2_heading">
             Our Vision:
           </h1>
-          <p className="parallaxSubRow2_subheading">
-            is to create A special time and place where you will follow the Path to an amazing Experience
-          </p>
         </Row>
+        <p className="parallaxSubRow2_subheading">
+          is to create A special time and place where you will follow the Path to an amazing Experience
+        </p>
 
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">

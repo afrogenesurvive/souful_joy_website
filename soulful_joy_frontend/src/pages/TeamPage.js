@@ -52,6 +52,7 @@ const TeamPage = (props) => {
   // let topMes = props.overscrollTop/.6+'em';
   // let topMes = props.overscrollTop/.65+'em';
   let topMes = 0;
+
   if (props.mobile !== true) {
     topMes = props.overscrollTop/.7+'em';
   }
@@ -60,18 +61,20 @@ const TeamPage = (props) => {
   }
   // let topMes = props.overscrollTop/.75+'em';
 
-  // if (props.mobile === false && props.viewHeight === 'med') {
-  //   if (props.overscrollTop <= -133) {
-  //     console.log('lower limit');
-  //     topMes = -133/.7+'em';
-  //   }
-  // }
-  // if (props.mobile === false && props.viewHeight === 'tall') {
-  //   if (props.overscrollTop <= -162) {
-  //     console.log('lower limit');
-  //     topMes = -162/.7+'em';
-  //   }
-  // }
+  if (props.mobile === false && props.viewHeight === 'med') {
+    if (props.overscrollTop <= -142) {
+      props.setOverscrollTop.bind(this, -142)
+      console.log('med lower limit');
+      topMes = -142/.7+'em';
+    }
+  }
+  if (props.mobile === false && props.viewHeight === 'tall') {
+    if (props.overscrollTop <= -162) {
+      props.setOverscrollTop.bind(this, -162)
+      console.log('tall lower limit');
+      topMes = -162/.7+'em';
+    }
+  }
   // if (props.mobile === true) {
   //   if (props.overscrollTop <= -340) {
   //     console.log('lower limit mobile');
@@ -80,11 +83,11 @@ const TeamPage = (props) => {
   // }
 
   if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
-    console.log('upper limit');
+    console.log('med upper limit');
     topMes = -26/.7+'em';
   }
   if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
-    console.log('upper limit');
+    console.log('tall upper limit');
     topMes = -30/.7+'em';
   }
   if (props.mobile === true) {
@@ -330,10 +333,11 @@ return (
           <h1 className="parallaxSubRow2_heading">
             Our Vision:
           </h1>
-          <p className="parallaxSubRow2_subheading">
-            is to create A special time and place where you will follow the Path to an amazing Experience
-          </p>
         </Row>
+
+        <p className="parallaxSubRow2_subheading">
+          is to create A special time and place where you will follow the Path to an amazing Experience
+        </p>
 
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">

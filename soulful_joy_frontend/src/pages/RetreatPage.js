@@ -229,7 +229,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -246,7 +246,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -258,7 +258,7 @@ return (
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -268,7 +268,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
         </Row>
@@ -291,7 +291,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -307,9 +307,7 @@ return (
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"logo"})}>
-              Logo
-            </p>
+            <Image src={Wht_ico} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"detox_rules"})}>
@@ -320,7 +318,7 @@ return (
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -330,7 +328,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
         </Row>
@@ -351,7 +349,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -364,7 +362,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -377,7 +375,7 @@ return (
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
@@ -397,51 +395,51 @@ return (
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
         </Row>
         <Row className="parallaxSubRow2_gridRow">
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
             </p>
           </Col>
           <Col md={4} className="parallax_gridCol">
             <p className="parallax_gridText">
-              x
+              .
+            </p>
+          </Col>
+        </Row>
+        <Row className="parallaxSubRow2_gridRow">
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              .
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              .
+            </p>
+          </Col>
+          <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              .
             </p>
           </Col>
         </Row>

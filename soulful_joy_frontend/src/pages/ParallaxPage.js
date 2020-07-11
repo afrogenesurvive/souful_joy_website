@@ -31,68 +31,7 @@ const ParallaxPage = (props) => {
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
 
-  console.log(`
-      x: ${props.mouseWheelDeltaY},
-      y: ${props.overscrollTop},
-      z: ${props.overscrollDir},
-      mobile: ${props.mobile},
-      height: ${props.viewHeight}
-    `);
-  // let topMes = props.overscrollTop/.3+'em';
-  // let topMes = props.overscrollTop/.35+'em';
-  // let topMes = props.overscrollTop/.45+'em';
-  // let topMes = props.overscrollTop/.4+'em';
-  // let topMes = props.overscrollTop/.55+'em';
-  // let topMes = props.overscrollTop/.5+'em';
-  // let topMes = props.overscrollTop/.6+'em';
-  // let topMes = props.overscrollTop/.65+'em';
-  let topMes = 0;
-  if (props.mobile !== true) {
-    topMes = props.overscrollTop/.7+'em';
-  }
-  if (props.mobile === true) {
-    topMes = props.overscrollTop/1.7+'em';
-  }
-  // let topMes = props.overscrollTop/.75+'em';
 
-  if (props.mobile === false && props.viewHeight === 'med') {
-    if (props.overscrollTop <= -133) {
-      console.log('lower limit');
-      topMes = -133/.7+'em';
-    }
-  }
-  if (props.mobile === false && props.viewHeight === 'tall') {
-    if (props.overscrollTop <= -162) {
-      console.log('lower limit');
-      topMes = -162/.7+'em';
-    }
-  }
-  if (props.mobile === true) {
-    if (props.overscrollTop <= -340) {
-      console.log('lower limit mobile');
-      topMes = -340/1.7+'em';
-    }
-  }
-
-  if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
-    console.log('upper limit');
-    topMes = -26/.7+'em';
-  }
-  if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
-    console.log('upper limit');
-    topMes = -30/.7+'em';
-  }
-  if (props.mobile === true) {
-    if (props.overscrollTop >= -65) {
-      console.log('upper limit mobile');
-      topMes = -65/1.7+'em';
-    }
-  }
-
-
-  const style = {
-    top: topMes,
-  }
 return (
   <div className="mainDiv_parallax">
   <MainNavigation
@@ -109,6 +48,7 @@ return (
 
     <Row className="parallaxRow1">
       <Col className="parallaxCol1">
+
         <Row className="parallaxSubRow1 desktop">
           <Col md={9} className="topCol">
             <Row className>
@@ -142,6 +82,194 @@ return (
           </Col>
         </Row>
 
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+              <h1 className="parallaxSubRow2_heading" >
+                First
+              </h1>
+              <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
+              </Button>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Second
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Third
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                x
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
         <Row className="parallaxFooterRow">
           <Col className="footerMainCol">
             <Row className="footer_midRow">
@@ -170,7 +298,7 @@ return (
               <Col md={3} className="footer_midCol">
                 <ul className="footer_socialList">
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebookSquare} className="footerIcon"/>
                   </a>
                   </li>
@@ -185,7 +313,7 @@ return (
                   </a>
                   </li>
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
                   </a>
                   </li>
@@ -203,197 +331,197 @@ return (
       </Col>
     </Row>
 
-    <Row style={style} className="parallaxRow2">
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-            <h1 className="parallaxSubRow2_heading" >
-              First
-            </h1>
-            <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
-            </Button>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Second
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Third
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-    </Row>
+    {
+      // <Row style={style} className="parallaxRow2">
+      //
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //         <h1 className="parallaxSubRow2_heading" >
+      //           First
+      //         </h1>
+      //         <Button variant="outline-light" onClick={props.openDetailViewer.bind(this, {page: 'parallax', data:"test"})}>
+      //         </Button>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Second
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Third
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           x
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //
+      // </Row>
+    }
 
   </div>
 )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import Container from 'react-bootstrap/Container';
@@ -43,64 +43,55 @@ const TeamPage = (props) => {
       mobile: ${props.mobile},
       height: ${props.viewHeight}
     `);
-  // let topMes = props.overscrollTop/.3+'em';
-  // let topMes = props.overscrollTop/.35+'em';
-  // let topMes = props.overscrollTop/.45+'em';
-  // let topMes = props.overscrollTop/.4+'em';
-  // let topMes = props.overscrollTop/.55+'em';
-  // let topMes = props.overscrollTop/.5+'em';
-  // let topMes = props.overscrollTop/.6+'em';
-  // let topMes = props.overscrollTop/.65+'em';
-  let topMes = 0;
 
-  if (props.mobile !== true) {
-    topMes = props.overscrollTop/.7+'em';
-  }
-  if (props.mobile === true) {
-    topMes = props.overscrollTop/1.7+'em';
-  }
-  // let topMes = props.overscrollTop/.75+'em';
-
-  if (props.mobile === false && props.viewHeight === 'med') {
-    if (props.overscrollTop <= -142) {
-      props.setOverscrollTop.bind(this, -142)
-      console.log('med lower limit');
-      topMes = -142/.7+'em';
-    }
-  }
-  if (props.mobile === false && props.viewHeight === 'tall') {
-    if (props.overscrollTop <= -162) {
-      props.setOverscrollTop.bind(this, -162)
-      console.log('tall lower limit');
-      topMes = -162/.7+'em';
-    }
-  }
+  // if (props.mobile !== true) {
+  //   topMes = props.overscrollTop/.7+'em';
+  // }
   // if (props.mobile === true) {
-  //   if (props.overscrollTop <= -340) {
-  //     console.log('lower limit mobile');
-  //     topMes = -340/1.7+'em';
+  //   topMes = props.overscrollTop/1.7+'em';
+  // }
+  // // let topMes = props.overscrollTop/.75+'em';
+  //
+  // if (props.mobile === false && props.viewHeight === 'med') {
+  //   if (props.overscrollTop <= -142) {
+  //     // props.setLowerLimit()
+  //     console.log('med lower limit');
+  //     topMes = -142/.7+'em';
   //   }
   // }
+  // if (props.mobile === false && props.viewHeight === 'tall') {
+  //   if (props.overscrollTop <= -162) {
+  //     // props.setLowerLimit()
+  //     console.log('tall lower limit');
+  //     topMes = -162/.7+'em';
+  //   }
+  // }
+  // // if (props.mobile === true) {
+  // //   if (props.overscrollTop <= -340) {
+  // //     console.log('lower limit mobile');
+  // //     topMes = -340/1.7+'em';
+  // //   }
+  // // }
+  //
+  // if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
+  //   console.log('med upper limit');
+  //   topMes = -26/.7+'em';
+  // }
+  // if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
+  //   console.log('tall upper limit');
+  //   topMes = -30/.7+'em';
+  // }
+  // if (props.mobile === true) {
+  //   if (props.overscrollTop >= -65) {
+  //     console.log('upper limit mobile');
+  //     topMes = -65/1.7+'em';
+  //   }
+  // }
+  // const style = {
+  //   top: topMes,
+  // }
 
-  if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
-    console.log('med upper limit');
-    topMes = -26/.7+'em';
-  }
-  if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
-    console.log('tall upper limit');
-    topMes = -30/.7+'em';
-  }
-  if (props.mobile === true) {
-    if (props.overscrollTop >= -65) {
-      console.log('upper limit mobile');
-      topMes = -65/1.7+'em';
-    }
-  }
 
-
-  const style = {
-    top: topMes,
-  }
 return (
   <div className="mainDiv_parallax">
   <MainNavigation
@@ -121,7 +112,7 @@ return (
         <Row className="parallaxSubRow1 desktop">
           <Col md={9} className="topCol">
             <Row className>
-              <h1 className="topHeading">
+              <h1 className="topHeading" onClick={props.resetOverscrollTop}>
                 Our Team
               </h1>
             </Row>
@@ -149,6 +140,188 @@ return (
               </p>
 
           </Col>
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+              <h1 className="parallaxSubRow2_heading" >
+                Our Mission
+              </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              Soulful Joy exists to provide a unique residential experience where people who give of themselves a lot & often
+            </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+                </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                can rejuvenate & relax; while detoxing during a 4-day long retreat in lush tropical locations.
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              .
+            </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+            <p className="parallax_gridText">
+              .
+            </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Team
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={team_1} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1_kwayera"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <Image src={team_2} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={team_3} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_3_khadijah"})}/>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <Image src={team_4} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_4_kwasausya"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_5_perdella"})}/>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Our Vision:
+            </h1>
+          </Row>
+
+          <p className="parallaxSubRow2_subheading">
+            is to create A special time and place where you will follow the Path to an amazing Experience
+          </p>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <NavLink to="/path">
+                <p className="parallax_gridText fiveIs">
+                  Inspire
+                </p>
+              </NavLink>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+            <NavLink to="/path">
+              <p className="parallax_gridText fiveIs">
+                Immerse
+              </p>
+            </NavLink>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+            <NavLink to="/path">
+              <p className="parallax_gridText fiveIs">
+                Invigorate
+              </p>
+            </NavLink>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+            <NavLink to="/path">
+              <p className="parallax_gridText fiveIs">
+                Improve
+              </p>
+            </NavLink>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+            <NavLink to="/path">
+              <p className="parallax_gridText fiveIs">
+                Incorporate
+              </p>
+            </NavLink>
+            </Col>
+          </Row>
+
         </Row>
 
         <Row className="parallaxFooterRow">
@@ -179,7 +352,7 @@ return (
               <Col md={3} className="footer_midCol">
                 <ul className="footer_socialList">
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebookSquare} className="footerIcon"/>
                   </a>
                   </li>
@@ -194,7 +367,7 @@ return (
                   </a>
                   </li>
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
                   </a>
                   </li>
@@ -213,189 +386,189 @@ return (
       </Col>
     </Row>
 
-    <Row style={style} className="parallaxRow2">
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-            <h1 className="parallaxSubRow2_heading" >
-              Our Mission
-            </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              Soulful Joy exists to provide a unique residential experience where people who give of themselves a lot & often can rejuvenate & relax; while detoxing during a 4-day long retreat in lush tropical locations.
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Team
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1_kwayera"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <Image src={team_2} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={team_3} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_3_khadijah"})}/>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <Image src={team_4} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_4_kwasausya"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              x
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_5_perdella"})}/>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Our Vision:
-          </h1>
-        </Row>
-
-        <p className="parallaxSubRow2_subheading">
-          is to create A special time and place where you will follow the Path to an amazing Experience
-        </p>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <NavLink to="/path">
-              <p className="parallax_gridText fiveIs">
-                Inspire
-              </p>
-            </NavLink>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-          <NavLink to="/path">
-            <p className="parallax_gridText fiveIs">
-              Immerse
-            </p>
-          </NavLink>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-          <NavLink to="/path">
-            <p className="parallax_gridText fiveIs">
-              Invigorate
-            </p>
-          </NavLink>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-          <NavLink to="/path">
-            <p className="parallax_gridText fiveIs">
-              Improve
-            </p>
-          </NavLink>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-          <NavLink to="/path">
-            <p className="parallax_gridText fiveIs">
-              Incorporate
-            </p>
-          </NavLink>
-          </Col>
-        </Row>
-
-      </Row>
-
-    </Row>
+    {
+      // <Row style={style} className="parallaxRow2">
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //         <h1 className="parallaxSubRow2_heading" >
+      //           Our Mission
+      //         </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //       <p className="parallax_gridText">
+      //         Soulful Joy exists to provide a unique residential experience where people who give of themselves a lot & often
+      //       </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //           </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           can rejuvenate & relax; while detoxing during a 4-day long retreat in lush tropical locations.
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //       <p className="parallax_gridText">
+      //         .
+      //       </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //       <p className="parallax_gridText">
+      //         .
+      //       </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Team
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1_kwayera"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={team_2} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={team_3} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_3_khadijah"})}/>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={team_4} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_4_kwasausya"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_5_perdella"})}/>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Our Vision:
+      //       </h1>
+      //     </Row>
+      //
+      //     <p className="parallaxSubRow2_subheading">
+      //       is to create A special time and place where you will follow the Path to an amazing Experience
+      //     </p>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <NavLink to="/path">
+      //           <p className="parallax_gridText fiveIs">
+      //             Inspire
+      //           </p>
+      //         </NavLink>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //       <NavLink to="/path">
+      //         <p className="parallax_gridText fiveIs">
+      //           Immerse
+      //         </p>
+      //       </NavLink>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //       <NavLink to="/path">
+      //         <p className="parallax_gridText fiveIs">
+      //           Invigorate
+      //         </p>
+      //       </NavLink>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //       <NavLink to="/path">
+      //         <p className="parallax_gridText fiveIs">
+      //           Improve
+      //         </p>
+      //       </NavLink>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //       <NavLink to="/path">
+      //         <p className="parallax_gridText fiveIs">
+      //           Incorporate
+      //         </p>
+      //       </NavLink>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      // </Row>
+    }
 
   </div>
 )

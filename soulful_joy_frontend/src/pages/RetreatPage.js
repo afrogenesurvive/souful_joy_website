@@ -37,69 +37,6 @@ const RetreatPage = (props) => {
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
 
-  console.log(`
-      x: ${props.mouseWheelDeltaY},
-      y: ${props.overscrollTop},
-      z: ${props.overscrollDir},
-      mobile: ${props.mobile},
-      height: ${props.viewHeight}
-    `);
-  // let topMes = props.overscrollTop/.3+'em';
-  // let topMes = props.overscrollTop/.35+'em';
-  // let topMes = props.overscrollTop/.45+'em';
-  // let topMes = props.overscrollTop/.4+'em';
-  // let topMes = props.overscrollTop/.55+'em';
-  // let topMes = props.overscrollTop/.5+'em';
-  // let topMes = props.overscrollTop/.6+'em';
-  // let topMes = props.overscrollTop/.65+'em';
-  let topMes = 0;
-  if (props.mobile !== true) {
-    topMes = props.overscrollTop/.7+'em';
-  }
-  if (props.mobile === true) {
-    topMes = props.overscrollTop/1.7+'em';
-  }
-  // let topMes = props.overscrollTop/.75+'em';
-
-  // if (props.mobile === false && props.viewHeight === 'med') {
-  //   if (props.overscrollTop <= -133) {
-  //     console.log('lower limit');
-  //     topMes = -133/.7+'em';
-  //   }
-  // }
-  // if (props.mobile === false && props.viewHeight === 'tall') {
-  //   if (props.overscrollTop <= -162) {
-  //     console.log('lower limit');
-  //     topMes = -162/.7+'em';
-  //   }
-  // }
-  // if (props.mobile === true) {
-  //   if (props.overscrollTop <= -340) {
-  //     console.log('lower limit mobile');
-  //     topMes = -340/1.7+'em';
-  //   }
-  // }
-
-
-  if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
-    console.log('upper limit');
-    topMes = -26/.7+'em';
-  }
-  if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
-    console.log('upper limit');
-    topMes = -30/.7+'em';
-  }
-  if (props.mobile === true) {
-    if (props.overscrollTop >= -65) {
-      console.log('upper limit mobile');
-      topMes = -65/1.7+'em';
-    }
-  }
-
-
-  const style = {
-    top: topMes,
-  }
 return (
   <div className="mainDiv_parallax">
   <MainNavigation
@@ -149,6 +86,365 @@ return (
           </Col>
         </Row>
 
+        <Row className="parallaxSubRow2 desktop">
+
+          <Row className="parallaxSubRow2_headRow">
+              <h1 className="parallaxSubRow2_heading" >
+                Our Purpose
+              </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+              Soulful Joy began as a solution in response to the ever-increasing levels
+              of stress that adults are experiencing every day.
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                The Path to this amazing Experience is based on Di I Dem
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Several of our friends who have been in the alternative wellness field for over 40 years each in various ways came together
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                and decided to offer a “relax and rejuvenate” while you detox retreat.
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Inspire – Immerse – Invigorate – Improve - Incorporate
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Join us this October 8-11, 2020 in Negril Jamaica where we will take you on the Path to this amazing Experience.
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+
+        <Row className="parallaxSubRow2 mobile">
+
+          <Row className="parallaxSubRow2_headRow">
+              <h1 className="parallaxSubRow2_heading" >
+                Our Purpose
+              </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+              Soulful Joy began as a solution in response to
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+              ever-increasing levels of stress that adults are experiencing every day
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                The Path to this amazing Experience is based on Di I Dem
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Several of our friends who have been in the alternative wellness field
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                for over 40 years each in various ways came together
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                and decided to offer a “relax and rejuvenate” while you detox retreat.
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+        <Row className="parallaxSubRow2 mobile">
+
+          <Row className="parallaxSubRow2_headRow">
+              <h1 className="parallaxSubRow2_heading" >
+                Our Purpose
+              </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+              .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Inspire – Immerse – Invigorate – Improve - Incorporate
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                Join us this October 8-11, 2020
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                in Negril Jamaica where we will take you
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                on the Path to this amazing Experience.
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Our Activities
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"four_day_outline"})}>
+                Four-day Outline
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"packages"})}>
+                Packages
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"what_to_bring"})}>
+                What to bring
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={Wht_ico} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"detox_rules"})}>
+                Rules for the detox
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"other_activities"})}>
+                Other activities
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              The Location
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_1} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_1"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_2} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_2"})}/>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_3} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_3"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_4} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_4"})}/>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_5} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_5"})}/>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <Image src={location_6} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_6"})}/>
+            </Col>
+          </Row>
+
+        </Row>
+
+        <Row className="parallaxSubRow2">
+
+          <Row className="parallaxSubRow2_headRow">
+            <h1 className="parallaxSubRow2_heading">
+              Facilitators
+            </h1>
+          </Row>
+
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+          <Row className="parallaxSubRow2_gridRow">
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+            <Col md={4} className="parallax_gridCol">
+              <p className="parallax_gridText">
+                .
+              </p>
+            </Col>
+          </Row>
+
+        </Row>
+
         <Row className="parallaxFooterRow">
           <Col className="footerMainCol">
             <Row className="footer_midRow">
@@ -177,7 +473,7 @@ return (
               <Col md={3} className="footer_midCol">
                 <ul className="footer_socialList">
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebookSquare} className="footerIcon"/>
                   </a>
                   </li>
@@ -192,7 +488,7 @@ return (
                   </a>
                   </li>
                   <li className="footer_socialListItem">
-                  <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
                   </a>
                   </li>
@@ -210,243 +506,365 @@ return (
       </Col>
     </Row>
 
-    <Row style={style} className="parallaxRow2">
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-            <h1 className="parallaxSubRow2_heading" >
-              Our Purpose
-            </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-            Soulful Joy began as a solution in response to the ever-increasing levels
-            of stress that adults are experiencing every day.
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              The Path to this amazing Experience is based on Di I Dem
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              Several of our friends who have been in the alternative wellness field for over 40 years each in various ways came together and decided to offer a “relax and rejuvenate” while you detox retreat.
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              Inspire – Immerse – Invigorate – Improve - Incorporate
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              Join us this October 8-11, 2020 in Negril Jamaica where we will take you on the Path to this amazing Experience.
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Our Activities
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"four_day_outline"})}>
-              Four-day Outline
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"packages"})}>
-              Packages
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"what_to_bring"})}>
-              What to bring
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={Wht_ico} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"detox_rules"})}>
-              Rules for the detox
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"other_activities"})}>
-              Other activities
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            The Location
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_1} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_1"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_2} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_2"})}/>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_3} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_3"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_4} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_4"})}/>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_5} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_5"})}/>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <Image src={location_6} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_6"})}/>
-          </Col>
-        </Row>
-
-      </Row>
-      <Row className="parallaxSubRow2">
-
-        <Row className="parallaxSubRow2_headRow">
-          <h1 className="parallaxSubRow2_heading">
-            Facilitators
-          </h1>
-        </Row>
-
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-        </Row>
-        <Row className="parallaxSubRow2_gridRow">
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-          <Col md={4} className="parallax_gridCol">
-            <p className="parallax_gridText">
-              .
-            </p>
-          </Col>
-        </Row>
-
-      </Row>
-
-    </Row>
+    {
+      // <Row style={style} className="parallaxRow2">
+      //
+      //   <Row className="parallaxSubRow2 desktop">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //         <h1 className="parallaxSubRow2_heading" >
+      //           Our Purpose
+      //         </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //         Soulful Joy began as a solution in response to the ever-increasing levels
+      //         of stress that adults are experiencing every day.
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           The Path to this amazing Experience is based on Di I Dem
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Several of our friends who have been in the alternative wellness field for over 40 years each in various ways came together
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           and decided to offer a “relax and rejuvenate” while you detox retreat.
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Inspire – Immerse – Invigorate – Improve - Incorporate
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Join us this October 8-11, 2020 in Negril Jamaica where we will take you on the Path to this amazing Experience.
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2 mobile">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //         <h1 className="parallaxSubRow2_heading" >
+      //           Our Purpose
+      //         </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //         Soulful Joy began as a solution in response to
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //         ever-increasing levels of stress that adults are experiencing every day
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           The Path to this amazing Experience is based on Di I Dem
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Several of our friends who have been in the alternative wellness field
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           for over 40 years each in various ways came together
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           and decided to offer a “relax and rejuvenate” while you detox retreat.
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2 mobile">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //         <h1 className="parallaxSubRow2_heading" >
+      //           Our Purpose
+      //         </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //         .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Inspire – Immerse – Invigorate – Improve - Incorporate
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           Join us this October 8-11, 2020
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           in Negril Jamaica where we will take you
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           on the Path to this amazing Experience.
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Our Activities
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"four_day_outline"})}>
+      //           Four-day Outline
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"packages"})}>
+      //           Packages
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"what_to_bring"})}>
+      //           What to bring
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={Wht_ico} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"detox_rules"})}>
+      //           Rules for the detox
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText" onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"other_activities"})}>
+      //           Other activities
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         The Location
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_1} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_1"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_2} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_2"})}/>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_3} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_3"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_4} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_4"})}/>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_5} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_5"})}/>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <Image src={location_6} className="ParallaxPage_locatiomImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'retreat', data:"location_6"})}/>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //   <Row className="parallaxSubRow2">
+      //
+      //     <Row className="parallaxSubRow2_headRow">
+      //       <h1 className="parallaxSubRow2_heading">
+      //         Facilitators
+      //       </h1>
+      //     </Row>
+      //
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //     <Row className="parallaxSubRow2_gridRow">
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //       <Col md={4} className="parallax_gridCol">
+      //         <p className="parallax_gridText">
+      //           .
+      //         </p>
+      //       </Col>
+      //     </Row>
+      //
+      //   </Row>
+      //
+      // </Row>
+    }
 
   </div>
 )

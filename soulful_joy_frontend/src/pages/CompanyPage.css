@@ -328,7 +328,8 @@ font-family: 'Sacramento', cursive; */
   }
 
   .mobile {
-    display: inline-block;
+    display: block;
+    /* display: inline-block; */
   }
   .desktop {
     display: none;

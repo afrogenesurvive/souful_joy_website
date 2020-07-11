@@ -24,6 +24,7 @@ import mobile_carousel_4 from "../assets/imgs/mobile_carousel_4.jpg";
 const HomePage = (props) => {
   // console.log("mobile",props.mobile);
   let location = props.location.pathname;
+  // props.setCurrentPage(location);
 return (
 
   <div className="homePage_maindiv">
@@ -130,7 +131,7 @@ return (
           </NavLink>
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>The 5 I's will help carve out your path to this amazing experience..</p>
             </li>
           </ul>
         </Col>
@@ -164,7 +165,7 @@ return (
         </NavLink>
           <ul className="carousel_caption_list">
             <li  className="carousel_caption_listItem">
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>Join the Joy.</p>
             </li>
           </ul>
         </Col>

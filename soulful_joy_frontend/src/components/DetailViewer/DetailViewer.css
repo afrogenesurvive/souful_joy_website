@@ -38,7 +38,7 @@ font-family: 'Sacramento', cursive; */
 
 .detailViewer_topRow {
   margin: 1rem auto 3rem;
-  height: 80%;
+  height: 90%;
 }
 .detailViewer_topCol {
   padding: 0;
@@ -49,7 +49,7 @@ font-family: 'Sacramento', cursive; */
   overflow: scroll;
 }
 .xRow {
-  height: 45vh;
+  height: 58vh;
   /* height: 35vh; */
   margin: 1rem;
   /* border: 1px solid yellow; */
@@ -89,7 +89,7 @@ font-family: 'Sacramento', cursive; */
   list-style-type: none;
 }
 .detail_content_row {
-  margin: 0 1rem;
+  margin: 0 auto;
   padding: 1rem;
   overflow: scroll;
 }
@@ -101,6 +101,9 @@ font-family: 'Sacramento', cursive; */
 }
 .detailStaffImg {
 
+}
+.locationDetailImg {
+  width: 200% !important;
 }
 .detailViewer_text {
   /* display: block; */
@@ -118,7 +121,7 @@ font-family: 'Sacramento', cursive; */
     padding: 0;
   }
   .xRow {
-    height: 52vh;
+    height: 60vh;
     margin: 1rem;
   }
   .detailViewer_text {
@@ -127,13 +130,16 @@ font-family: 'Sacramento', cursive; */
   .detailViewContainer {
     border-radius: 7rem;
   }
+  .detailViewer_Img {
+    margin: 3rem 0 0 0;
+  }
 
 }
 
 @media only screen and (min-height: 960px) {
 
   .xRow {
-    height: 50vh;
+    height: 58vh;
   }
 
 }

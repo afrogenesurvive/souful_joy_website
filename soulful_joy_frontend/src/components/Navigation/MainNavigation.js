@@ -53,11 +53,19 @@ const mainNavigation = (props) => (
             <Nav className="ml-auto">
 
 
+
                 {props.currentPage !== '/home' && (
                   <NavLink to="/home" className="navBar_link">Home</NavLink>
                 )}
                 {props.currentPage === '/home' && (
                   <NavLink to="/home" className="navBar_link_selected">Home</NavLink>
+                )}
+
+                {props.currentPage !== '/retreat' && (
+                  <NavLink to="/retreat" className="navBar_link" onClick={props.resetOverscrollTop}>The Experience</NavLink>
+                )}
+                {props.currentPage === '/retreat' && (
+                  <NavLink to="/retreat" className="navBar_link_selected">The Experience</NavLink>
                 )}
 
                 {props.currentPage !== '/team' && (
@@ -74,12 +82,6 @@ const mainNavigation = (props) => (
                   <NavLink to="/path" className="navBar_link_selected">The Path</NavLink>
                 )}
 
-                {props.currentPage !== '/retreat' && (
-                  <NavLink to="/retreat" className="navBar_link">The Experience</NavLink>
-                )}
-                {props.currentPage === '/retreat' && (
-                  <NavLink to="/retreat" className="navBar_link_selected">The Experience</NavLink>
-                )}
 
                 {props.currentPage !== '/socialMedia' && (
                   <NavLink to="/socialMedia" className="navBar_link">The Joy</NavLink>
@@ -101,7 +103,7 @@ const mainNavigation = (props) => (
 
                 <Nav.Link className="navbar_divider">
                 </Nav.Link>
-                <Nav.Link className="navbar_item_social" href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+                <Nav.Link className="navbar_item_social" href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faFacebookSquare} className="navbar_socialIcon"/>
                 </Nav.Link>
                 <Nav.Link className="navbar_item_social" href="https://www.instagram.com/soulfuljoyjamaica" target="_blank" rel="noopener noreferrer">

@@ -13,6 +13,8 @@ import Wht_ico from '../assets/imgs/wht_ico.png';
 import "./WelcomePage.css"
 
 const WelcomePage = (props) => {
+  let location = props.location.pathname;
+  // props.setCurrentPage(location);
 
 return (
   <div className="welcomePage_maindiv">

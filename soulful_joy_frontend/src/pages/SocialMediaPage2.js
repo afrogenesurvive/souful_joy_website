@@ -89,7 +89,7 @@ return (
           <Col className="companyPage_sectionCol">
             <Row className="companyPage_section_row">
               <Col md={4} className="content_section_grid_cell">
-              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                 <p className="content_section_grid_text">
                   facebook
                 </p>
@@ -469,7 +469,7 @@ return (
           <Col md={3} className="footer_midCol">
             <ul className="footer_socialList">
               <li className="footer_socialListItem">
-              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebookSquare} className="footerIcon"/>
               </a>
               </li>
@@ -484,7 +484,7 @@ return (
               </a>
               </li>
               <li className="footer_socialListItem">
-              <a href="https://www.facebook.com/SoulfulJoy" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/SoulfulJoyJa" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} className="footerIcon"/>
               </a>
               </li>

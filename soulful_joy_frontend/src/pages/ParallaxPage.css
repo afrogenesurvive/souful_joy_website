@@ -6,7 +6,8 @@ body {
   display: none;
 }
 .mainDiv_parallax {
-  height: 100vh;
+  height: fit-content;
+  /* height: 100vh; */
   background-image: url("../assets/imgs/palm_bg.png");
   background-position: center;
   background-size: cover;
@@ -15,7 +16,7 @@ body {
 }
 .parallaxRow1 {
   /* border: 3px solid yellow; */
-  margin: 25vh auto;
+  margin: 25vh auto 0 auto;
   height: 100%;
   /* position: fixed; */
 }
@@ -30,8 +31,8 @@ body {
   width: 100%;
   margin: 0rem;
   padding-top: 1rem;
-  position: absolute;
-  bottom: 25vh;
+  /* position: absolute; */
+  /* bottom: 25vh; */
 }
 .footer_navBar_link {
   color: #ffffff !important;
@@ -72,7 +73,7 @@ body {
   padding: 1.5rem 1.5rem 1.5rem 5rem;
   border-radius: 25px;
   background-color: rgba(198, 184, 169, 0.9);
-  margin: 0 7rem;
+  margin: 5rem 7rem;
 }
 .topCol {
 
@@ -95,7 +96,7 @@ body {
  background-color: rgba(198, 184, 169, 0.95);
  width: 85vw;
  height: fit-content;
- margin:  5rem auto;
+ margin:  7rem auto;
  padding: 3rem;
  border-radius: 20px;
 }
@@ -116,6 +117,7 @@ body {
   margin: 1rem auto;
   color: #ffffff;
   font-size: 1.3rem;
+  text-align: center;
 }
 .parallaxSubRow2_gridRow {
  /* border: 1px solid yellow; */
@@ -154,7 +156,8 @@ body {
 @media only screen and (max-width: 420px) {
 
   .mobile {
-    display: inline-block;
+    display: block;
+    /* display: inline-block; */
   }
   .desktop {
     display: none;
@@ -185,6 +188,7 @@ body {
   .parallaxSubRow2 {
     padding: 1rem;
     width: 90vw;
+    display: block;
   }
   .parallaxSubRow2_headRow {
     margin-bottom: .5rem;
@@ -196,10 +200,19 @@ body {
     width: 33%;
     height: 21vh;
   }
+  .parallax_gridText {
+    font-size: 1rem;
+  }
   .ParallaxPage_staffImg {
     height: 7.5rem;
     width: 7.5rem;
     border-radius: 15px;
+  }
+  .footer_navBar_link {
+    font-size: .9rem;
+  }
+  .footer_midCol {
+    text-align: center;
   }
 
 }

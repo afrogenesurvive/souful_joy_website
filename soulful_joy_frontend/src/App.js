@@ -29,11 +29,12 @@ class App extends Component {
     contactForm: false,
     scrollPos: 0,
     mouseWheelDeltaY: 0,
-    overscrollTop: .5,
+    overscrollTop: -30,
     overscrollDir: null,
     mobile: false,
     height: "",
     lowerLimit: false,
+    currentPage: '',
   };
 
   static contextType = AuthContext;
@@ -59,38 +60,32 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // console.log(window.innerWidth);
-     window.addEventListener('scroll', this.listenToScroll);
-     // window.addEventListener('mousemove', this.mousemove);
-     // window.addEventListener('mouseup', this.mousemove);
-     // window.addEventListener('mousedown', this.mousemove);
-     window.addEventListener('wheel', this.mousemove);
-
-     this.setState({height: window.innerHeight});
-     if (window.innerHeight > 780 && window.innerHeight < 960) {
-       this.setState({
-         height: 'med',
-         overscrollTop: -26
-       })
-     }
-     if (window.innerHeight > 960) {
-       this.setState({
-         height: 'tall',
-         overscrollTop: -30
-       })
-     }
-     if (window.innerWidth <= 428) {
-       console.log("beep");
-       this.setState({
-         mobile: true,
-         height: 'mobile',
-         overscrollTop: -65
-       })
-     }
+     // window.addEventListener('wheel', this.mousemove);
+     // this.setState({height: window.innerHeight});
+     // if (window.innerHeight > 780 && window.innerHeight < 960) {
+     //   this.setState({
+     //     height: 'med',
+     //     overscrollTop: -26
+     //   })
+     // }
+     // if (window.innerHeight > 960) {
+     //   this.setState({
+     //     height: 'tall',
+     //     overscrollTop: -30
+     //   })
+     // }
+     // if (window.innerWidth <= 428) {
+     //   console.log("beep");
+     //   this.setState({
+     //     mobile: true,
+     //     height: 'mobile',
+     //     overscrollTop: -65
+     //   })
+     // }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.listenToScroll)
+    // window.removeEventListener('wheel', this.mousemove)
   }
 
 
@@ -123,9 +118,6 @@ class App extends Component {
     this.setState({contactForm: false})
   }
 
-  listenToScroll = () => {
-    this.setState({scrollPos: window.scrollY});
-  }
   mousemove = (e) => {
     let overscrollTop = this.state.overscrollTop;
     let overscrollDir = null;
@@ -139,23 +131,22 @@ class App extends Component {
     if (
       overscrollDir === 'down' &&
       this.state.height === 'med' &&
-      this.state.detailViewerOpen === false &&
-      this.state.lowerLimit === false
+      this.state.detailViewerOpen === false
+      // && overscrollTop >= -150;
     ) {
-    // if (overscrollDir === 'down' && this.state.height === 'med' && overscrollTop >= -133) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
         overscrollDir: overscrollDir
       })
     }
+    // this.state.overscrollTop >= this.state.currentLowerLimit
     if (
       overscrollDir === 'down' &&
       this.state.height === 'tall' &&
-       this.state.detailViewerOpen === false &&
-       this.state.lowerLimit === false
+       this.state.detailViewerOpen === false
+       // && overscrollTop >= -150;
      ) {
-    // if (overscrollDir === 'down' && this.state.height === 'tall' && overscrollTop >= -162) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
@@ -165,16 +156,24 @@ class App extends Component {
     if (
       overscrollDir === 'down' &&
       this.state.mobile === true &&
-      this.state.detailViewerOpen === false &&
-      this.state.lowerLimit === false
+      this.state.detailViewerOpen === false
+      // && overscrollTop >= -150;
     ) {
-    // if (overscrollDir === 'down' && this.state.mobile === true && overscrollTop >= -340) {
       this.setState({
         mouseWheelDeltaY: e.deltaY,
         overscrollTop: overscrollTop-1,
         overscrollDir: overscrollDir
       })
     }
+
+
+    // if (overscrollDir === 'down' && overscrollDir >= this.state.currentLowerLimit) {
+    //   this.setState({
+    //     mouseWheelDeltaY: e.deltaY,
+    //     overscrollTop: overscrollTop-1,
+    //     overscrollDir: overscrollDir
+    //   })
+    // }
 
 
     if (overscrollDir === 'up' && this.state.height === 'med' && overscrollTop <= -26 && this.state.detailViewerOpen === false) {
@@ -201,12 +200,34 @@ class App extends Component {
 
   }
 
-  setOverscrollTop = (args) => {
-    console.log('set overscrollTop');
-    this.setState({
-      overscrollTop: args,
-      lowerLimitState: true
-    })
+  setCurrentPage = (args) => {
+    console.log('setCurrentPage', args);
+    // this.setState({
+    //   currentPage: args
+    // })
+
+    // if (args === 'team' && this.state.height === 'tall') {
+    //   this.setState({currentLowerLimit: })
+    // }
+    // if (args === 'team' && this.state.height === 'med') {
+    //   this.setState({currentLowerLimit: })
+    // }
+    // if (args === 'team' && this.state.height === 'mobile') {
+    //   this.setState({currentLowerLimit: })
+    // }
+  }
+  resetOverscrollTop = () => {
+    console.log('resetOverscrollTop');
+    // this.setState({overscrollTop: -30})
+    if (this.state.height === 'tall') {
+      this.setState({overscrollTop: -30})
+    }
+    if (this.state.height === 'med') {
+      this.setState({overscrollTop: -26})
+    }
+    if (this.state.height === 'mobile') {
+      this.setState({overscrollTop: -65})
+    }
   }
 
 // <Route path="/home" component={MainNavigation} />
@@ -239,10 +260,12 @@ class App extends Component {
                 scrollPos={this.state.scrollPos}
                 mouseWheelDeltaY={this.state.mouseWheelDeltaY}
                 overscrollTop={this.state.overscrollTop}
-                setOverscrollTop={this.setOverscrollTop}
+                resetOverscrollTop={this.resetOverscrollTop}
+                setLowerLimit={this.setLowerLimit}
                 overscrollDir={this.state.overscrollDir}
                 mobile={this.state.mobile}
                 viewHeight={this.state.height}
+                testFunc={this.testFunc}
 
                 openDetailViewer={this.openDetailViewer}
                 closeDetailViewer={this.closeDetailViewer}
@@ -296,6 +319,8 @@ class App extends Component {
                 overscrollDir={this.state.overscrollDir}
                 mobile={this.state.mobile}
                 viewHeight={this.state.height}
+                setCurrentPage={this.setCurrentPage}
+
 
                 openDetailViewer={this.openDetailViewer}
                 closeDetailViewer={this.closeDetailViewer}

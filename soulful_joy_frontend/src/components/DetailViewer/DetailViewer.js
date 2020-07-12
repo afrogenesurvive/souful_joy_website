@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 
 import AuthContext from '../../context/auth-context';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
 // import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 // import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 // import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -27,13 +26,11 @@ import team_4 from '../../assets/imgs/team_4_kwasausya.jpg';
 import team_5 from '../../assets/imgs/team_5_perdella.jpg';
 
 import './DetailViewer.css';
-// import SplashMainLogo from '../../assets/imgs/logo_splash_pg.png';
 
 
 const detailViewer = props => (
   <AuthContext.Consumer>
     {context => {
-      // console.log('detailViewer', props);
       return (
         <div className="detailViewer_blackTop">
           <div className="detailViewContainer">

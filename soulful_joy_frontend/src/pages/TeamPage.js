@@ -1,32 +1,22 @@
 import React, {useEffect} from 'react';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 // import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
-// import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import DetailViewer from '../components/DetailViewer/DetailViewer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-// import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core'// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-// import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
-// import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
 import team_1 from '../assets/imgs/team_1_kwayera.jpeg';
 import team_2 from '../assets/imgs/team_2_ade.jpg';
 import team_3 from '../assets/imgs/team_3_khadijah.jpg';
 import team_4 from '../assets/imgs/team_4_kwasausya.jpg';
 import team_5 from '../assets/imgs/team_5_perdella.jpg';
-// import Blk_ico from '../assets/imgs/blk_ico.png';
 
 import "./ParallaxPage.css"
 
@@ -35,61 +25,6 @@ const TeamPage = (props) => {
   let location = props.location.pathname;
   let detailViewerOpen = props.detailViewerOpen;
   let detailViewerData = props.detailViewerData;
-
-  console.log(`
-      x: ${props.mouseWheelDeltaY},
-      y: ${props.overscrollTop},
-      z: ${props.overscrollDir},
-      mobile: ${props.mobile},
-      height: ${props.viewHeight}
-    `);
-
-  // if (props.mobile !== true) {
-  //   topMes = props.overscrollTop/.7+'em';
-  // }
-  // if (props.mobile === true) {
-  //   topMes = props.overscrollTop/1.7+'em';
-  // }
-  // // let topMes = props.overscrollTop/.75+'em';
-  //
-  // if (props.mobile === false && props.viewHeight === 'med') {
-  //   if (props.overscrollTop <= -142) {
-  //     // props.setLowerLimit()
-  //     console.log('med lower limit');
-  //     topMes = -142/.7+'em';
-  //   }
-  // }
-  // if (props.mobile === false && props.viewHeight === 'tall') {
-  //   if (props.overscrollTop <= -162) {
-  //     // props.setLowerLimit()
-  //     console.log('tall lower limit');
-  //     topMes = -162/.7+'em';
-  //   }
-  // }
-  // // if (props.mobile === true) {
-  // //   if (props.overscrollTop <= -340) {
-  // //     console.log('lower limit mobile');
-  // //     topMes = -340/1.7+'em';
-  // //   }
-  // // }
-  //
-  // if (props.overscrollTop >= -26 && props.viewHeight === 'med') {
-  //   console.log('med upper limit');
-  //   topMes = -26/.7+'em';
-  // }
-  // if (props.overscrollTop >= -30 && props.viewHeight === 'tall') {
-  //   console.log('tall upper limit');
-  //   topMes = -30/.7+'em';
-  // }
-  // if (props.mobile === true) {
-  //   if (props.overscrollTop >= -65) {
-  //     console.log('upper limit mobile');
-  //     topMes = -65/1.7+'em';
-  //   }
-  // }
-  // const style = {
-  //   top: topMes,
-  // }
 
 
 return (
@@ -385,190 +320,6 @@ return (
 
       </Col>
     </Row>
-
-    {
-      // <Row style={style} className="parallaxRow2">
-      //   <Row className="parallaxSubRow2">
-      //
-      //     <Row className="parallaxSubRow2_headRow">
-      //         <h1 className="parallaxSubRow2_heading" >
-      //           Our Mission
-      //         </h1>
-      //     </Row>
-      //
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //       <p className="parallax_gridText">
-      //         Soulful Joy exists to provide a unique residential experience where people who give of themselves a lot & often
-      //       </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //           </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           can rejuvenate & relax; while detoxing during a 4-day long retreat in lush tropical locations.
-      //         </p>
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //       <p className="parallax_gridText">
-      //         .
-      //       </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //       <p className="parallax_gridText">
-      //         .
-      //       </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //     </Row>
-      //
-      //   </Row>
-      //   <Row className="parallaxSubRow2">
-      //
-      //     <Row className="parallaxSubRow2_headRow">
-      //       <h1 className="parallaxSubRow2_heading">
-      //         Team
-      //       </h1>
-      //     </Row>
-      //
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_1_kwayera"})}/>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //         <Image src={team_2} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_2_ade"})}/>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <Image src={team_3} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_3_khadijah"})}/>
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //         <Image src={team_4} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_4_kwasausya"})}/>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <p className="parallax_gridText">
-      //           .
-      //         </p>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <Image src={team_5} className="ParallaxPage_staffImg" fluid onClick={props.openDetailViewer.bind(this, {page: 'team', data:"team_5_perdella"})}/>
-      //       </Col>
-      //     </Row>
-      //
-      //   </Row>
-      //   <Row className="parallaxSubRow2">
-      //
-      //     <Row className="parallaxSubRow2_headRow">
-      //       <h1 className="parallaxSubRow2_heading">
-      //         Our Vision:
-      //       </h1>
-      //     </Row>
-      //
-      //     <p className="parallaxSubRow2_subheading">
-      //       is to create A special time and place where you will follow the Path to an amazing Experience
-      //     </p>
-      //
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //         <NavLink to="/path">
-      //           <p className="parallax_gridText fiveIs">
-      //             Inspire
-      //           </p>
-      //         </NavLink>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //       <NavLink to="/path">
-      //         <p className="parallax_gridText fiveIs">
-      //           Immerse
-      //         </p>
-      //       </NavLink>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //       <NavLink to="/path">
-      //         <p className="parallax_gridText fiveIs">
-      //           Invigorate
-      //         </p>
-      //       </NavLink>
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //       <NavLink to="/path">
-      //         <p className="parallax_gridText fiveIs">
-      //           Improve
-      //         </p>
-      //       </NavLink>
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //       <NavLink to="/path">
-      //         <p className="parallax_gridText fiveIs">
-      //           Incorporate
-      //         </p>
-      //       </NavLink>
-      //       </Col>
-      //     </Row>
-      //
-      //   </Row>
-      // </Row>
-    }
 
   </div>
 )

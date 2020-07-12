@@ -3,28 +3,19 @@
 font-family: 'Sacramento', cursive; */
 
 .welcomePage_overlay {
-  /* height: 100vh; */
-  /* width: 100vw; */
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .welcomePage_maindiv {
   /* border: 1px solid black; */
   height: 100vh;
-  /* width: 100%; */
   background-image: url('../assets/imgs/Splash1.jpg');
-  /* background-repeat: no-repeat; */
   background-size: cover;
-  /* padding-top: 5rem; */
 }
 
 .welcomePageRow {
-  /* border: 1px solid yellow; */
-  /* height: 100%; */
-  /* width: 100%; */
   display: block;
   margin: 0rem;
-  /* padding: 1.5rem 0; */
 }
 
 .welcomePageSubRow {
@@ -56,7 +47,6 @@ font-family: 'Sacramento', cursive; */
 }
 .welcomePageSubHeading {
   color: #ffffff;
-  /* font-weight: bold; */
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
@@ -72,8 +62,6 @@ font-family: 'Sacramento', cursive; */
 
 .SplashMainLogo {
   height: 35vh;
-  /* height: 13rem; */
-  /* margin: 3rem auto; */
 }
 
 
@@ -102,5 +90,5 @@ font-family: 'Sacramento', cursive; */
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
 }

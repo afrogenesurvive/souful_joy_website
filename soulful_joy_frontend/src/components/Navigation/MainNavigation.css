@@ -9,7 +9,6 @@ font-family: 'Sacramento', cursive; */
   z-index: 9999;
   width: 100%;
   height: 3.5rem;
-  /* background: #06D6A0; */
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@ font-family: 'Sacramento', cursive; */
 .main-navigation__logo h1 {
   margin: 0;
   font-size: 1.5rem;
-  /* color: #ffffff; */
 }
 
 .main-navigation__items {
@@ -64,20 +62,12 @@ font-family: 'Sacramento', cursive; */
 
 .navbarBrandLogo {
   height: 4rem;
-  /* height: 1.5rem; */
   display: inline-block;
   margin: 0 1rem;
 }
 
 .navbarMaster {
   background-color: rgba(5, 138, 102, 0.85);
-  /* background-color: rgba(13, 136, 111, 0.85); */
-  /* background-color: rgba(198, 184, 169, 0.85); */
-  /* background-color: rgba(245, 121, 131, 0.85); */
-  /* background-color: rgba(241, 91, 181, 0.85); */
-  /* background-color: rgba(255, 205, 178, 0.85); */
-  /* background-color: rgba(0,0,0, 0.85); */
-  /* background-color: rgba(58, 183, 149, 0.3); */
   padding: .5rem 4vw;
 }
 
@@ -138,7 +128,6 @@ font-family: 'Sacramento', cursive; */
   border: none;
   font-size: 1.9rem;
   color: #ffffff;
-  /* margin-top: .5rem; */
 }
 .navbar_divider {
   border: 1px solid #ffffff;
@@ -187,7 +176,6 @@ font-family: 'Sacramento', cursive; */
     padding: .5rem 1.5rem;
   }
   .navbarBrandLogo {
-    /* height: 1.5rem; */
     margin: 0;
   }
   .navBar_link {

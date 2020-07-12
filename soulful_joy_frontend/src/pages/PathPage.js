@@ -5,12 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
-// import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import DetailViewer from '../components/DetailViewer/DetailViewer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 // import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -18,10 +16,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-// import SplashMainLogo from '../assets/imgs/logo_splash_pg.png';
-// import ContentBgLogo from '../assets/imgs/content_bg.png';
 import Wht_ico from '../assets/imgs/wht_ico.png';
-// import Blk_ico from '../assets/imgs/blk_ico.png';
 
 import "./ParallaxPage.css"
 
@@ -211,79 +206,6 @@ return (
         </Row>
       </Col>
     </Row>
-
-    {
-      // <Row style={style} className="parallaxRow2">
-      //
-      //   <Row className="parallaxSubRow2">
-      //
-      //     <Row className="parallaxSubRow2_headRow">
-      //       <h1 className="parallaxSubRow2_heading">
-      //         Our Vision:
-      //       </h1>
-      //     </Row>
-      //     <p className="parallaxSubRow2_subheading">
-      //       is to create A special time and place where you will follow the Path to an amazing Experience
-      //     </p>
-      //
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //           <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_inspire"})}>
-      //             Inspire
-      //           </p>
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //         <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_immerse"})}>
-      //           Immerse
-      //         </p>
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //         <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_invigorate"})}>
-      //           Invigorate
-      //         </p>
-      //
-      //       </Col>
-      //     </Row>
-      //     <Row className="parallaxSubRow2_gridRow">
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //         <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_improve"})}>
-      //           Improve
-      //         </p>
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //       </Col>
-      //       <Col md={4} className="parallax_gridCol">
-      //
-      //         <p className="parallax_gridText fiveIs" onClick={props.openDetailViewer.bind(this, {page: 'path', data:"fiveIs_incorporate"})}>
-      //           Incorporate
-      //         </p>
-      //
-      //       </Col>
-      //     </Row>
-      //
-      //   </Row>
-      //
-      // </Row>
-    }
 
   </div>
 )

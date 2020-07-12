@@ -3,10 +3,8 @@
 font-family: 'Sacramento', cursive; */
 
 .homePage_maindiv {
-  /* border: 1px solid black; */
   height: 100vh;
   width: 100vw;
-  /* padding-top: 5.5vh; */
   background-image: url("../assets/imgs/bg1.jpg");
 }
 
@@ -15,7 +13,6 @@ font-family: 'Sacramento', cursive; */
 }
 .homePage_container {
   margin: 7vh auto;
-  /* border: 1px solid black; */
   height: 70vh;
   text-align: center;
 }
@@ -54,7 +51,6 @@ font-family: 'Sacramento', cursive; */
 }
 .carousel-caption {
   bottom: 9rem;
-  /* padding-top: 1.5rem; */
 }
 .carousel-indicators {
   bottom: 5rem
@@ -100,8 +96,6 @@ font-family: 'Sacramento', cursive; */
   width: fit-content;
   margin: 0 auto;
   background-image: linear-gradient(rgba(197, 31, 113, .7),	rgba(236, 161, 48, .7));
-  /* background: rgba(0, 0, 0, 0.8); */
-  /* background-color: rgba(198, 184, 169, 0.9); */
   padding: .5rem 3rem;
 }
 
@@ -109,8 +103,6 @@ font-family: 'Sacramento', cursive; */
 @media only screen and (max-width: 420px) {
 
   .homePageCarouselRow {
-    /* border: 1px solid brown; */
-    /* height: 98%; */
     height: 101%;
   }
 

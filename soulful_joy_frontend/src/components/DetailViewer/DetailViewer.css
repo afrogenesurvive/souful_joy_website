@@ -13,27 +13,12 @@ font-family: 'Sacramento', cursive; */
 }
 
 .detailViewContainer {
-  /* border: 1.5px solid rgba(198, 184, 169, 0.85); */
-  /* position: fixed; */
-  /* top: 7rem; */
-  /* left: 3.5rem; */
   height: 75vh;
   width: 70vw;
-  /* height: 100vh;
-  width: 100vw; */
-  /* z-index: 10; */
-  /* background-color: rgba(0, 0, 0, 0.9); */
-  /* background-color: rgba(5, 138, 102, 0.85); */
   background-image: linear-gradient(rgba(197, 31, 113, .7),	rgba(236, 161, 48, .7));
-  /* background-image: linear-gradient(#c51f71, eca130); */
-  /* background-color: rgba(198, 184, 169, 0.85); */
-  /* background-color: rgba(241, 91, 181, 0.85); */
-  /* background-color: rgba(255, 205, 178, 0.85); */
-  /* background-color: rgba(13, 136, 111, 0.85); */
   padding: 1rem;
   margin: 19vh auto;
   border-radius: 10rem;
-  /* border-radius: 25%; */
 }
 
 .detailViewer_topRow {
@@ -44,15 +29,11 @@ font-family: 'Sacramento', cursive; */
   padding: 0;
 }
 .detailViewer_subRow {
-  /* height: 30vh; */
-  /* border: 1px solid #ffffff; */
   overflow: scroll;
 }
 .xRow {
   height: 58vh;
-  /* height: 35vh; */
   margin: 1rem;
-  /* border: 1px solid yellow; */
   text-align: center;
 }
 .detailViewer_buttomRow {
@@ -94,9 +75,7 @@ font-family: 'Sacramento', cursive; */
   overflow: scroll;
 }
 .detailViewer_Img {
-  /* height: 90%; */
   margin: 0 auto 3rem auto;
-  /* display: block; */
   border-radius: 15px;
 }
 .detailStaffImg {
@@ -106,8 +85,6 @@ font-family: 'Sacramento', cursive; */
   width: 200% !important;
 }
 .detailViewer_text {
-  /* display: block; */
-
   margin: 0 auto;
   color: #ffffff;
 }

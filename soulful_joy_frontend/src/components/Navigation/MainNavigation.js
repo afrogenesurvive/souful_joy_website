@@ -3,12 +3,10 @@ import { NavLink, withRouter } from 'react-router-dom';
 // import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image';
 
 import AuthContext from '../../context/auth-context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 // import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -18,7 +16,6 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 import './MainNavigation.css';
 import Wht_ico from '../../assets/imgs/wht_ico.png';
-// import Blk_ico from '../../assets/imgs/blk_ico.png';
 
 
 const mainNavigation = (props) => (
@@ -38,13 +35,6 @@ const mainNavigation = (props) => (
               <p className="navbar_brand_text">
               Soulful Joy
               </p>
-              {
-              //   props.currentPage && (
-              //   <p className="currentPageTxt">
-              //   {props.currentPage}
-              //   </p>
-              // )
-            }
             </NavLink>
           </Navbar.Brand>
 

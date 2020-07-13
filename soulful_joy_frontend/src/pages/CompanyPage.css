@@ -257,27 +257,27 @@ font-family: 'Sacramento', cursive; */
   }
 
   .mainDiv_team {
-    background-image: url("../assets/imgs/Team_Portrait3.jpg");
+
     /* background-size: contain; */
     background-position: center;
     /* background-size: cover; */
   }
   .mainDiv_path {
     /* background-image: url("../assets/imgs/Process_1.jpg"); */
-    background-image: url("../assets/imgs/Process_Portrait3.jpg");
+
     background-position: center;
   }
   .mainDiv_retreat {
-    background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+
   }
   .mainDiv_shop {
-    background-image: url("../assets/imgs/Retreat_Portrait.jpg");
+
   }
   .mainDiv_socialMedia {
-    background-image: url("../assets/imgs/Splash_Portrait.jpg");
+
   }
   .mainDiv_contact {
-    background-image: url("../assets/imgs/Retreat_1.jpg");
+
   }
   .companyPage_maindiv {
   }

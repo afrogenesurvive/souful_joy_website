@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Row from 'react-bootstrap/Row';
-// import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import MainNavigation from '../components/Navigation/MainNavigation';
@@ -8,7 +8,9 @@ import Image from 'react-bootstrap/Image';
 import DetailViewer from '../components/DetailViewer/DetailViewer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core'// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 import Wht_ico from '../assets/imgs/wht_ico.png';

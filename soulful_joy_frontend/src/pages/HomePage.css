@@ -75,6 +75,9 @@ font-family: 'Sacramento', cursive; */
   display: block;
   margin: 1.5rem auto;
 }
+a:hover {
+  text-decoration: none;
+}
 .carousel_caption_list {
   display: block;
   padding: 0;

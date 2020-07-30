@@ -84,55 +84,59 @@ class App extends Component {
                 <Route path="/welcome" render={(props) => <WelcomePage {...props}
                   closeSplash={this.closeSplash}
                 />}/>
-                <Route path="/home" render={(props) => <HomePage {...props}
-                />}/>
-                <Route path="/team" render={(props) => <TeamPage {...props}
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
 
-                <Route path="/path" render={(props) => <PathPage {...props}
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
-                <Route path="/socialMedia" render={(props) => <SocialMediaPage {...props}
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
-                <Route path="/retreat" render={(props) => <RetreatPage {...props}
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
-                <Route path="/shop" render={(props) => <ShopPage {...props}
+                {
+                  // <Route path="/home" render={(props) => <HomePage {...props}
+                  // />}/>
+                  <Route path="/team" render={(props) => <TeamPage {...props}
+                    openDetailViewer={this.openDetailViewer}
+                    closeDetailViewer={this.closeDetailViewer}
+                    detailViewerOpen={this.state.detailViewerOpen}
+                    detailViewerData={this.state.detailViewerData}
+                  />}/>
+                  //
+                  // <Route path="/path" render={(props) => <PathPage {...props}
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                  // <Route path="/socialMedia" render={(props) => <SocialMediaPage {...props}
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                  // <Route path="/retreat" render={(props) => <RetreatPage {...props}
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                  // <Route path="/shop" render={(props) => <ShopPage {...props}
+                  //
+                  // />}/>
+                  // <Route path="/parallax" render={(props) => <ParallaxPage {...props}
+                  //   scrollPos={this.state.scrollPos}
+                  //   mouseWheelDeltaY={this.state.mouseWheelDeltaY}
+                  //   overscrollTop={this.state.overscrollTop}
+                  //   overscrollDir={this.state.overscrollDir}
+                  //   mobile={this.state.mobile}
+                  //   viewHeight={this.state.height}
+                  //
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                  // <Route path="/contact" render={(props) => <ContactPage {...props}
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                }
 
-                />}/>
-                <Route path="/parallax" render={(props) => <ParallaxPage {...props}
-                  scrollPos={this.state.scrollPos}
-                  mouseWheelDeltaY={this.state.mouseWheelDeltaY}
-                  overscrollTop={this.state.overscrollTop}
-                  overscrollDir={this.state.overscrollDir}
-                  mobile={this.state.mobile}
-                  viewHeight={this.state.height}
-
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
-                <Route path="/contact" render={(props) => <ContactPage {...props}
-                  openDetailViewer={this.openDetailViewer}
-                  closeDetailViewer={this.closeDetailViewer}
-                  detailViewerOpen={this.state.detailViewerOpen}
-                  detailViewerData={this.state.detailViewerData}
-                />}/>
 
                 <Redirect from="/" to="/welcome" exact />
                 <Redirect from="*" to="/welcome" exact />

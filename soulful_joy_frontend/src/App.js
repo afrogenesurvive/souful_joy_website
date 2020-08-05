@@ -88,13 +88,13 @@ class App extends Component {
                 {
                   // <Route path="/home" render={(props) => <HomePage {...props}
                   // />}/>
-                  <Route path="/team" render={(props) => <TeamPage {...props}
-                    openDetailViewer={this.openDetailViewer}
-                    closeDetailViewer={this.closeDetailViewer}
-                    detailViewerOpen={this.state.detailViewerOpen}
-                    detailViewerData={this.state.detailViewerData}
-                  />}/>
-                  //
+                  // <Route path="/team" render={(props) => <TeamPage {...props}
+                  //   openDetailViewer={this.openDetailViewer}
+                  //   closeDetailViewer={this.closeDetailViewer}
+                  //   detailViewerOpen={this.state.detailViewerOpen}
+                  //   detailViewerData={this.state.detailViewerData}
+                  // />}/>
+                  // //
                   // <Route path="/path" render={(props) => <PathPage {...props}
                   //   openDetailViewer={this.openDetailViewer}
                   //   closeDetailViewer={this.closeDetailViewer}

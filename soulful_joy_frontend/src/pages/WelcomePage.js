@@ -27,7 +27,9 @@ const WelcomePage = (props) => {
               </Row>
 
               <Row className="welcomePageSubRow Row2">
-                <h3 className='welcomePageSubHeading'>A Special Time & Place...Negril, Jamiaca</h3>
+                <h3 className='welcomePageSubHeading'>A Special Time & Place</h3>
+                <h3 className='welcomePageSubHeading'>Negril Treehouse Resort</h3>
+                <h3 className='welcomePageSubHeading'>Jamaica</h3>
                 <h4 className='welcomePageSubHeading'>Oct 8-12, 2020</h4>
                 <NavLink to="/home">
                   <Button variant="outline-light" size="lg" className="welcomePageEnterBtn" >Join the Joy</Button>
